@@ -196,4 +196,31 @@ namespace PlayerState
       return "shock";
     }
   }
+
+	class PlayerDie : PlayerState
+	{
+		public PlayerDie(PlayerCTL instance)
+		{
+			this.Instance = instance;
+		}
+		public override void onEnter()
+		{
+			GameManager.GetInstance().sm.SwitchState("dead");
+		}
+
+		public override void onUpdate()
+		{
+
+		}
+
+		public override void onExit()
+		{
+
+		}
+
+		public override string GetState()
+		{
+			return "die";
+		}
+	}
 }
