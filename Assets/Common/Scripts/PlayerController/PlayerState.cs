@@ -197,30 +197,34 @@ namespace PlayerState
     }
   }
 
-	class PlayerDie : PlayerState
-	{
-		public PlayerDie(PlayerCTL instance)
-		{
-			this.Instance = instance;
-		}
-		public override void onEnter()
-		{
-			GameManager.GetInstance().sm.SwitchState("dead");
-		}
+  class PlayerDie : PlayerState
+  {
+    public PlayerDie(PlayerCTL instance)
+    {
+      this.Instance = instance;
+    }
+    public override void onEnter()
+    {
+      this.Instance.AnimCTL.SetBool("Die", true);
+    }
 
-		public override void onUpdate()
-		{
+    public override void onUpdate()
+    {
+      if (this.Instance.AnimInfo.IsName("Die") &&
+         this.Instance.AnimInfo.normalizedTime >= 1.0)
+      {
+        this.Instance.ResetPlayer();
+      }
+    }
 
-		}
+    public override void onExit()
+    {
+      this.Instance.AnimCTL.SetBool("Die", false);
+    }
 
-		public override void onExit()
-		{
-
-		}
-
-		public override string GetState()
-		{
-			return "die";
-		}
-	}
+    public override string GetState()
+    {
+      return "die";
+    }
+  }
 }

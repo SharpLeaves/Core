@@ -70,7 +70,7 @@ public class PlayerCTL : MonoBehaviour
 
   public void Die()
   {
-    Debug.Log("PlayerDie");
+    this.sm.SwitchState("die");
   }
   void StateMachineInit()
   {
@@ -80,6 +80,7 @@ public class PlayerCTL : MonoBehaviour
     this.sm.addState(new PlayerWalk(this));
     this.sm.addState(new PlayerRecycle(this));
     this.sm.addState(new PlayerShock(this));
+    this.sm.addState(new PlayerDie(this));
     this.sm.SwitchState("idle");
   }
 
@@ -94,5 +95,20 @@ public class PlayerCTL : MonoBehaviour
   }
 
 
+  public void ResetPlayer()
+  {
+    this.transform.position = GameManager.GetInstance().SpwanPoint;
+    this.sm.SwitchState("idle");
+  }
+
+
+
+  private void OnTriggerEnter2D(Collider2D other)
+  {
+    if (other.tag == "Trap")
+    {
+      this.Die();
+    }
+  }
 
 }

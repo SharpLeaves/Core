@@ -55,6 +55,8 @@ public class LaserCTL : MonoBehaviour
       {
         float dis = Vector2.Distance(hit.point, (Vector2)transform.position);
         this.line.SetPosition(1, new Vector3(0, dis, 0));
+        this.line.GetComponent<BoxCollider2D>().size = new Vector2(this.line.GetComponent<BoxCollider2D>().size.x, dis);
+        this.line.GetComponent<BoxCollider2D>().offset = new Vector2(this.line.GetComponent<BoxCollider2D>().offset.x, dis / 2);
         //Debug.Log(dis);
       }
     }
