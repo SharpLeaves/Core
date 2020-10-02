@@ -16,8 +16,8 @@ namespace Core.Physics{
 		private Vector2 applyPosition = new Vector2(0.0f, 0.0f);
 
 		/* 摩擦参数 */
-		public float groundDamping = 80.0f;
-		public float airDamping = 40.0f;
+		public float groundDamping = 40.0f;
+		public float airDamping = 30.0f;
 
 		/* 重力参数 */
 		public float gravityScale;

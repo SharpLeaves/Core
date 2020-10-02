@@ -33,8 +33,6 @@ namespace Core.Physics{
 		
 		private void Update(){
 			GroundedTest();
-            if(bGrounded)
-                Debug.Log("Ground");
 		}
 		
 		private void GroundedTest(){

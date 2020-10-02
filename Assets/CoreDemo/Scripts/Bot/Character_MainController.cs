@@ -10,7 +10,7 @@ namespace Core.Character{
     public class Character_MainController : Creature{
 		// 输入组件
 		public Character_InputController inputController;
-        // 相机组件
+        // 相机控制组件
         public Character_LookController lookController;
         // 朝向组件
         public Character_FlipController flipController;

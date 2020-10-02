@@ -325,6 +325,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bot
       objectReference: {fileID: 0}
+    - target: {fileID: 8138135835430622755, guid: e6756fa5567dfa046bb5a9e0a989fc30,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 8138135835482524053, guid: e6756fa5567dfa046bb5a9e0a989fc30,
         type: 3}
       propertyPath: animationController
@@ -340,6 +345,11 @@ PrefabInstance:
       propertyPath: groundedTester
       value: 
       objectReference: {fileID: 1302278049}
+    - target: {fileID: 8138135835482524053, guid: e6756fa5567dfa046bb5a9e0a989fc30,
+        type: 3}
+      propertyPath: walkForce
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8138135836607288659, guid: e6756fa5567dfa046bb5a9e0a989fc30,
         type: 3}
       propertyPath: cameraRestrict
@@ -1074,8 +1084,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   main: {fileID: 2692055}
-  groundDamping: 80
-  airDamping: 40
+  groundDamping: 20
+  airDamping: 20
   gravityScale: 0.8
   normalGravityScale: 1.25
 --- !u!4 &1932808639 stripped

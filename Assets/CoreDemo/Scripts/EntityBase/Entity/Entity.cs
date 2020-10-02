@@ -10,7 +10,5 @@ namespace Core{
         protected StateMachine stateMachine;
         public AnimatorController animationController;
         public Rigidbody2D rigidbodyComponent;
-        
-
     }
 }
