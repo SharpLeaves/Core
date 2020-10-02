@@ -45,6 +45,10 @@ public abstract class Interactable : MonoBehaviour
 
   }
 
+  private void OnTriggerStayUpdate()
+  {
+
+  }
   private void OnTriggerStay2D(Collider2D other)
   {
     if (other.gameObject.tag == "Player")

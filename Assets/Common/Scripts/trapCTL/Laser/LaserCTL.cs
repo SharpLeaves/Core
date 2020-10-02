@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LaserCTL : MonoBehaviour
+public class LaserCTL : TrapBase
 {
-  [Header("所属核")]
-  public TrapCoreCTL belongTo;
+
   [Header("旋转速度")]
   public float rotateSpeed;
   [Header("最大旋转角度")]
@@ -16,27 +15,41 @@ public class LaserCTL : MonoBehaviour
   public LineRenderer line;
   [Header("需要射线检测的图层")]
   public LayerMask layer;
+
+
   private int rotateDir;
   private float currentRotate = 0;
 
   private RaycastHit2D hit;
+
+
+  public override void FunctionOnDisable()
+  {
+    Destroy(line.gameObject);
+    //this.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+  }
+
   void Start()
   {
+    Init();
+  }
+
+
+
+  void FixedUpdate()
+  {
+    if (IsActive)
+    {
+      rotate();
+      LaserRay();
+    }
+  }
+
+  void Init()
+  {
     rotateDir = 1;
+    this.Active = true;
   }
-
-  // Update is called once per frame
-  void Update()
-  {
-    Debug.DrawRay(transform.position, transform.rotation * Vector3.up * 1000, Color.black);
-  }
-
-  private void FixedUpdate()
-  {
-    rotate();
-    LaserRay();
-  }
-
   void rotate()
   {
 
