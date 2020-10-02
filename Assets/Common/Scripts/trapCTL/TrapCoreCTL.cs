@@ -2,17 +2,37 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TrapCoreCTL : MonoBehaviour
+public class TrapCoreCTL : Interactable
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+  [Header("下属的陷阱列表")]
+  public List<TrapBase> TrapList;
 
-    // Update is called once per frame
-    void Update()
+
+  // Start is called before the first frame update
+  protected override void ExStart()
+  {
+
+  }
+
+  // Update is called once per frame
+  protected override void ExUpdate()
+  {
+
+  }
+
+  protected override void InteractFunction()
+  {
+    DisableAllTrap();
+  }
+
+  void DisableAllTrap()
+  {
+    foreach (TrapBase temp in TrapList)
     {
-        
+      temp.Disable();
     }
+  }
+
+
+
 }

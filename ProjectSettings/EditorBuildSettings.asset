@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Common/Scenes/forword.unity
     guid: 752511d67d9c41448a23d8550577fb8c
+  - enabled: 1
+    path: Assets/Common/Scenes/Test.unity
+    guid: 104df244e3ef8834d84d6f27105d0344
   m_configObjects: {}

@@ -5,10 +5,11 @@ using UnityEngine.UI;
 
 public class LabelVisual : MonoBehaviour
 {
+  [Header("字体变换速度")]
   public float TransSpeed = 0.05f;
+
   private Text label;
   private float alpha;
-
   private Color oricolor;
   private bool dir = false;
   // Start is called before the first frame update
