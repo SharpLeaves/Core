@@ -26,7 +26,7 @@ public class LaserCTL : TrapBase
   public override void FunctionOnDisable()
   {
     Destroy(line.gameObject);
-    this.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+    //this.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
   }
 
   void Start()
