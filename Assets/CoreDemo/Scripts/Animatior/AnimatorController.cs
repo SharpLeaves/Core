@@ -7,7 +7,7 @@ namespace Core.Animation{
 		public Animator animator;
 
 		private string curPlay;
-		private float playSpeed;
+		private float playSpeed = 1.0f;
 
 		public string play{
 			get{

@@ -10,5 +10,12 @@ namespace Core{
         protected StateMachine stateMachine;
         public AnimatorController animationController;
         public Rigidbody2D rigidbodyComponent;
+
+        protected abstract void StateMachineInit();
+        public StateMachine GetStateMachine{
+            get{
+                return stateMachine;
+            }
+        }
     }
 }

@@ -1,7 +1,7 @@
 ﻿/*
  * @Author: vanot313
  * @Date: 2020-09-20 16:59:23
- * @LastEditTime: 2020-09-30 20:54:50
+ * @LastEditTime: 2020-10-05 20:29:11
  * @LastEditors: Please set LastEditors
  * @Description: Main player input component.
  * @FilePath: \Core\Assets\Scripts\Bot\Character_Input.cs
@@ -29,41 +29,85 @@ namespace Core.Character
 		public UnityEngine.KeyCode kMainHand = KeyCode.Z;
 		public UnityEngine.KeyCode kOffHand = KeyCode.X;
 		public UnityEngine.KeyCode kSpecial = KeyCode.C;
+		public UnityEngine.KeyCode kInteract = KeyCode.E;
+		
 
 
 		private bool bJumpWasPressed;
 		private bool bJump;
 		private bool bRunWasPressed;
 		private bool bRun;
-		
+		private bool bMainHandWasPressed;
+		private bool bMainHand;
+		private bool bOffHandWasPressed;
+		private bool bOffHand;
+		private bool bSpecialWasPressed;
+		private bool bSpecial;
+		private bool bInteractWasPressed;
+		private bool bInteract;
+
+		public bool MainHand{
+			get{
+				return bMainHand;
+			}
+		}
+		public bool MainHandHeld{
+			get{
+				return bMainHandWasPressed;
+			}
+		}
+		public bool OffHand{
+			get{
+				return bOffHand;
+			}
+		}
+		public bool OffHandHeld{
+			get{
+				return bOffHandWasPressed;
+			}
+		}
+		public bool Special{
+			get{
+				return bSpecial;
+			}
+		}
+		public bool SpecialHeld{
+			get{
+				return bSpecialWasPressed;
+			}
+		}
+		public bool Interact{
+			get{
+				return bInteract;
+			}
+		}
+		public bool InteractHeld{
+			get{
+				return bInteractWasPressed;
+			}
+		}
 		public bool Run{
 			get{
 				return bRun;
 			}
 		}
-
 		public bool RunHeld{
 			get{
 				return bRunWasPressed;
 			}
 		}
-		
 		public bool Jump{
 			get{
 				return bJump;
 			}
 		}
-		
 		public bool JumpHeld{
 			get{
 				return bJumpWasPressed;
 			}
 		}
-		/**
-		* @description: 获取水平移动输入
-		* @param {} 
-		* @return {float} 
-		*/
+		
+
 		public float Horizontal{
 			get{
 				float fValue = 0.0f;
@@ -76,11 +120,6 @@ namespace Core.Character
 				return fValue;
 			}
 		}
-		/**
-		* @description:获取垂直移动输入
-		* @param {} 
-		* @return {float} 
-		*/
 		public float Vertical{
 			get{
 				float fValue = 0.0f;
@@ -99,32 +138,30 @@ namespace Core.Character
 				return Input.GetKey(kJump);
 			}
 		}
-		
 		public bool RunInput{
 			get{
 				return Input.GetKey(kRun);
 			}
 		}
-		/**
-		* @description:更新角色输入状态 
-		* @param {}
-		* @return {} 
-		*/
-		private void FixedUpdate()
-		{
-			UpdateRunInput();
-			UpdateJumpInput();
-			// KeyCode currentKey = KeyCode.Space;
-			// if (Input.anyKeyDown)
-			// {
-			// 	Debug.Log("Press");
-				// Event e = Event.current;
-				// if (e.isKey)
-				// {
-				// 	currentKey = e.keyCode;
-				// 	Debug.Log("Current Key is : " + currentKey.ToString());
-				// }
-			// }
+		public bool MainHandInput{
+			get{
+				return Input.GetKey(kMainHand);
+			}
+		}
+		public bool OffHandInput{
+			get{
+				return Input.GetKey(kOffHand);
+			}
+		}
+		public bool SpecialInput{
+			get{
+				return Input.GetKey(kSpecial);
+			}
+		}
+		public bool InteractInput{
+			get{
+				return Input.GetKey(kInteract);
+			}
 		}
 		
 		private void UpdateJumpInput(){
@@ -134,7 +171,6 @@ namespace Core.Character
 			bJumpWasPressed = bJumpPressed;
 			bJump = bJumpJustPressed;
 		}
-		
 		private void UpdateRunInput(){
 			bool bRunPressed = RunInput;
 			bool bRunJustPressed = bRunWasPressed == false && bRunPressed;
@@ -142,5 +178,38 @@ namespace Core.Character
 			bRunWasPressed = bRunPressed;
 			bRun = bRunJustPressed;
 		}
+		private void UpdateOther(){
+			bool bMainHandPressed = MainHandInput;
+			bool bMainHandJustPressed = bMainHandWasPressed == false && bMainHandPressed;
+
+			bMainHandWasPressed = bMainHandPressed;
+			bMainHand = bMainHandJustPressed;
+
+			bool bOffHandPressed = OffHandInput;
+			bool bOffHandJustPressed = bOffHandWasPressed == false && bOffHandPressed;
+
+			bOffHandWasPressed = bOffHandPressed;
+			bOffHand = bOffHandJustPressed;
+
+			bool bSpecialPressed = SpecialInput;
+			bool bSpecialJustPressed = bSpecialWasPressed == false && bSpecialPressed;
+
+			bSpecialWasPressed = bSpecialPressed;
+			bSpecial = bSpecialJustPressed;
+
+			bool bInteractPressed = InteractInput;
+			bool bInteractJustPressed = bInteractWasPressed == false && bInteractPressed;
+
+			bInteractWasPressed = bInteractPressed;
+			bInteract = bInteractJustPressed;
+		}
+
+
+		private void FixedUpdate(){
+			UpdateRunInput();
+			UpdateJumpInput();
+			UpdateOther();
+		}
+		
 	}
 }

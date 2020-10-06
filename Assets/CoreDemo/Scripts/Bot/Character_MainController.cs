@@ -32,10 +32,7 @@ namespace Core.Character{
 		public float jump = 2.0f;
         // 跳跃重力
         public float jumpGravityScale = 0.8f;
-		// Dash CD
-        public float dashCD = 4.0f;
-
-        public bool dashOK = true;
+		
 
         // // 跳跃前容许跳跃持续时间
 		// public float lateJumpToleranceDuration = 0.2f;
@@ -43,7 +40,7 @@ namespace Core.Character{
 		
 
 
-        void StateMachineInit(){
+        protected override void StateMachineInit(){
             this.stateMachine = new StateMachine();
             this.stateMachine.addState(new IdleState(this));
             this.stateMachine.addState(new WalkState(this));

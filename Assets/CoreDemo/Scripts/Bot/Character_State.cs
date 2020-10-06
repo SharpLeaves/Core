@@ -163,14 +163,7 @@ namespace Core.Character{
             if(main.groundedTester.IsGrounded)
                 this.Container.switchState("idle");
 
-            if(main.inputController.Run && main.dashOK){
-                main.dashOK = false;
-                main.physicsController.addVelocity(main.dashForce * main.flipController.flipTransform.localScale.x, 0);
-                TimerManager.instance.addTask(new Task(main.dashCD, ()=>{
-                    main.dashOK = true;
-                    Debug.Log("cd ok");
-                }));
-            }
+            
                 
  
 
