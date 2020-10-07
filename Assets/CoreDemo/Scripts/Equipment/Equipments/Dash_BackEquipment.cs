@@ -9,6 +9,10 @@ namespace Core.Test{
         public float dashCD = 4.0f;
         public bool dashOK = true;
 
+        public override string getName(){
+            return "Dash";
+        }
+
         public override void function(){
             if(main.GetStateMachine.curState.getName() == "air" && dashOK){
                 dashOK = false;
@@ -17,9 +21,6 @@ namespace Core.Test{
                     dashOK = true;
                 }));
             }
-        }
-        public override string getName(){
-            return "Dash";
         }
 
         protected override void StateMachineInit(){

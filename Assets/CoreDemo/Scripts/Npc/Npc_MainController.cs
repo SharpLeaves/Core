@@ -6,7 +6,7 @@ using Core.StateController;
 
 namespace Core.Test{
     public class Npc_MainController : Creature{
-        
+        public Container container;
 
         protected override void StateMachineInit(){
             this.stateMachine = new StateMachine();

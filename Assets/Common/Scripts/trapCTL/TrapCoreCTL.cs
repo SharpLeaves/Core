@@ -32,7 +32,4 @@ public class TrapCoreCTL : Interactable
       temp.Disable();
     }
   }
-
-
-
 }

@@ -14,6 +14,9 @@ namespace Core.Character{
         public Character_LookController lookController;
         // 朝向组件
         public Character_FlipController flipController;
+        // 装备挂载组件
+        public EquipmentController handEquipment;
+        public EquipmentController backEquipment;
 
         /* 角色动作参数 */
 		// 行走增量

@@ -8,7 +8,7 @@ using Core.Character;
 namespace Core{
     public abstract class IEquipment : Entity{
         public Character_MainController main;
-        public void setPlayer(Character_MainController character){
+        public void setCharacter(Character_MainController character){
             main = character;
         }
         public abstract void function();

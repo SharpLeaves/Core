@@ -22,9 +22,8 @@ namespace Core{
         
         override protected void processObjectUpdate(){
             foreach (GameObject gameObject in effectedObjects){
-                Debug.Log(gameObject.name);
                 if( gameObject.tag == "Player" ){
-                    Character_InputController playerInput = gameObject.GetComponentInChildren<Character_InputController>();
+                    Character_InputController playerInput = gameObject.GetComponentInChildren<Character_InputController>();                    
                     if(playerInput.Interact){
                         processInteract();
                         if( !repeatable ){
