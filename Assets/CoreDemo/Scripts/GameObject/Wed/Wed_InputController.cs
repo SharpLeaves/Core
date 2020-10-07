@@ -1,14 +1,13 @@
 ﻿/*
  * @Author: vanot313
  * @Date: 2020-09-20 16:59:23
- * @LastEditTime: 2020-10-05 20:29:11
+ * @LastEditTime: 2020-10-07 15:10:15
  * @LastEditors: Please set LastEditors
  * @Description: Main player input component.
  * @FilePath: \Core\Assets\Scripts\Bot\Character_Input.cs
  */
 
 using UnityEngine;
-using System.Collections;
 
 
 namespace Core.Character

@@ -1,7 +1,4 @@
 using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-using Core.Character;
 
 namespace Core.Character{
     [AddComponentMenu("Core/Character/MainController")]
