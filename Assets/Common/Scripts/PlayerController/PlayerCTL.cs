@@ -44,7 +44,7 @@ public class PlayerCTL : MonoBehaviour
   {
     if (MoveX != 0)
     {
-      transform.localScale = new Vector3(MoveX, 1, 1);
+      transform.localScale = new Vector3(-MoveX, 1, 1);
     }
 
     this.rb.velocity = new Vector2(MoveX * this.moveSpeed, rb.velocity.y);
@@ -53,7 +53,7 @@ public class PlayerCTL : MonoBehaviour
   {
     if (MoveX != 0)
     {
-      transform.localScale = new Vector3(MoveX, 1, 1);
+      transform.localScale = new Vector3(-MoveX, 1, 1);
     }
 
     this.rb.velocity = new Vector2(MoveX * this.runSpeed, rb.velocity.y);
