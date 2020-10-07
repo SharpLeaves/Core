@@ -10,6 +10,16 @@ namespace Core
     public Collider2D col;
     protected List<GameObject> effectedObjects = new List<GameObject>();
 
+    private void Start()
+    {
+      colInit();
+    }
+
+    private void colInit()
+    {
+      col = GetComponent<Collider2D>();
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
 

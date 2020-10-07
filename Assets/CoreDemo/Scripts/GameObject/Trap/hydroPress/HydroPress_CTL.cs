@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HydroPressCTL : TrapBase
+public class HydroPress_CTL : TrapBase
 {
   [Header("下压初速度")]
   public float PressInitialSpeed;
@@ -50,6 +50,12 @@ public class HydroPressCTL : TrapBase
 
     }
   }
+
+  protected override void StateMachineInit()
+  {
+
+  }
+
   public override void FunctionOnDisable()
   {
     throw new System.NotImplementedException();

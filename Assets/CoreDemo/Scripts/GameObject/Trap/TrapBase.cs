@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Core;
 
-public abstract class TrapBase : MonoBehaviour
+public abstract class TrapBase : Entity
 {
   protected bool IsActive;
   public bool Active

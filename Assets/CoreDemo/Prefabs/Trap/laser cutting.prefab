@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5204810918611848057}
   - component: {fileID: 5204810918611848056}
-  - component: {fileID: 5204810918611848062}
+  - component: {fileID: 8611498688057705732}
   m_Layer: 0
   m_Name: laser cutting
   m_TagString: Trap
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5204810918611848062
+--- !u!114 &8611498688057705732
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,10 +96,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 615e0d8d59d9b4944be968d3d58e024e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  belongTo: {fileID: 0}
-  rotateSpeed: 1
+  rotateSpeed: 3.44
   rotateMax: 60
-  LaserLength: 1000
+  LaserLength: 999.12
   line: {fileID: 5204810919098120145}
   layer:
     serializedVersion: 2

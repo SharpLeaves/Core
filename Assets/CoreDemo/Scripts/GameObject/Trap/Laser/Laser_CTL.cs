@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LaserCTL : TrapBase
+public class Laser_CTL : TrapBase
 {
 
   [Header("旋转速度")]
@@ -43,6 +43,11 @@ public class LaserCTL : TrapBase
       rotate();
       LaserRay();
     }
+  }
+
+  protected override void StateMachineInit()
+  {
+
   }
 
   void Init()
