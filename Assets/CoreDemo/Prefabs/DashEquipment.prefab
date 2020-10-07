@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1889538804899398761}
   - component: {fileID: 7935798597424392370}
   m_Layer: 0
-  m_Name: DashBack
+  m_Name: DashEquipment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42,7 +42,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1889538804899398760}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eb9c8936003b7749b36ef5261c80af2, type: 3}
+  m_Script: {fileID: 11500000, guid: 9775bf3a1f223ca42a53c28762e79b78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animationController: {fileID: 1889538805351457762}

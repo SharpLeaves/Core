@@ -1,8 +1,6 @@
 using UnityEngine;
-using System.Collections;
-using Core;
 
-namespace Core.Physics{
+namespace Core{
 	[AddComponentMenu("Core/Physics")]
 	public class PhysicsController : MonoBehaviour {		
 		public Creature main;

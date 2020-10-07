@@ -1,8 +1,7 @@
 using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
 
-namespace Core.Physics{
+namespace Core{
 	[AddComponentMenu("Core/Physics")]
 	public class GroundedTester : MonoBehaviour {
 		// 地面LayerName，用于获取LayerIndex

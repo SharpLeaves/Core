@@ -1,9 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Core.StateController;
-using Core.Animation;
-using Core.Character;
 
 namespace Core{
     public abstract class Entity : MonoBehaviour{
@@ -12,6 +7,7 @@ namespace Core{
         public Rigidbody2D rigidbodyComponent;
 
         protected abstract void StateMachineInit();
+
         public StateMachine GetStateMachine{
             get{
                 return stateMachine;

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using Core.Character;
 using UnityEngine;
 
@@ -20,10 +18,10 @@ namespace Core{
             transform.position.y + col.offset.y + col.bounds.size.y/2, 0); 
         }
         
-        override protected void processObjectUpdate(){
+        protected override void processObjectUpdate(){
             foreach (GameObject gameObject in effectedObjects){
                 if( gameObject.tag == "Player" ){
-                    Character_InputController playerInput = gameObject.GetComponentInChildren<Character_InputController>();                    
+                    Wed_InputController playerInput = gameObject.GetComponentInChildren<Wed_InputController>();                    
                     if(playerInput.Interact){
                         processInteract();
                         if( !repeatable ){

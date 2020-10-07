@@ -1,7 +1,6 @@
 using UnityEngine;
-using System.Collections;
 
-namespace Core.Animation{
+namespace Core{
 	[AddComponentMenu("Core/AnimationController")]
 	public class AnimatorController : MonoBehaviour {
 		public Animator animator;

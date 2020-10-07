@@ -1,9 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Events;
 
-namespace Core.Timer{
+namespace Core{
     public class Task{
         public float cd;
         public UnityAction function;

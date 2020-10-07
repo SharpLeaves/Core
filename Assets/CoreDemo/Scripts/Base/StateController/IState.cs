@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using Core;
 
-namespace Core.StateController{
+namespace Core{
     [AddComponentMenu("Core/FSM/State")]
 
     public abstract class IState{

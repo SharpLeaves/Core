@@ -1,14 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Core.StateController;
-using Core.Animation;
 using Core.Character;
 
 namespace Core{
     public abstract class IEquipment : Entity{
-        public Character_MainController main;
-        public void setCharacter(Character_MainController character){
+        public Wed main;
+        public void setCharacter(Wed character){
             main = character;
         }
         public abstract void function();

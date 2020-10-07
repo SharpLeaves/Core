@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Core.Character;
 
 namespace Core{
     public class EquipmentController : MonoBehaviour{
-        public Character_MainController main;
+        public Wed main;
         protected IEquipment curEquipment;
 
         public void switchEquipment(IEquipment equipment){

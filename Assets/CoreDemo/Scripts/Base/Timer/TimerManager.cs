@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace Core.Timer{
+namespace Core{
     public class TimerManager : MonoBehaviour{
         public static TimerManager instance;
 

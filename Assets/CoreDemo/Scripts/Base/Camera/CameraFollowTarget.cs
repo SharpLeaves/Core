@@ -1,9 +1,6 @@
 using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
 
-namespace Core.Camera
-{
+namespace Core{
 	[AddComponentMenu("Core/Camera/CameraFollowTarget")]
 	public class CameraFollowTarget : MonoBehaviour
 	{

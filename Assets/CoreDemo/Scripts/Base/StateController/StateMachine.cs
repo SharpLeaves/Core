@@ -1,8 +1,7 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Core.StateController{
+namespace Core{
     [AddComponentMenu("Core/FSM/StateMachine")]
 
     public class StateMachine{
