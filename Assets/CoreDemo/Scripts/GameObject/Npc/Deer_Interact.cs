@@ -4,8 +4,8 @@ using UnityEngine;
 using Core;
 
 namespace Core.Test{
-    public class Npc_Interact : InteractableC{
-        public Npc_MainController main;
+    public class Deer_Interact : InteractableC{
+        public Deer_MainController main;
         protected override void processInteract(){
             main.GetStateMachine.switchState("eat");
             IEquipment equipment = main.container.getByName("Dash");
@@ -24,7 +24,6 @@ namespace Core.Test{
 
         protected override void processObjectEnter(GameObject gameObject){
             base.processObjectEnter(gameObject);
-            Debug.Log("Enter");
         }
     }
 }

@@ -144,7 +144,7 @@ GameObject:
   - component: {fileID: 47900341}
   - component: {fileID: 47900342}
   m_Layer: 0
-  m_Name: Npc_animator
+  m_Name: deer_animator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1217,10 +1217,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: {fileID: 1007114532}
+  effectedObjects: []
   reusable: 1
   repeatable: 1
   interactSign: {fileID: 4370045189857543694, guid: 5bf526b31bea29d4588104f17982ecfb,
     type: 3}
+  signPosition: {x: 0, y: 0, z: 0}
   main: {fileID: 1069725265}
 --- !u!61 &1007114532
 BoxCollider2D:
@@ -1288,7 +1290,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1069725263}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62d8f0dfcca897b4d9aedc43e8b840eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b96dbdd79224f7458c2d9d86204394e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animationController: {fileID: 47900342}
@@ -1679,7 +1681,7 @@ GameObject:
   - component: {fileID: 1734949523}
   - component: {fileID: 1734949522}
   m_Layer: 0
-  m_Name: npc
+  m_Name: deer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

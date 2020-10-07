@@ -3,12 +3,12 @@ using Core.StateController;
 using Core.Timer;
 
 namespace Core.Test{
-    public abstract class NpcState : IState{
-        protected Npc_MainController main {get; set;}
+    public abstract class DeerState : IState{
+        protected Deer_MainController main {get; set;}
     }
 
-    public class smallState : NpcState{
-        public smallState(Npc_MainController mainController){
+    public class smallState : DeerState{
+        public smallState(Deer_MainController mainController){
             this.main = mainController;
         }
         public override string getName(){
@@ -26,8 +26,8 @@ namespace Core.Test{
         }
     }
 
-    public class eatState : NpcState{
-        public eatState(Npc_MainController mainController){
+    public class eatState : DeerState{
+        public eatState(Deer_MainController mainController){
             this.main = mainController;
         }
 
@@ -53,8 +53,8 @@ namespace Core.Test{
         
     }
 
-    public class bigState : NpcState{
-        public bigState(Npc_MainController mainController){
+    public class bigState : DeerState{
+        public bigState(Deer_MainController mainController){
             this.main = mainController;
         }
         public override string getName(){
