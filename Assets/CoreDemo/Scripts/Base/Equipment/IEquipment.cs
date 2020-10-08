@@ -16,7 +16,7 @@ namespace Core
 
   public abstract class IEquipmentHand : IEquipment
   {
-    protected void FixedUpdate()
+    protected void Update()
     {
       if (main.inputController.OffHand)
       {
@@ -27,7 +27,7 @@ namespace Core
 
   public abstract class IEquipmentBack : IEquipment
   {
-    protected void FixedUpdate()
+    protected void Update()
     {
       if (main.inputController.Special)
       {

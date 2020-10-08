@@ -41,8 +41,13 @@ namespace Core.Equipment
     }
     protected void FixedUpdate()
     {
-      base.FixedUpdate();
+      //base.Update();
       this.stateMachine.update();
+    }
+
+    protected void Update()
+    {
+      base.Update();
     }
   }
 }

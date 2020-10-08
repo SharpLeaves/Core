@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Core;
 
 public class GameManager
 {
@@ -19,22 +20,8 @@ public class GameManager
 
   /* 角色出生点 */
   public Vector2 SpwanPoint { get; set; }
-
-  public FSM.StateMachine sm;
-  public enum GameProgress
-  {
-    MENU,
-    FORWORD,
-    Chapter1
-  }
-
-  public enum PlayerState
-  {
-    Controlable,
-    Dead,
-    UnControable,
-  }
-
+  /* 游戏状态机 */
+  public Core.StateMachine stateMachine;
 
   // Start is called before the first frame update
   void Start()
@@ -50,6 +37,12 @@ public class GameManager
 
   void statemachineInit()
   {
-
+    this.stateMachine.addState(new GameState_Playing());
+    this.stateMachine.addState(new GameState_SwitchScenes());
+    this.stateMachine.addState(new GameState_DEAD());
+    this.stateMachine.addState(new GameState_Setting());
   }
+
+
+
 }
