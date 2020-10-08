@@ -2,47 +2,52 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Core;
-
-public class GameManager
+using UnityEngine.SceneManagement;
+public class GameManager : MonoBehaviour
 {
-  /* 单例模式 */
-  static public GameManager GetInstance()
+  [Header("当前场景编号")]
+  /* 当前场景编号 */
+  public int CurScenceIndex;
+  /* 游戏UI动画控制器 */
+  public AnimatorController AnimCTL;
+  /* WED */
+  public Core.Character.Wed wed;
+  private void Awake()
   {
-    if (instance == null)
-      instance = new GameManager();
+    GameManagerData.GetInstance().GameManagerInit(this);
 
-    return instance;
   }
-  static private GameManager instance;
-  private GameManager() { }
-
-
-
-  /* 角色出生点 */
-  public Vector2 SpwanPoint { get; set; }
-  /* 游戏状态机 */
-  public Core.StateMachine stateMachine;
-
   // Start is called before the first frame update
   void Start()
   {
-
+    GameManagerData.GetInstance().statemachineInit();
+    GameInit();
   }
 
   // Update is called once per frame
   void Update()
   {
-
+    GameManagerData.GetInstance().stateMachine.update();
   }
 
-  void statemachineInit()
+
+  public void IsPlayerDead()
   {
-    this.stateMachine.addState(new GameState_Playing());
-    this.stateMachine.addState(new GameState_SwitchScenes());
-    this.stateMachine.addState(new GameState_DEAD());
-    this.stateMachine.addState(new GameState_Setting());
+    if (wed.IsDead)
+    {
+      GameManagerData.GetInstance().stateMachine.switchState("dead");
+    }
   }
 
+  void GameInit()
+  {
+
+  }
+
+  public void LoadGame()
+  {
+    SceneManager.LoadScene(CurScenceIndex);
+  }
 
 
 }

@@ -7,6 +7,6 @@ public class InteractionSpawnPoint : InteractableC
 {
   protected override void processInteract()
   {
-    GameManager.GetInstance().SpwanPoint = this.transform.position;
+    GameManagerData.GetInstance().SpwanPoint = this.transform.position;
   }
 }

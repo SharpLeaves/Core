@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using FSM;
 using PlayerState;
+using Core;
 public class PlayerCTL : MonoBehaviour
 {
 
@@ -21,7 +22,7 @@ public class PlayerCTL : MonoBehaviour
   public Animator AnimCTL;
   public AnimatorStateInfo AnimInfo;
   public Rigidbody2D rb;
-  private StateMachine sm;
+  private FSM.StateMachine sm;
   // Start is called before the first frame update
   void Start()
   {
@@ -74,7 +75,7 @@ public class PlayerCTL : MonoBehaviour
   }
   void StateMachineInit()
   {
-    this.sm = new StateMachine();
+    this.sm = new FSM.StateMachine();
     this.sm.addState(new PlayerIdle(this));
     this.sm.addState(new PlayerRun(this));
     this.sm.addState(new PlayerWalk(this));
@@ -97,7 +98,7 @@ public class PlayerCTL : MonoBehaviour
 
   public void ResetPlayer()
   {
-    this.transform.position = GameManager.GetInstance().SpwanPoint;
+    this.transform.position = GameManagerData.GetInstance().SpwanPoint;
     this.sm.SwitchState("idle");
   }
 
