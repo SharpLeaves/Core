@@ -18,13 +18,27 @@ namespace Core
     static private GameManagerData instance;
     private GameManagerData() { }
 
+    public bool IsSetSpwanPoint = false;
     public GameManager gameManager;
-
-
-    /* 角色出生点 */
-    public Vector2 SpwanPoint { get; set; }
     /* 游戏状态机 */
     public Core.StateMachine stateMachine;
+
+    /* 角色出生点 */
+    public Vector2 spwanpoint;
+    public Vector2 SpwanPoint
+    {
+      get
+      {
+        if (IsSetSpwanPoint) return spwanpoint;
+        else return gameManager.FirstSpwanPoint.position;
+      }
+      set
+      {
+        spwanpoint = value;
+        IsSetSpwanPoint = true;
+      }
+    }
+
     public void statemachineInit()
     {
       this.stateMachine = new Core.StateMachine();

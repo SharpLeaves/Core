@@ -91,7 +91,7 @@ namespace Core
 
     public override void onExit()
     {
-      this.gameManager.LoadGame();
+      this.gameManager.ReLoadScene();
     }
 
     public override string getName()

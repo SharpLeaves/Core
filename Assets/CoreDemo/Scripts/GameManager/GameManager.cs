@@ -7,7 +7,9 @@ public class GameManager : MonoBehaviour
 {
   [Header("当前场景编号")]
   /* 当前场景编号 */
-  public int CurScenceIndex;
+  public int CurSceneIndex;
+  [Header("场景出生点")]
+  public Transform FirstSpwanPoint;
   /* 游戏UI动画控制器 */
   public AnimatorController AnimCTL;
   /* WED */
@@ -44,9 +46,15 @@ public class GameManager : MonoBehaviour
 
   }
 
-  public void LoadGame()
+  public void ReLoadScene()
   {
-    SceneManager.LoadScene(CurScenceIndex);
+    SceneManager.LoadScene(CurSceneIndex);
+  }
+
+  public void SwitchScene(int Scene)
+  {
+    SceneManager.LoadScene(Scene);
+    GameManagerData.GetInstance().IsSetSpwanPoint = false;
   }
 
 
