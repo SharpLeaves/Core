@@ -360,9 +360,10 @@ MonoBehaviour:
   flipController: {fileID: 0}
   handEquipment: {fileID: 6852091478290590772}
   backEquipment: {fileID: 6852091478609892133}
-  walkForce: 10
+  wedTransform: {fileID: 0}
+  walkForce: 30
   runForce: 50
-  airForce: 30
+  airForce: 50
   dashForce: 20
   walkMinSpeed: 0.2
   runMinSpeed: 1
@@ -412,9 +413,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   main: {fileID: 6852091477850009026}
-  groundDamping: 20
-  airDamping: 20
-  gravityScale: 0.8
+  groundDamping: 10
+  airDamping: 30
+  gravityScale: 1.25
   normalGravityScale: 1.25
 --- !u!1 &6852091478290590730
 GameObject:
@@ -737,7 +738,7 @@ GameObject:
   - component: {fileID: 6852091479246604695}
   - component: {fileID: 6852091479246604692}
   - component: {fileID: 6852091479246604650}
-  - component: {fileID: 6852091479246604693}
+  - component: {fileID: 8459281703450303710}
   m_Layer: 0
   m_Name: Wed
   m_TagString: Player
@@ -797,7 +798,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.05715552, y: 0.813361}
+  m_Offset: {x: -0.044774234, y: 0.6733025}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -808,21 +809,19 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.51605695, y: 1.0670513}
+  m_Size: {x: 0.5408195, y: 1.3471683}
   m_EdgeRadius: 0
---- !u!58 &6852091479246604693
-CircleCollider2D:
+--- !u!114 &8459281703450303710
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6852091479246604651}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 65e679685bd7d4f33859ca25ec69e456, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.039441437, y: 0.13929866}
-  serializedVersion: 2
-  m_Radius: 0.14071144
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db368dd2fbad05b42ab143a0e8fb8f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  col: {fileID: 6852091479246604650}
+  main: {fileID: 6852091477850009026}

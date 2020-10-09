@@ -16,10 +16,16 @@ public class Laser_CTL : TrapBase
   public LineRenderer line;
   [Header("需要射线检测的图层")]
   public LayerMask layer;
+  [Header("左右移动速度")]
+  public float MoveSpeed;
+  [Header("左右移动范围")]
+  public float MoveRange;
 
 
   private int rotateDir;
+  private int moveDir;
   private float currentRotate = 0;
+  private float currentMovement = 0;
 
   private RaycastHit2D hit;
 
@@ -32,12 +38,12 @@ public class Laser_CTL : TrapBase
 
   protected override void StateMachineInit()
   {
-	this.stateMachine = new Core.StateMachine();
-	this.stateMachine.addState(new Laser_Normal(this));
-	this.stateMachine.addState(new Laser_Disable(this));
+    this.stateMachine = new Core.StateMachine();
+    this.stateMachine.addState(new Laser_Normal(this));
+    this.stateMachine.addState(new Laser_Disable(this));
   }
 
-	void Start()
+  void Start()
   {
     Init();
   }
@@ -46,7 +52,13 @@ public class Laser_CTL : TrapBase
 
   void FixedUpdate()
   {
-		this.stateMachine.update();
+    //this.stateMachine.update();
+    if (Active)
+    {
+      rotate();
+      LaserRay();
+      Move();
+    }
   }
 
 
@@ -54,6 +66,7 @@ public class Laser_CTL : TrapBase
   void Init()
   {
     rotateDir = 1;
+    moveDir = 1;
     this.Active = true;
   }
   void rotate()
@@ -78,6 +91,21 @@ public class Laser_CTL : TrapBase
         this.line.GetComponent<BoxCollider2D>().offset = new Vector2(this.line.GetComponent<BoxCollider2D>().offset.x, dis / 2);
         //Debug.Log(dis);
       }
+    }
+  }
+
+  void Move()
+  {
+    if (this.currentMovement < this.MoveRange)
+    {
+      float moveDistance = MoveSpeed * Time.deltaTime;
+      this.transform.Translate(moveDistance * moveDir, 0, 0);
+      this.currentMovement += moveDistance;
+    }
+    else
+    {
+      moveDir = -moveDir;
+      this.currentMovement = 0;
     }
   }
 
