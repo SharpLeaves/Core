@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Core;
 
 public class HydroPress_CTL : TrapBase
 {
@@ -27,6 +28,7 @@ public class HydroPress_CTL : TrapBase
   /*判断是否在停留*/
   private bool IsTimeout;
   // Start is called before the first frame update
+
   void Start()
   {
     Init();
@@ -40,20 +42,21 @@ public class HydroPress_CTL : TrapBase
 
   private void FixedUpdate()
   {
-    if (Active)
-    {
-      if (!IsTimeout)
-      {
-        this.Press();
-        this.Recall();
-      }
-
-    }
+	if (Active)
+	{
+		if (!IsTimeout)
+		{
+			this.Press();
+			this.Recall();
+		}
+	}
   }
 
   protected override void StateMachineInit()
   {
-
+		this.stateMachine = new Core.StateMachine();
+		this.stateMachine.addState(new HydroPress_Normal(this));
+		this.stateMachine.addState(new HydroPress_Disable(this));
   }
 
   public override void FunctionOnDisable()
@@ -67,6 +70,7 @@ public class HydroPress_CTL : TrapBase
     this.Active = true;
     this.IsTimeout = false;
     this.CurrentPressSpeed = this.PressInitialSpeed;
+	StateMachineInit();
   }
 
   void Press()
@@ -93,7 +97,6 @@ public class HydroPress_CTL : TrapBase
         StartCoroutine(RecallTimeout());
         this.CurrentPressSpeed = this.PressInitialSpeed;
       }
-
     }
   }
 

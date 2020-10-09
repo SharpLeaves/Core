@@ -5,27 +5,22 @@ using Core;
 
 namespace Core
 {
-	public abstract class HydroPress_State : IState
+	public abstract class Laser2_State : IState
 	{
-		protected HydroPress_CTL main;
+		protected Laser2_CTL main;
 	}
 
-	public class HydroPress_Normal : HydroPress_State
+	public class Laser2_Normal : Laser2_State
 	{
-		public HydroPress_Normal(HydroPress_CTL _main)
+		public Laser2_Normal(Laser2_CTL _main)
 		{
 			main = _main;
 		}
 		public override void onEnter()
 		{
 		}
-		public override void update()
-		{
-
-		}
-
-		public void fixedUpdate()
-		{
+		public override void update() 
+		{ 
 
 		}
 		public override void onExit()
@@ -38,9 +33,9 @@ namespace Core
 		}
 	}
 
-	public class HydroPress_Disable : HydroPress_State
+	public class Laser2_Disable : Laser2_State
 	{
-		public HydroPress_Disable(HydroPress_CTL _main)
+		public Laser2_Disable(Laser2_CTL _main)
 		{
 			main = _main;
 		}
@@ -48,11 +43,6 @@ namespace Core
 		{
 		}
 		public override void update()
-		{
-
-		}
-
-		public void fixedUpdate()
 		{
 
 		}
