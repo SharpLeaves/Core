@@ -22,11 +22,48 @@ namespace Core
     }
     public override void onEnter()
     {
-
+      Time.timeScale = 0;
+      this.gameManager.ShowSettingInterface();
+      this.gameManager.wed.inputController.InputEnable = false;
     }
 
     public override void update()
     {
+      if (Input.GetKeyDown(KeyCode.Escape))
+      {
+        this.belongTO.switchState("playing");
+      }
+    }
+    public override void onExit()
+    {
+      Time.timeScale = 1;
+      this.gameManager.HideSettingInterface();
+      this.gameManager.wed.inputController.InputEnable = true;
+    }
+
+    public override string getName()
+    {
+      return "setting";
+    }
+  }
+
+  public class GameState_ToPlay : GameState
+  {
+    public GameState_ToPlay(GameManager gm)
+    {
+      this.gameManager = gm;
+      belongTO = GameManagerData.GetInstance().stateMachine;
+    }
+    public override void onEnter()
+    {
+      this.gameManager.AnimCTL.play = "fadein";
+      this.gameManager.wed.Wed_Init();
+      this.belongTO.switchState("playing");
+    }
+
+    public override void update()
+    {
+
     }
 
     public override void onExit()
@@ -35,7 +72,7 @@ namespace Core
 
     public override string getName()
     {
-      return "setting";
+      return "toplay";
     }
   }
 
@@ -48,13 +85,15 @@ namespace Core
     }
     public override void onEnter()
     {
-      this.gameManager.AnimCTL.play = "fadein";
-      this.gameManager.wed.Wed_Init();
+
     }
 
     public override void update()
     {
-      gameManager.IsPlayerDead();
+      if (Input.GetKeyDown(KeyCode.Escape))
+        this.belongTO.switchState("setting");
+      if (gameManager.IsPlayerDead())
+        this.belongTO.switchState("dead");
     }
 
     public override void onExit()
@@ -85,7 +124,7 @@ namespace Core
       if (this.gameManager.AnimCTL.animInfo.IsName("dead") &&
           this.gameManager.AnimCTL.animInfo.normalizedTime >= 1.0f)
       {
-        this.belongTO.switchState("playing");
+        this.belongTO.switchState("toplay");
       }
     }
 

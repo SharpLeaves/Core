@@ -1,7 +1,7 @@
 ﻿/*
  * @Author: vanot313
  * @Date: 2020-09-20 16:59:23
- * @LastEditTime: 2020-10-08 09:58:47
+ * @LastEditTime: 2020-10-09 22:42:13
  * @LastEditors: Please set LastEditors
  * @Description: Main player input component.
  * @FilePath: \Core\Assets\Scripts\Bot\Character_Input.cs
@@ -207,6 +207,9 @@ namespace Core.Character
       }
     }
 
+
+    public bool InputEnable = true;
+
     private void UpdateJumpInput()
     {
       bool bJumpPressed = JumpInput;
@@ -253,14 +256,19 @@ namespace Core.Character
 
     private void FixedUpdate()
     {
-      UpdateRunInput();
-      UpdateJumpInput();
-      //UpdateOther();
+      if (InputEnable)
+      {
+        UpdateRunInput();
+        UpdateJumpInput();
+        //UpdateOther();
+      }
+
     }
 
     private void Update()
     {
-      UpdateOther();
+      if (InputEnable)
+        UpdateOther();
     }
 
   }

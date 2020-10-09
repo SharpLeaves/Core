@@ -5,11 +5,18 @@ using Core;
 using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
+
+
+
   [Header("当前场景编号")]
   /* 当前场景编号 */
   public int CurSceneIndex;
   [Header("场景出生点")]
   public Transform FirstSpwanPoint;
+
+  [Header("设置组件")]
+  public GameManager_Setting settingComponent;
+
   /* 游戏UI动画控制器 */
   public AnimatorController AnimCTL;
   /* WED */
@@ -32,18 +39,27 @@ public class GameManager : MonoBehaviour
     GameManagerData.GetInstance().stateMachine.update();
   }
 
-
-  public void IsPlayerDead()
-  {
-    if (wed.IsDead)
-    {
-      GameManagerData.GetInstance().stateMachine.switchState("dead");
-    }
-  }
-
   void GameInit()
   {
 
+  }
+
+  public bool IsPlayerDead()
+  {
+    if (wed.IsDead)
+      return true;
+    else
+      return false;
+  }
+
+  public void ShowSettingInterface()
+  {
+    this.settingComponent.gameObject.SetActive(true);
+  }
+
+  public void HideSettingInterface()
+  {
+    this.settingComponent.gameObject.SetActive(false);
   }
 
   public void ReLoadScene()

@@ -42,11 +42,12 @@ namespace Core
     public void statemachineInit()
     {
       this.stateMachine = new Core.StateMachine();
+      this.stateMachine.addState(new GameState_ToPlay(this.gameManager));
       this.stateMachine.addState(new GameState_Playing(this.gameManager));
       this.stateMachine.addState(new GameState_SwitchScenes(this.gameManager));
       this.stateMachine.addState(new GameState_DEAD(this.gameManager));
       this.stateMachine.addState(new GameState_Setting(this.gameManager));
-      this.stateMachine.switchState("playing");
+      this.stateMachine.switchState("toplay");
     }
 
     public void GameManagerInit(GameManager gm)
