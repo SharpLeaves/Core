@@ -7,6 +7,7 @@ namespace Core.Deer{
     public class Deer_Interact : InteractableC{
         public Deer main;
         protected override void processInteract(){
+            Debug.Log("Deer: Process");
             main.GetStateMachine.switchState("eat");
             IEquipment equipment = main.container.getByName("Dash");
             Debug.Log(equipment.getName());

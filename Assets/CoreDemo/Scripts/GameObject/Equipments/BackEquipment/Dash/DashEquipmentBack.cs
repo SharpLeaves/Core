@@ -16,6 +16,7 @@ namespace Core.Equipment
 
     public override void function()
     {
+      Debug.Log("Dash: Process");
       if (main.GetStateMachine.curState.getName() == "air" && dashOK)
       {
         dashOK = false;
@@ -41,13 +42,13 @@ namespace Core.Equipment
     }
     protected void FixedUpdate()
     {
-      //base.Update();
+      base.Update();
       this.stateMachine.update();
     }
 
-    protected void Update()
-    {
-      base.Update();
-    }
+    // protected void Update()
+    // {
+    //   base.Update();
+    // }
   }
 }

@@ -41,6 +41,7 @@ namespace Core
 
     private void OnTriggerStay2D()
     {
+      // Debug.Log("Trigger");
       processObjectUpdate();
     }
 

@@ -1,7 +1,7 @@
 ﻿/*
  * @Author: vanot313
  * @Date: 2020-09-20 16:59:23
- * @LastEditTime: 2020-10-09 22:42:13
+ * @LastEditTime: 2020-10-10 11:50:10
  * @LastEditors: Please set LastEditors
  * @Description: Main player input component.
  * @FilePath: \Core\Assets\Scripts\Bot\Character_Input.cs
@@ -260,15 +260,17 @@ namespace Core.Character
       {
         UpdateRunInput();
         UpdateJumpInput();
-        //UpdateOther();
+        UpdateOther();
       }
 
     }
 
     private void Update()
     {
-      if (InputEnable)
-        UpdateOther();
+      // Debug.Log("Input");
+
+      // if (InputEnable)
+      //   UpdateOther();
     }
 
   }
