@@ -21,9 +21,7 @@ namespace Core.Dog
 
     public override void onEnter()
     {
-      TimerManager.instance.addTask(new Task(5.0f, ()=>{
-        this.main.active = true;
-      }));
+
     }
 
     public override void onExit()
@@ -33,9 +31,7 @@ namespace Core.Dog
 
     public override void update()
     {
-      if(this.main.active){
-        this.stateMachine.switchState("active");
-      }
+
     }
   }
 
@@ -52,9 +48,7 @@ namespace Core.Dog
 
     public override void onEnter()
     {
-      TimerManager.instance.addTask(new Task(5.0f, ()=>{
-        this.main.active = false;
-      }));
+
     }
 
     public override void onExit()
@@ -64,10 +58,7 @@ namespace Core.Dog
 
     public override void update()
     {
-      if(!this.main.active){
-        this.stateMachine.switchState("normal");
-      }
-      
+
     }
   }
 
