@@ -17,6 +17,9 @@ public class GameManager : MonoBehaviour
   [Header("设置组件")]
   public GameManager_Setting settingComponent;
 
+  [Header("声音组件")]
+  public AudioManager audioManager;
+
   /* 游戏UI动画控制器 */
   public AnimatorController AnimCTL;
   /* WED */
