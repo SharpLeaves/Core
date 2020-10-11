@@ -17,12 +17,12 @@ namespace Core.Character
       // 输入左右时逻辑处理
       if (fHorizontal > 0.0f)
       {
-        localScale.x = 1.0f;
+        localScale.x = -1.0f;
 
       }
       else if (fHorizontal < 0.0f)
       {
-        localScale.x = -1.0f;
+        localScale.x = 1.0f;
 
       }
 

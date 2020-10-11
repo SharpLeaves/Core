@@ -16,6 +16,7 @@ namespace Core
     public List<Transform> groundedTesters;
     // 是否在地面
     private bool bGrounded;
+
     // 是否在地面
     public bool IsGrounded
     {
@@ -61,7 +62,7 @@ namespace Core
         // 检测碰撞
         //Physics2D.OverlapBox(groundCheck.position, new Vector2(0.3f, 0.3f), 0, ground);
         //Physics2D.Linecast(f2StartLinecast, f2GroundTesterPosition, iGroundLayer)
-        if (Physics2D.Linecast(f2StartLinecast, f2GroundTesterPosition, iGroundLayer))
+        if (Physics2D.OverlapBox(rGroundTester.position, new Vector2(0.5f, 0.5f), 0, iGroundLayer))
         {
           bGrounded = true;
         }
