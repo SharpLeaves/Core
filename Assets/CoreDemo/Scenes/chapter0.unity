@@ -3427,7 +3427,10 @@ MonoBehaviour:
   groundedTester: {fileID: 593373730}
   aimAt: {fileID: 1122189858}
   active: 0
-  power: 50
+  speed: 50
+  power: 100
+  duration: 2
+  allowableErrorX: 0.5
 --- !u!1 &152778880
 GameObject:
   m_ObjectHideFlags: 0
@@ -66111,7 +66114,7 @@ PrefabInstance:
     - target: {fileID: 6852091477850009026, guid: e6756fa5567dfa046bb5a9e0a989fc30,
         type: 3}
       propertyPath: dashForce
-      value: 300
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6852091477850009026, guid: e6756fa5567dfa046bb5a9e0a989fc30,
         type: 3}

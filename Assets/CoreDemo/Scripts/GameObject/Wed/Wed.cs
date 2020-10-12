@@ -26,7 +26,7 @@ namespace Core.Character
     // 浮空增量
     public float airForce = 30f;
     // 冲刺速度
-    public float dashForce = 20f;
+    public float dashForce = 50f;
     // 最小行走速度
     public float walkMinSpeed = 0.2f;
     // 最小跑步速度

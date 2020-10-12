@@ -11,6 +11,7 @@ namespace Core.Dog{
                 foreach(GameObject gameObject in effectedObjects){
                     Creature creature = gameObject.GetComponentInChildren<Creature>();
                     if(creature != null){
+                        creature.physicsController.addDamp(this.main.addAirDamp,0);
                         creature.physicsController.addForce(0,this.main.power);
                     }
                 }

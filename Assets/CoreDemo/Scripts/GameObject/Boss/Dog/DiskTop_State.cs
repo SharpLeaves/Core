@@ -31,7 +31,7 @@ namespace Core.Dog
 
     public override void update()
     {
-      if(Mathf.Abs(this.main.aimAt.transform.position.x - this.main.transform.position.x) > 0.5){
+      if(Mathf.Abs(this.main.aimAt.transform.position.x - this.main.transform.position.x) > this.main.allowableErrorX){
         this.stateMachine.switchState("moving");
       }
       else{
@@ -54,7 +54,7 @@ namespace Core.Dog
 
     public override void onEnter()
     {
-      TimerManager.instance.addTask(new Task(5.0f, ()=>{
+      TimerManager.instance.addTask(new Task(this.main.duration, ()=>{
         this.main.active = false;
       }));
     }
@@ -96,11 +96,11 @@ namespace Core.Dog
 
     public override void update()
     {
-      if(this.main.aimAt.transform.position.x - this.main.transform.position.x > 0.5){
-        this.main.physicsController.addVelocity(20,0);
+      if(this.main.aimAt.transform.position.x - this.main.transform.position.x > this.main.allowableErrorX){
+        this.main.physicsController.addVelocity(this.main.speed,0);
       }
-      else if(this.main.aimAt.transform.position.x - this.main.transform.position.x < -0.5){
-        this.main.physicsController.addVelocity(-20,0);
+      else if(this.main.aimAt.transform.position.x - this.main.transform.position.x < -this.main.allowableErrorX){
+        this.main.physicsController.addVelocity(-this.main.speed,0);
       }
       else{
         this.stateMachine.switchState("normal");
