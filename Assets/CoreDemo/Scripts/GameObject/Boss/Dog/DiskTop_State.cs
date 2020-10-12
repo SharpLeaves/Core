@@ -21,9 +21,7 @@ namespace Core.Dog
 
     public override void onEnter()
     {
-      TimerManager.instance.addTask(new Task(5.0f, ()=>{
-        this.main.active = true;
-      }));
+      
     }
 
     public override void onExit()
@@ -33,8 +31,12 @@ namespace Core.Dog
 
     public override void update()
     {
-      if(this.main.active){
+      if(Mathf.Abs(this.main.aimAt.transform.position.x - this.main.transform.position.x) > 0.5){
+        this.stateMachine.switchState("moving");
+      }
+      else{
         this.stateMachine.switchState("active");
+        this.main.active = true;
       }
     }
   }
@@ -94,7 +96,15 @@ namespace Core.Dog
 
     public override void update()
     {
-
+      if(this.main.aimAt.transform.position.x - this.main.transform.position.x > 0.5){
+        this.main.physicsController.addVelocity(20,0);
+      }
+      else if(this.main.aimAt.transform.position.x - this.main.transform.position.x < -0.5){
+        this.main.physicsController.addVelocity(-20,0);
+      }
+      else{
+        this.stateMachine.switchState("normal");
+      }
     }
   }
 }

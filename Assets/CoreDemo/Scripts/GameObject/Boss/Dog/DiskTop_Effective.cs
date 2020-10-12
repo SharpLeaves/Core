@@ -6,12 +6,11 @@ namespace Core.Dog{
         public DiskTop main;
 
         protected override void processObjectUpdate(){
+                
             if(main.GetStateMachine.curState.getName() ==  "active"){
-                Debug.Log("DiskTop : active");
                 foreach(GameObject gameObject in effectedObjects){
                     Creature creature = gameObject.GetComponentInChildren<Creature>();
                     if(creature != null){
-                        Debug.Log(creature.name);
                         creature.physicsController.addForce(0,this.main.power);
                     }
                 }
@@ -19,12 +18,11 @@ namespace Core.Dog{
         }
 
         protected override void processObjectExit(GameObject gameObject){
-
         }
 
         protected override void processObjectEnter(GameObject gameObject){
-
         }
-        
+        void Update(){
+        }
     }
 }
