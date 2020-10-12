@@ -22,7 +22,11 @@ namespace Core{
 		// 默认重力
 		public float normalGravityScale = 1.25f;
 		
-		
+		public bool ignoreDamp = false;
+		public bool ignoreForce = false;
+		public bool ignoreVelocity = false;
+		public bool ignorePosition = false;
+
 		
 		
 		
@@ -93,6 +97,7 @@ namespace Core{
 		private void processBrake(){
 			Vector2 velocity = main.rigidbodyComponent.velocity;
 			if(brakeHorizontal){
+				Debug.Log("brake");
 				velocity.x = 0;
 			}
 				
@@ -115,10 +120,16 @@ namespace Core{
 			main.rigidbodyComponent.velocity = velocity;
 		}
 
-		private void processPhysics(){
+		private void processForce(){
+			Vector2 velocity = main.rigidbodyComponent.velocity;
+			velocity += applyForce * Time.fixedDeltaTime;
+
+			main.rigidbodyComponent.velocity = velocity;
+		}
+
+		private void processVelocity(){
 			Vector2 velocity = main.rigidbodyComponent.velocity;
 			velocity += applyVelocity;
-			velocity += applyForce * Time.fixedDeltaTime;
 
 			main.rigidbodyComponent.velocity = velocity;
 		}
@@ -150,10 +161,17 @@ namespace Core{
 			applyForce.y = 0;
 
 			gravityScale = normalGravityScale;
+
+			ignoreDamp = false;
+			ignoreForce = false;
+			ignoreVelocity = false;
+			ignorePosition = false;
 		}
 
 		private void FixedUpdate(){
-			processPosition();
+			if(!ignorePosition){
+				processPosition();
+			}
 			processGravityModification();
 			processBrake();
 			// Vector2 velocity = main.rigidbodyComponent.velocity;
@@ -163,8 +181,15 @@ namespace Core{
 			// velocity += applyForce * Time.fixedDeltaTime;
 
 			// main.rigidbodyComponent.velocity = velocity;
-			processPhysics();
-			processDamping();
+			if(!ignoreForce){
+				processForce();
+			}
+			if(!ignoreVelocity){
+				processVelocity();
+			}
+			if(!ignoreDamp){
+				processDamping();
+			}
 			microAdjust();
 			after();
 		}

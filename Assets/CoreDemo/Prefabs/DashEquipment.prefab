@@ -50,6 +50,8 @@ MonoBehaviour:
   main: {fileID: 0}
   dashCD: 4
   dashOK: 1
+  buffTime: 0.1
+  dashForce: 100
 --- !u!1 &1889538805168004681
 GameObject:
   m_ObjectHideFlags: 0

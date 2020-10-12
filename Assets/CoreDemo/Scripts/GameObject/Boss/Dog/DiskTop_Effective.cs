@@ -5,6 +5,8 @@ namespace Core.Dog{
     public class DiskTop_Effective : Effective{
         public DiskTop main;
 
+        
+
         protected override void processObjectUpdate(){
                 
             if(main.GetStateMachine.curState.getName() ==  "active"){
