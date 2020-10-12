@@ -20,7 +20,7 @@ namespace Core.Equipment
       if (main.GetStateMachine.curState.getName() == "air" && dashOK)
       {
         dashOK = false;
-        main.physicsController.addVelocity(main.dashForce * main.flipController.flipTransform.localScale.x, 0);
+        main.physicsController.addVelocity(main.dashForce * main.flipController.flipTransform.localScale.x * -1, 0);
         TimerManager.instance.addTask(new Task(dashCD, () =>
         {
           dashOK = true;
