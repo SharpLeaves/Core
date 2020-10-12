@@ -176,15 +176,20 @@ namespace Core
     }
     public override void onEnter()
     {
-
+      this.gameManager.storysystem.Dialog();
     }
 
     public override void update()
     {
+      if (Input.GetKeyDown(KeyCode.E))
+        this.gameManager.storysystem.Dialog();
+      if (this.gameManager.storysystem.IsDialogEnd)
+        this.belongTO.switchState("playing");
     }
 
     public override void onExit()
     {
+      GameManagerData.GetInstance().IsStory = false;
     }
 
     public override string getName()

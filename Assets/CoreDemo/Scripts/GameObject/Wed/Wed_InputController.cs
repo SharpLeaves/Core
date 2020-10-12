@@ -1,7 +1,7 @@
 ﻿/*
  * @Author: vanot313
  * @Date: 2020-09-20 16:59:23
- * @LastEditTime: 2020-10-10 11:50:10
+ * @LastEditTime: 2020-10-12 16:27:03
  * @LastEditors: Please set LastEditors
  * @Description: Main player input component.
  * @FilePath: \Core\Assets\Scripts\Bot\Character_Input.cs
@@ -133,16 +133,20 @@ namespace Core.Character
 
     public float Horizontal
     {
+
       get
       {
         float fValue = 0.0f;
-        if (Input.GetKey(kLeft))
+        if (InputEnable)
         {
-          fValue -= 1.0f;
-        }
-        if (Input.GetKey(kRight))
-        {
-          fValue += 1.0f;
+          if (Input.GetKey(kLeft))
+          {
+            fValue -= 1.0f;
+          }
+          if (Input.GetKey(kRight))
+          {
+            fValue += 1.0f;
+          }
         }
         return fValue;
       }
@@ -152,13 +156,16 @@ namespace Core.Character
       get
       {
         float fValue = 0.0f;
-        if (Input.GetKey(kDown))
+        if (InputEnable)
         {
-          fValue -= 1.0f;
-        }
-        if (Input.GetKey(kUp))
-        {
-          fValue += 1.0f;
+          if (Input.GetKey(kDown))
+          {
+            fValue -= 1.0f;
+          }
+          if (Input.GetKey(kUp))
+          {
+            fValue += 1.0f;
+          }
         }
         return fValue;
       }

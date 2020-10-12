@@ -16,6 +16,9 @@ public class GameManager : MonoBehaviour
 
   [Header("设置组件")]
   public GameManager_Setting settingComponent;
+
+  [Header("故事组件")]
+  public StorySystem storysystem;
   /* 
     [Header("剧情对话组件")]
     public  */

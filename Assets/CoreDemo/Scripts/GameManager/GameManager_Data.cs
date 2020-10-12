@@ -41,6 +41,14 @@ namespace Core
       }
     }
 
+    public StorySystem storySystem
+    {
+      get
+      {
+        return this.gameManager.storysystem;
+      }
+    }
+
     public void statemachineInit()
     {
       this.stateMachine = new Core.StateMachine();
@@ -57,6 +65,11 @@ namespace Core
     {
       this.gameManager = gm;
     }
-  }
 
+    public void StartStory(TextAsset t)
+    {
+      this.gameManager.storysystem.setText(t);
+      this.IsStory = true;
+    }
+  }
 }
