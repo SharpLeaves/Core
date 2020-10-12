@@ -17,7 +17,7 @@ public class InteractionTest : Interactable
   }
   protected override void InteractFunction()
   {
-    player.SwitchBackEquipment("package");
+    GetComponent<DialogSystem>().Dialog(this.transform.position);
   }
 
 

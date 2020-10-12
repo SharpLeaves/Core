@@ -19,6 +19,8 @@ namespace Core
     private GameManagerData() { }
 
     public bool IsSetSpwanPoint = false;
+    /* 是否在剧情 */
+    public bool IsStory = false;
     public GameManager gameManager;
     /* 游戏状态机 */
     public Core.StateMachine stateMachine;
@@ -47,6 +49,7 @@ namespace Core
       this.stateMachine.addState(new GameState_SwitchScenes(this.gameManager));
       this.stateMachine.addState(new GameState_DEAD(this.gameManager));
       this.stateMachine.addState(new GameState_Setting(this.gameManager));
+      this.stateMachine.addState(new GameState_Story(this.gameManager));
       this.stateMachine.switchState("toplay");
     }
 
@@ -54,7 +57,6 @@ namespace Core
     {
       this.gameManager = gm;
     }
-
   }
 
 }

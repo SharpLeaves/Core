@@ -24,7 +24,6 @@ namespace Core
     {
       Time.timeScale = 0;
       this.gameManager.ShowSettingInterface();
-      this.gameManager.wed.inputController.InputEnable = false;
     }
 
     public override void update()
@@ -38,7 +37,7 @@ namespace Core
     {
       Time.timeScale = 1;
       this.gameManager.HideSettingInterface();
-      this.gameManager.wed.inputController.InputEnable = true;
+
     }
 
     public override string getName()
@@ -85,7 +84,7 @@ namespace Core
     }
     public override void onEnter()
     {
-
+      this.gameManager.wed.inputController.InputEnable = true;
     }
 
     public override void update()
@@ -94,10 +93,13 @@ namespace Core
         this.belongTO.switchState("setting");
       if (gameManager.IsPlayerDead())
         this.belongTO.switchState("dead");
+      if (GameManagerData.GetInstance().IsStory)
+        this.belongTO.switchState("story");
     }
 
     public override void onExit()
     {
+      this.gameManager.wed.inputController.InputEnable = false;
     }
 
     public override string getName()
@@ -162,6 +164,32 @@ namespace Core
     public override string getName()
     {
       return "switchscenes";
+    }
+  }
+
+  public class GameState_Story : GameState
+  {
+    public GameState_Story(GameManager gm)
+    {
+      this.gameManager = gm;
+      belongTO = GameManagerData.GetInstance().stateMachine;
+    }
+    public override void onEnter()
+    {
+
+    }
+
+    public override void update()
+    {
+    }
+
+    public override void onExit()
+    {
+    }
+
+    public override string getName()
+    {
+      return "story";
     }
   }
 }
