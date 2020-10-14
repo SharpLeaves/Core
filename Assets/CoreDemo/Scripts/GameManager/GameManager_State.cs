@@ -55,6 +55,7 @@ namespace Core
     }
     public override void onEnter()
     {
+      Debug.Log(GameManagerData.GetInstance().WEDcurEquipmentBack);
       this.gameManager.AnimCTL.play = "fadein";
       this.gameManager.wed.Wed_Init();
       this.belongTO.switchState("playing");

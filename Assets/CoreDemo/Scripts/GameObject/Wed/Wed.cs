@@ -79,6 +79,8 @@ namespace Core.Character
       this.IsDead = false;
       wedTransform.position = GameManagerData.GetInstance().SpwanPoint;
       this.stateMachine.switchState("idle");
+      this.handEquipment.switchEquipment(GameManagerData.GetInstance().WEDcurEquipmentHand);
+      this.backEquipment.switchEquipment(GameManagerData.GetInstance().WEDcurEquipmentBack);
     }
   }
 }

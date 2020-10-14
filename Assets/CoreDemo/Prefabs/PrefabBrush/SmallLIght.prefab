@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2972387187348419465}
   - component: {fileID: 2972387187348419471}
-  - component: {fileID: 2972387187348419470}
+  - component: {fileID: 7364618278572864105}
   m_Layer: 0
   m_Name: Point Light 2D (3)
   m_TagString: Untagged
@@ -48,11 +48,11 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 0.16078432, g: 0.86274517, b: 0.7137255, a: 1}
-  m_Intensity: 1.04
+  m_Intensity: 2
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000
   m_LightCookieSprite: {fileID: 0}
-  m_UseNormalMap: 0
+  m_UseNormalMap: 1
   m_LightOrder: 0
   m_AlphaBlendOnOverlap: 0
   m_ShadowIntensity: 0
@@ -61,7 +61,7 @@ MonoBehaviour:
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.44
   m_PointLightOuterRadius: 8.03
-  m_PointLightDistance: 3
+  m_PointLightDistance: 14.31
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
@@ -73,7 +73,7 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
---- !u!114 &2972387187348419470
+--- !u!114 &7364618278572864105
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -82,11 +82,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2972387187348419464}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2c9877f176ad51499d2b0f7e5324e0c, type: 3}
+  m_Script: {fileID: 11500000, guid: 42605c60ff3a93a44a153528eb6d9fa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _light: {fileID: 2972387187348419471}
-  Flickrate: 0
+  minIntensity: 1.5
+  maxIntensity: 2
+  breathTime: 50
+  IsBreath: 1
 --- !u!1 &2972387188739686019
 GameObject:
   m_ObjectHideFlags: 0

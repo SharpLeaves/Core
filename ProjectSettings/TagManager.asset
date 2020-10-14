@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Platform
   - Trap
+  - NPC
   layers:
   - Default
   - TransparentFX
@@ -40,9 +41,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
+  - name: Backround
+    uniqueID: 2149261827
     locked: 0
   - name: unLight
     uniqueID: 3443298347
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 1084001709
     locked: 0

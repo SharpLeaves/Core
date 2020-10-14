@@ -18,6 +18,10 @@ namespace Core
     static private GameManagerData instance;
     private GameManagerData() { }
 
+    /* 角色身上的装备，角色死亡时更新 */
+    public Core.IEquipment WEDcurEquipmentBack = null;
+    public Core.IEquipment WEDcurEquipmentHand = null;
+
     public bool IsSetSpwanPoint = false;
     /* 是否在剧情 */
     public bool IsStory = false;
@@ -26,7 +30,7 @@ namespace Core
     public Core.StateMachine stateMachine;
 
     /* 角色出生点 */
-    public Vector2 spwanpoint;
+    private Vector2 spwanpoint;
     public Vector2 SpwanPoint
     {
       get

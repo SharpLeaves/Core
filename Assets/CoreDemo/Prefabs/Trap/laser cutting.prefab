@@ -71,8 +71,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -2965493570764912252, guid: 1a668c2a146ed914c942c98d059ca753,
+  m_SortingOrder: 3
+  m_Sprite: {fileID: 4258707936503235488, guid: 097f6e1a3de4d424ebb17cf9d866bfba,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -96,6 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 615e0d8d59d9b4944be968d3d58e024e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationController: {fileID: 0}
+  rigidbodyComponent: {fileID: 0}
   rotateSpeed: 3.44
   rotateMax: 60
   LaserLength: 999.12
@@ -103,6 +105,8 @@ MonoBehaviour:
   layer:
     serializedVersion: 2
     m_Bits: 256
+  MoveSpeed: 0
+  MoveRange: 0
 --- !u!1 &5204810919098120147
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,7 +121,7 @@ GameObject:
   - component: {fileID: 5204810919098120151}
   m_Layer: 0
   m_Name: Line
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -174,10 +178,10 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Positions:
   - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 7.7, z: 0}
+  - {x: 0, y: 100, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.1
@@ -185,8 +189,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.88001895
-        value: 0.2837742
+        time: 1
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -198,7 +202,7 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
+      key0: {r: 1, g: 0.44383222, b: 0.21226418, a: 1}
       key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
