@@ -5,7 +5,8 @@ using Core;
 
 namespace Core.Character
 {
-  public class Wed_Manager : Effective
+
+  public class Wed_Manager : MonoBehaviour
   {
     //角色主控制脚本
     public Wed main;
@@ -21,24 +22,14 @@ namespace Core.Character
     {
 
     }
-    protected override void processObjectEnter(GameObject gameObject)
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
-      if (gameObject.tag == "Trap")
+      if (other.tag == "Trap")
       {
         main.Wed_Die();
       }
     }
-
-    protected override void processObjectExit(GameObject gameObject)
-    {
-
-    }
-
-    protected override void processObjectUpdate()
-    {
-
-    }
-
   }
 
 

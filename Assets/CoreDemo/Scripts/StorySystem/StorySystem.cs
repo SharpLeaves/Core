@@ -32,7 +32,7 @@ public class StorySystem : MonoBehaviour
     {
       IsDialogEnd = false;
       dialog = Instantiate(DialogFrame.gameObject, new Vector3(0, 0, 0), Quaternion.identity, this.transform);
-      dialog.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, -122);
+      dialog.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
       dialog.GetComponent<StoryBase>().setTextFile(text);
       isDialogStart = true;
     }

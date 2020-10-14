@@ -17,6 +17,8 @@ public class HydroPress_CTL : TrapBase
   public float PressTimeoutDuration;
   [Header("回缩停留时间")]
   public float RecallTimeoutDuration;
+  [Header("时间偏移")]
+  public float TimeOffset;
 
 
   /* 当前下压速度 */
@@ -27,6 +29,9 @@ public class HydroPress_CTL : TrapBase
   private float CurPressDistance;
   /*判断是否在停留*/
   private bool IsTimeout;
+
+  private bool IsRecallFinished;
+
   // Start is called before the first frame update
 
   void Start()
@@ -42,36 +47,51 @@ public class HydroPress_CTL : TrapBase
 
   private void FixedUpdate()
   {
-	if (Active)
-	{
-		if (!IsTimeout)
-		{
-			this.Press();
-			this.Recall();
-		}
-	}
+    if (Active)
+    {
+      if (!IsTimeout)
+      {
+        this.Press();
+        this.Recall();
+      }
+    }
+    else
+    {
+      if (!IsRecallFinished)
+      {
+        this.Recall();
+      }
+    }
   }
 
   protected override void StateMachineInit()
   {
-		this.stateMachine = new Core.StateMachine();
-		this.stateMachine.addState(new HydroPress_Normal(this));
-		this.stateMachine.addState(new HydroPress_Disable(this));
+    this.stateMachine = new Core.StateMachine();
+    this.stateMachine.addState(new HydroPress_Normal(this));
+    this.stateMachine.addState(new HydroPress_Disable(this));
   }
 
   public override void FunctionOnDisable()
   {
-    throw new System.NotImplementedException();
+    this.Active = false;
+    isPress = false;
+    this.Press();
+    this.Recall();
   }
 
   void Init()
   {
     isPress = true;
-    this.Active = true;
+    IsRecallFinished = true;
+    this.Active = false;
     this.IsTimeout = false;
     this.CurrentPressSpeed = this.PressInitialSpeed;
-	StateMachineInit();
+    StateMachineInit();
+    StartCoroutine(processTimeOffset());
   }
+
+
+
 
   void Press()
   {
@@ -96,8 +116,17 @@ public class HydroPress_CTL : TrapBase
       {
         StartCoroutine(RecallTimeout());
         this.CurrentPressSpeed = this.PressInitialSpeed;
+        if (!Active)
+          this.IsRecallFinished = true;
       }
     }
+  }
+
+  IEnumerator processTimeOffset()
+  {
+    yield return new WaitForSeconds(TimeOffset);
+    IsRecallFinished = false;
+    this.Active = true;
   }
 
   IEnumerator PressTimeout()

@@ -9,6 +9,8 @@ public class StorySystem_Point : Effective
 
   [Header("本次剧情需要的对话")]
   public TextAsset text;
+  [Header("是否自动触发")]
+  public bool IsAuto;
   private void Start()
   {
 
@@ -16,13 +18,14 @@ public class StorySystem_Point : Effective
 
   protected override void processObjectEnter(GameObject gameObject)
   {
-    //Debug.Log("111");
-    if (gameObject.tag == "Player")
+    if (IsAuto)
     {
-      GameManagerData.GetInstance().StartStory(text);
-      Destroy(this.gameObject);
+      if (gameObject.tag == "Player")
+      {
+        GameManagerData.GetInstance().StartStory(text);
+        Destroy(this.gameObject);
+      }
     }
-
   }
 
   protected override void processObjectExit(GameObject gameObject)
@@ -33,5 +36,10 @@ public class StorySystem_Point : Effective
   protected override void processObjectUpdate()
   {
 
+  }
+
+  public void Dialog()
+  {
+    GameManagerData.GetInstance().StartStory(text);
   }
 }

@@ -66,7 +66,6 @@ namespace Core.Character
       //         main.physicsController.addVelocity(main.walkMinSpeed * main.inputController.Horizontal, 0);
       //     }
       // }
-
       if (main.inputController.Horizontal != 0)
       {
         if (main.inputController.RunHeld)

@@ -18,7 +18,8 @@ public class GameManager_Setting : MonoBehaviour
 
   public void onQuit()
   {
-
+    Debug.Log("Quit");
+    Application.Quit();
   }
 
   public void onMenu()

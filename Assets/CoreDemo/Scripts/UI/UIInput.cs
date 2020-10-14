@@ -16,7 +16,7 @@ public class UIInput : MonoBehaviour
   {
     if (Input.anyKeyDown)
     {
-      SceneManager.LoadScene("Test");
+      SceneManager.LoadScene("chapter0");
     }
   }
 }
