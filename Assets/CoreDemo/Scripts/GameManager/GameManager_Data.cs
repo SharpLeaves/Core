@@ -21,7 +21,9 @@ namespace Core
     /* 角色身上的装备，角色死亡时更新 */
     public Core.IEquipment WEDcurEquipmentBack = null;
     public Core.IEquipment WEDcurEquipmentHand = null;
-
+    /* 出生时的游戏边界 */
+    public int gameBoundNumber = -1;
+    /*是否已经设置出生点 */
     public bool IsSetSpwanPoint = false;
     /* 是否在剧情 */
     public bool IsStory = false;
@@ -44,7 +46,6 @@ namespace Core
         IsSetSpwanPoint = true;
       }
     }
-
     public StorySystem storySystem
     {
       get

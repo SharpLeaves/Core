@@ -45,7 +45,7 @@ public class LightBreath : MonoBehaviour
     if (curIntensity <= minIntensity)
       breathDir = 1;
 
-    this.curIntensity += breathDir * ((maxIntensity - minIntensity) / breathTime);
+    this.curIntensity += breathDir * ((maxIntensity - minIntensity) / breathTime) * Time.deltaTime;
     this._light.intensity = curIntensity;
   }
 

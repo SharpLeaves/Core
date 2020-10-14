@@ -20,6 +20,9 @@ public class HydroPress_CTL : TrapBase
   [Header("时间偏移")]
   public float TimeOffset;
 
+  [Header("撞击箱")]
+  public Collider2D col;
+
 
   /* 当前下压速度 */
   private float CurrentPressSpeed;
@@ -75,6 +78,7 @@ public class HydroPress_CTL : TrapBase
   {
     this.Active = false;
     isPress = false;
+    this.col.isTrigger = false;
     this.Press();
     this.Recall();
   }

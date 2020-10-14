@@ -19,6 +19,9 @@ public class GameManager : MonoBehaviour
 
   [Header("故事组件")]
   public StorySystem storysystem;
+
+  [Header("边界管理器")]
+  public BoundSwitchManager boundSwitchManager;
   /* 
     [Header("剧情对话组件")]
     public  */
@@ -47,7 +50,7 @@ public class GameManager : MonoBehaviour
 
   void GameInit()
   {
-
+    SetBound();
   }
 
   public bool IsPlayerDead()
@@ -79,5 +82,9 @@ public class GameManager : MonoBehaviour
     GameManagerData.GetInstance().IsSetSpwanPoint = false;
   }
 
+  public void SetBound()
+  {
+    this.boundSwitchManager.SetBoundByNumber(GameManagerData.GetInstance().gameBoundNumber);
+  }
 
 }

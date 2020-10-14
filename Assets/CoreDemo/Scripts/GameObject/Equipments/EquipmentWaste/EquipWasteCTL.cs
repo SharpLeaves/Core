@@ -8,6 +8,9 @@ namespace Core
   {
     [Header("装备容器")]
     public Container container;
+    [Header("废品主体")]
+    public WasteFloat Main;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +36,7 @@ namespace Core
             if (equipmentController.name == "BackEquipment")
             {
               equipmentController.switchEquipment(equipment);
+              Destroy(Main.gameObject);
             }
           }
         }

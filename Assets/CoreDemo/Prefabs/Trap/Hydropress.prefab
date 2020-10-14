@@ -193,6 +193,7 @@ MonoBehaviour:
   PressTimeoutDuration: 0.8
   RecallTimeoutDuration: 0.5
   TimeOffset: 0
+  col: {fileID: 4212018385906490067}
 --- !u!1 &4317316740410096635
 GameObject:
   m_ObjectHideFlags: 0
