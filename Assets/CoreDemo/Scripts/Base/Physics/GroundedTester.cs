@@ -18,10 +18,8 @@ namespace Core
     private bool bGrounded;
 
     // 是否在地面
-    public bool IsGrounded
-    {
-      get
-      {
+    public bool IsGrounded{
+      get{
         return bGrounded;
       }
     }

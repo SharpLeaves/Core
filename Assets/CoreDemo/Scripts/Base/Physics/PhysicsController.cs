@@ -46,6 +46,23 @@ namespace Core{
 				main.rigidbodyComponent.transform.position = value;
 			}
 		}
+		
+		public void setForce(float x, float y){
+			applyForce.x = x;
+			applyForce.y = y;
+		}
+		public void setVelocity(float x, float y){
+			applyVelocity.x = x;
+			applyVelocity.y = y;
+		}
+		public void setPosition(float x, float y){
+			applyPosition.x = x;
+			applyPosition.y = y;
+		}
+		public void setDamp(float x, float y){
+			applyDamping.x = x;
+			applyDamping.y = y;
+		}
 
 		public void addForce(float x, float y){
 			applyForce.x += x;
@@ -76,7 +93,6 @@ namespace Core{
 		private void Awake(){
 			gravityScale = normalGravityScale;
 		}
-
 		// 刚体受物理系统影响与否
 		public void disable(){
 			enabled = false;
@@ -97,7 +113,6 @@ namespace Core{
 		private void processBrake(){
 			Vector2 velocity = main.rigidbodyComponent.velocity;
 			if(brakeHorizontal){
-				Debug.Log("brake");
 				velocity.x = 0;
 			}
 				
@@ -123,7 +138,6 @@ namespace Core{
 		private void processForce(){
 			Vector2 velocity = main.rigidbodyComponent.velocity;
 			velocity += applyForce * Time.fixedDeltaTime;
-
 			main.rigidbodyComponent.velocity = velocity;
 		}
 
@@ -169,18 +183,13 @@ namespace Core{
 		}
 
 		private void FixedUpdate(){
+			processGravityModification();
+
 			if(!ignorePosition){
 				processPosition();
 			}
-			processGravityModification();
 			processBrake();
-			// Vector2 velocity = main.rigidbodyComponent.velocity;
-			// applyForce.x = 30;
-			// applyForce.y = 0;
-			// velocity += applyVelocity;
-			// velocity += applyForce * Time.fixedDeltaTime;
 
-			// main.rigidbodyComponent.velocity = velocity;
 			if(!ignoreForce){
 				processForce();
 			}

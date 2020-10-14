@@ -21,7 +21,9 @@ namespace Core.Dog
 
     public override void onEnter()
     {
-      
+      TimerManager.instance.addTask(new Task(this.main.unactiveDuration, ()=>{
+        this.main.search = true;
+      }));
     }
 
     public override void onExit()
@@ -31,12 +33,17 @@ namespace Core.Dog
 
     public override void update()
     {
-      if(Mathf.Abs(this.main.aimAt.transform.position.x - this.main.transform.position.x) > this.main.allowableErrorX){
-        this.stateMachine.switchState("moving");
-      }
-      else{
-        this.stateMachine.switchState("active");
-        this.main.active = true;
+      if(this.main.search){
+        if(this.main.aimAt.transform.position.x - this.main.transform.position.x > this.main.allowableErrorX){
+          this.main.physicsController.addVelocity(this.main.speed,0);
+        }
+        else if(this.main.aimAt.transform.position.x - this.main.transform.position.x < -this.main.allowableErrorX){
+          this.main.physicsController.addVelocity(-this.main.speed,0);
+        }
+        else{
+          this.main.search = false;
+          this.stateMachine.switchState("active");
+        }
       }
     }
   }
@@ -54,8 +61,8 @@ namespace Core.Dog
 
     public override void onEnter()
     {
-      TimerManager.instance.addTask(new Task(this.main.duration, ()=>{
-        this.main.active = false;
+      TimerManager.instance.addTask(new Task(this.main.activeDuration, ()=>{
+        this.main.search = true;
       }));
     }
 
@@ -66,45 +73,19 @@ namespace Core.Dog
 
     public override void update()
     {
-      if(!this.main.active){
-        this.stateMachine.switchState("normal");
-      }
-      
-    }
-  }
-
-  public class DiskTop_Moving : DiskTop_State
-  {
-    public DiskTop_Moving(DiskTop main)
-    {
-      this.main = main;
-    }
-    public override string getName()
-    {
-      return "moving";
-    }
-
-    public override void onEnter()
-    {
-
-    }
-
-    public override void onExit()
-    {
-
-    }
-
-    public override void update()
-    {
-      if(this.main.aimAt.transform.position.x - this.main.transform.position.x > this.main.allowableErrorX){
-        this.main.physicsController.addVelocity(this.main.speed,0);
-      }
-      else if(this.main.aimAt.transform.position.x - this.main.transform.position.x < -this.main.allowableErrorX){
-        this.main.physicsController.addVelocity(-this.main.speed,0);
-      }
-      else{
-        this.stateMachine.switchState("normal");
+      if(this.main.search){
+        if(this.main.aimAt.transform.position.x - this.main.transform.position.x > this.main.allowableErrorX){
+          this.main.physicsController.addVelocity(this.main.speed,0);
+        }
+        else if(this.main.aimAt.transform.position.x - this.main.transform.position.x < -this.main.allowableErrorX){
+          this.main.physicsController.addVelocity(-this.main.speed,0);
+        }
+        else{
+          this.main.search = false;
+          this.stateMachine.switchState("normal");
+        }
       }
     }
   }
+
 }
