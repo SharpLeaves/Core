@@ -19,7 +19,8 @@ public class BoundSwitchManager : MonoBehaviour
 
   public void SetBoundByNumber(int number)
   {
-    BoundSwitches[number].setBound();
+    if (number >= 0)
+      BoundSwitches[number].setBound();
   }
 
   public void setNumber()

@@ -43,5 +43,11 @@ namespace Core.Equipment
       this.stateMachine.addState(new DashUpEquipmentBack_Active(this));
       this.stateMachine.switchState("ready");
     }
+
+    protected void FixedUpdate()
+    {
+      base.Update();
+      //this.stateMachine.update();
+    }
   }
 }
