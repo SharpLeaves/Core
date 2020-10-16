@@ -54,21 +54,23 @@ namespace Core.Equipment{
         }
         public override void onEnter(){
             main.animationController.play = "active";
+            main.main.deathJudgeBody.onDash = true;
+
             TimerManager.instance.addSustainTask(new Task(main.buffTime, ()=>{
                 main.main.physicsController.ignoreDamp =  true;
                 main.main.physicsController.ignoreForce = true;
                 main.main.physicsController.setVerticalBrake(true);
             }));
             TimerManager.instance.addTask(new Task(main.buffTime, ()=>{
+                main.main.deathJudgeBody.onDash = false;
                 main.main.physicsController.setHorizontalBrake(true);
-                
             }));
         }
         public override void onExit(){
             
         }
         public override void update(){
-            AnimatorStateInfo info =main.animationController.animator.GetCurrentAnimatorStateInfo(0);    
+            AnimatorStateInfo info = main.animationController.animator.GetCurrentAnimatorStateInfo(0);    
             if (info.normalizedTime >= 1.0f)  {
                 stateMachine.switchState("cd");
             }   

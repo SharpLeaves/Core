@@ -15,8 +15,13 @@ namespace Core.Character
     // 装备挂载组件
     public EquipmentController handEquipment;
     public EquipmentController backEquipment;
+    // 死亡判定组件
+    public Wed_DeathJudgeBody deathJudgeBody;
+    public Wed_DeathJudgeTop deathJudgeTop;
     //角色的transform
     public Transform wedTransform;
+    //角色顶部碰撞检测
+    public GroundedTester upTester;
 
     /* 角色动作参数 */
     // 行走增量
@@ -64,6 +69,7 @@ namespace Core.Character
     private void FixedUpdate()
     {
       this.stateMachine.update();
+
       // Debug.Log(this.stateMachine.curState.getName());
     }
 
