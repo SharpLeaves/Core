@@ -183,6 +183,7 @@ namespace Core{
 		}
 
 		private void FixedUpdate(){
+
 			processGravityModification();
 
 			if(!ignorePosition){
@@ -194,6 +195,9 @@ namespace Core{
 				processForce();
 			}
 			if(!ignoreVelocity){
+				// Debug.Log(applyVelocity.y);
+
+
 				processVelocity();
 			}
 			if(!ignoreDamp){

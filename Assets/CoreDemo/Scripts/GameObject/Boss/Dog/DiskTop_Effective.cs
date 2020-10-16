@@ -17,7 +17,6 @@ namespace Core.Dog{
             }
 
             if(main.GetStateMachine.curState.getName() ==  "active"){
-                Debug.Log("active");
                 foreach(GameObject gameObject in effectedObjects){
                     Creature creature = gameObject.GetComponentInChildren<Creature>();
                     if(creature != null){
@@ -36,7 +35,6 @@ namespace Core.Dog{
             }
             
             if(main.GetStateMachine.curState.getName() == "normal"){
-                Debug.Log("normal");
 
                 foreach(IronBlock block in blocks){
                     block.rigidbodyComponent.transform.gameObject.layer = 8;

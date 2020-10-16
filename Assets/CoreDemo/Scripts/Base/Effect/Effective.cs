@@ -18,7 +18,6 @@ namespace Core
 
       if (effectedObjects.Exists(x => x.name == gameObject.name) == false)
       {
-        Debug.Log(gameObject.name);
         processObjectEnter(gameObject);
         effectedObjects.Add(gameObject);
       }
