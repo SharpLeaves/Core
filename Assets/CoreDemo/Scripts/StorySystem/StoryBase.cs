@@ -56,6 +56,5 @@ public class StoryBase : MonoBehaviour
   {
     textfile = t;
     LoadTextFormFile();
-    Debug.Log(textList.ToArray().Length);
   }
 }

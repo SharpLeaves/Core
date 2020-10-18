@@ -130,7 +130,8 @@ namespace Core{
 			else{
 				velocity.x -= airDamping * 		velocity.x * Time.fixedDeltaTime;
 			}
-			velocity -= applyDamping * 			velocity.x * Time.fixedDeltaTime;
+			velocity -= applyDamping * 			velocity * Time.fixedDeltaTime;
+
 
 			main.rigidbodyComponent.velocity = velocity;
 		}
@@ -139,6 +140,7 @@ namespace Core{
 			Vector2 velocity = main.rigidbodyComponent.velocity;
 			velocity += applyForce * Time.fixedDeltaTime;
 			main.rigidbodyComponent.velocity = velocity;
+
 		}
 
 		private void processVelocity(){
@@ -186,25 +188,28 @@ namespace Core{
 
 			processGravityModification();
 
+			if(!ignoreDamp){
+				processDamping();
+			}
+			
 			if(!ignorePosition){
 				processPosition();
 			}
-			processBrake();
+
 
 			if(!ignoreForce){
 				processForce();
 			}
 			if(!ignoreVelocity){
-				// Debug.Log(applyVelocity.y);
-
-
 				processVelocity();
 			}
-			if(!ignoreDamp){
-				processDamping();
-			}
+			
+			processBrake();
+
 			microAdjust();
 			after();
+
+
 		}
 
 

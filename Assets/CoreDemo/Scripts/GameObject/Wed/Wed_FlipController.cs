@@ -18,12 +18,10 @@ namespace Core.Character
       if (fHorizontal > 0.0f)
       {
         localScale.x = -1.0f;
-
       }
       else if (fHorizontal < 0.0f)
       {
         localScale.x = 1.0f;
-
       }
 
       // if(localScale.x >= 0.0f){

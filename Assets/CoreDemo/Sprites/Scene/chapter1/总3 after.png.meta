@@ -1,0 +1,4217 @@
+fileFormatVersion: 2
+guid: d06049e9c7a9a56459807dbd3ec51382
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6165829975701006757
+    second: "\u603B3 after_0"
+  - first:
+      213: 1174526831020663634
+    second: "\u603B3 after_1"
+  - first:
+      213: -8299753757516227762
+    second: "\u603B3 after_2"
+  - first:
+      213: 3471204503859263074
+    second: "\u603B3 after_3"
+  - first:
+      213: -6651446608760554353
+    second: "\u603B3 after_4"
+  - first:
+      213: -339049453471620894
+    second: "\u603B3 after_5"
+  - first:
+      213: 775282587822475239
+    second: "\u603B3 after_6"
+  - first:
+      213: 4719346610622222814
+    second: "\u603B3 after_7"
+  - first:
+      213: -5877080494416485389
+    second: "\u603B3 after_8"
+  - first:
+      213: 6491474888639898458
+    second: "\u603B3 after_9"
+  - first:
+      213: -6377927530771620652
+    second: "\u603B3 after_10"
+  - first:
+      213: -2509716684545759460
+    second: "\u603B3 after_11"
+  - first:
+      213: -1992571099404597500
+    second: "\u603B3 after_12"
+  - first:
+      213: 3952211020097222929
+    second: "\u603B3 after_13"
+  - first:
+      213: -5261191081578696535
+    second: "\u603B3 after_14"
+  - first:
+      213: -7296343512691865785
+    second: "\u603B3 after_15"
+  - first:
+      213: -3591463425309989966
+    second: "\u603B3 after_16"
+  - first:
+      213: -262226965942669413
+    second: "\u603B3 after_17"
+  - first:
+      213: 6345000171020591231
+    second: "\u603B3 after_18"
+  - first:
+      213: 5538835562113240193
+    second: "\u603B3 after_19"
+  - first:
+      213: 7112070032119296330
+    second: "\u603B3 after_20"
+  - first:
+      213: -5551167541681983524
+    second: "\u603B3 after_21"
+  - first:
+      213: -7388257881051019425
+    second: "\u603B3 after_22"
+  - first:
+      213: -5921482333004944578
+    second: "\u603B3 after_23"
+  - first:
+      213: -6524516552622837294
+    second: "\u603B3 after_24"
+  - first:
+      213: 8227754008821561441
+    second: "\u603B3 after_25"
+  - first:
+      213: -7784990664714031210
+    second: "\u603B3 after_26"
+  - first:
+      213: 2692953936221999605
+    second: "\u603B3 after_27"
+  - first:
+      213: 5906497514294236280
+    second: "\u603B3 after_28"
+  - first:
+      213: -3404918770692008283
+    second: "\u603B3 after_29"
+  - first:
+      213: -6735851179041285272
+    second: "\u603B3 after_30"
+  - first:
+      213: -4383429484837046121
+    second: "\u603B3 after_31"
+  - first:
+      213: 8061440566753831266
+    second: "\u603B3 after_32"
+  - first:
+      213: -1945088718040052494
+    second: "\u603B3 after_33"
+  - first:
+      213: -7681763523724692094
+    second: "\u603B3 after_34"
+  - first:
+      213: -5102184172314285551
+    second: "\u603B3 after_35"
+  - first:
+      213: -5667727814782334074
+    second: "\u603B3 after_36"
+  - first:
+      213: 4743601580274699289
+    second: "\u603B3 after_37"
+  - first:
+      213: 5333705782809380826
+    second: "\u603B3 after_38"
+  - first:
+      213: -7131564056148341024
+    second: "\u603B3 after_39"
+  - first:
+      213: -8648502339143034726
+    second: "\u603B3 after_40"
+  - first:
+      213: -1584465969584381359
+    second: "\u603B3 after_41"
+  - first:
+      213: -712925485100296293
+    second: "\u603B3 after_42"
+  - first:
+      213: 7704883933027408627
+    second: "\u603B3 after_43"
+  - first:
+      213: -2252313688129520807
+    second: "\u603B3 after_44"
+  - first:
+      213: -6764330996484264047
+    second: "\u603B3 after_45"
+  - first:
+      213: -1718344898791325468
+    second: "\u603B3 after_46"
+  - first:
+      213: -978515684001973662
+    second: "\u603B3 after_47"
+  - first:
+      213: 791885266155295587
+    second: "\u603B3 after_48"
+  - first:
+      213: -8771191800748792220
+    second: "\u603B3 after_49"
+  - first:
+      213: -6258988809095835445
+    second: "\u603B3 after_50"
+  - first:
+      213: -3202020320214571230
+    second: "\u603B3 after_51"
+  - first:
+      213: -2933158386941049707
+    second: "\u603B3 after_52"
+  - first:
+      213: -7359380003982427703
+    second: "\u603B3 after_53"
+  - first:
+      213: 7760842430359639954
+    second: "\u603B3 after_54"
+  - first:
+      213: -7050612010067218591
+    second: "\u603B3 after_55"
+  - first:
+      213: 4084809435547705434
+    second: "\u603B3 after_56"
+  - first:
+      213: 3026835640158623905
+    second: "\u603B3 after_57"
+  - first:
+      213: 5133941295380755785
+    second: "\u603B3 after_58"
+  - first:
+      213: -4428596323057563183
+    second: "\u603B3 after_59"
+  - first:
+      213: 3699703168139740706
+    second: "\u603B3 after_60"
+  - first:
+      213: -4511164548315232417
+    second: "\u603B3 after_61"
+  - first:
+      213: 9161776053418410269
+    second: "\u603B3 after_62"
+  - first:
+      213: 8419920271382717723
+    second: "\u603B3 after_63"
+  - first:
+      213: -8613728719639576691
+    second: "\u603B3 after_64"
+  - first:
+      213: -3341556139573928372
+    second: "\u603B3 after_65"
+  - first:
+      213: 8010768521208087177
+    second: "\u603B3 after_66"
+  - first:
+      213: -7319858867901547100
+    second: "\u603B3 after_67"
+  - first:
+      213: -7739514712036255908
+    second: "\u603B3 after_68"
+  - first:
+      213: 2068440382658639517
+    second: "\u603B3 after_69"
+  - first:
+      213: -7441462471600253746
+    second: "\u603B3 after_70"
+  - first:
+      213: -3566108680424026372
+    second: "\u603B3 after_71"
+  - first:
+      213: -399374516966496623
+    second: "\u603B3 after_72"
+  - first:
+      213: -6619086992614346303
+    second: "\u603B3 after_73"
+  - first:
+      213: 4275821869807647986
+    second: "\u603B3 after_74"
+  - first:
+      213: -5126946936559828200
+    second: "\u603B3 after_75"
+  - first:
+      213: -76772362076704217
+    second: "\u603B3 after_76"
+  - first:
+      213: -924234531766183207
+    second: "\u603B3 after_77"
+  - first:
+      213: 9049634578567106155
+    second: "\u603B3 after_78"
+  - first:
+      213: -1484887375758510663
+    second: "\u603B3 after_79"
+  - first:
+      213: -5567044961858372022
+    second: "\u603B3 after_80"
+  - first:
+      213: -3896888459791727791
+    second: "\u603B3 after_81"
+  - first:
+      213: -2526931949324099986
+    second: "\u603B3 after_82"
+  - first:
+      213: 238236571897576326
+    second: "\u603B3 after_83"
+  - first:
+      213: -7449464860983732846
+    second: "\u603B3 after_84"
+  - first:
+      213: -7432081089525198906
+    second: "\u603B3 after_85"
+  - first:
+      213: -3392913248409749784
+    second: "\u603B3 after_86"
+  - first:
+      213: 1021344987893948953
+    second: "\u603B3 after_87"
+  - first:
+      213: -7854874874302004352
+    second: "\u603B3 after_88"
+  - first:
+      213: 3422832670524459028
+    second: "\u603B3 after_89"
+  - first:
+      213: -1465103373552429833
+    second: "\u603B3 after_90"
+  - first:
+      213: 2735191675559966019
+    second: "\u603B3 after_91"
+  - first:
+      213: -4281891308608135101
+    second: "\u603B3 after_92"
+  - first:
+      213: 869916873905801547
+    second: "\u603B3 after_93"
+  - first:
+      213: 5669192389385455281
+    second: "\u603B3 after_94"
+  - first:
+      213: -6606157365139376433
+    second: "\u603B3 after_95"
+  - first:
+      213: 1603628448887803465
+    second: "\u603B3 after_96"
+  - first:
+      213: 5171690011637294142
+    second: "\u603B3 after_97"
+  - first:
+      213: 1593185263244253685
+    second: "\u603B3 after_98"
+  - first:
+      213: 6989286133274222795
+    second: "\u603B3 after_99"
+  - first:
+      213: 8530600030173758506
+    second: "\u603B3 after_100"
+  - first:
+      213: -146324839656381655
+    second: "\u603B3 after_101"
+  - first:
+      213: -1005117634363041128
+    second: "\u603B3 after_102"
+  - first:
+      213: -2858628299201237603
+    second: "\u603B3 after_103"
+  - first:
+      213: 7223172618827149821
+    second: "\u603B3 after_104"
+  - first:
+      213: -8779689274693547681
+    second: "\u603B3 after_105"
+  - first:
+      213: 6262866878550087424
+    second: "\u603B3 after_106"
+  - first:
+      213: -582735041670776804
+    second: "\u603B3 after_107"
+  - first:
+      213: 5484986948925479272
+    second: "\u603B3 after_108"
+  - first:
+      213: -4209785023743645634
+    second: "\u603B3 after_109"
+  - first:
+      213: 862790341669324241
+    second: "\u603B3 after_110"
+  - first:
+      213: -6539625552983075425
+    second: "\u603B3 after_111"
+  - first:
+      213: 7208867643230792137
+    second: "\u603B3 after_112"
+  - first:
+      213: -6659323290807239918
+    second: "\u603B3 after_113"
+  - first:
+      213: 1191821485073242345
+    second: "\u603B3 after_114"
+  - first:
+      213: -9064508216682314268
+    second: "\u603B3 after_115"
+  - first:
+      213: -14613451017319200
+    second: "\u603B3 after_116"
+  - first:
+      213: -8131715848183047734
+    second: "\u603B3 after_117"
+  - first:
+      213: -6182094595176956989
+    second: "\u603B3 after_118"
+  - first:
+      213: -4700565012041762019
+    second: "\u603B3 after_119"
+  - first:
+      213: -1255442618457647661
+    second: "\u603B3 after_120"
+  - first:
+      213: -6375646031057725325
+    second: "\u603B3 after_121"
+  - first:
+      213: -3989074581172615355
+    second: "\u603B3 after_122"
+  - first:
+      213: -429254123909929143
+    second: "\u603B3 after_123"
+  - first:
+      213: -1236884465444069816
+    second: "\u603B3 after_124"
+  - first:
+      213: -3784579130941941302
+    second: "\u603B3 after_125"
+  - first:
+      213: -5079589867200128730
+    second: "\u603B3 after_126"
+  - first:
+      213: 8662279889872036991
+    second: "\u603B3 after_127"
+  - first:
+      213: 413536901044727911
+    second: "\u603B3 after_128"
+  - first:
+      213: 4401143758698364704
+    second: "\u603B3 after_129"
+  - first:
+      213: 1267953931308697819
+    second: "\u603B3 after_130"
+  - first:
+      213: 4929500835009635124
+    second: "\u603B3 after_131"
+  - first:
+      213: -4045046197720936189
+    second: "\u603B3 after_132"
+  - first:
+      213: -5123953711762154725
+    second: "\u603B3 after_133"
+  - first:
+      213: 7302677232406808988
+    second: "\u603B3 after_134"
+  - first:
+      213: -5686875926455644477
+    second: "\u603B3 after_135"
+  - first:
+      213: 6009550380988106717
+    second: "\u603B3 after_136"
+  - first:
+      213: 4702911022577676919
+    second: "\u603B3 after_137"
+  - first:
+      213: 5449111004311646643
+    second: "\u603B3 after_138"
+  - first:
+      213: 8957167445455590949
+    second: "\u603B3 after_139"
+  - first:
+      213: 1781965572117065489
+    second: "\u603B3 after_140"
+  - first:
+      213: -5042238735671553392
+    second: "\u603B3 after_141"
+  - first:
+      213: 6172546975380081710
+    second: "\u603B3 after_142"
+  - first:
+      213: -6580677730739944003
+    second: "\u603B3 after_143"
+  - first:
+      213: 1034290264596648899
+    second: "\u603B3 after_144"
+  - first:
+      213: 9007390980837740773
+    second: "\u603B3 after_145"
+  - first:
+      213: -2024792615953076580
+    second: "\u603B3 after_146"
+  - first:
+      213: -3219691034854496095
+    second: "\u603B3 after_147"
+  - first:
+      213: 2452415813977103898
+    second: "\u603B3 after_148"
+  - first:
+      213: 3806252976068289852
+    second: "\u603B3 after_149"
+  - first:
+      213: -7730178504430280482
+    second: "\u603B3 after_150"
+  - first:
+      213: -7544257448378807871
+    second: "\u603B3 after_151"
+  - first:
+      213: 3547179761204470615
+    second: "\u603B3 after_152"
+  - first:
+      213: -9067959521493639215
+    second: "\u603B3 after_153"
+  - first:
+      213: 406437134876325556
+    second: "\u603B3 after_154"
+  - first:
+      213: 3321723803134515755
+    second: "\u603B3 after_155"
+  - first:
+      213: -3854190860601066488
+    second: "\u603B3 after_156"
+  - first:
+      213: 5603030630016134525
+    second: "\u603B3 after_157"
+  - first:
+      213: 4200167487889166953
+    second: "\u603B3 after_158"
+  - first:
+      213: 5242339507931853377
+    second: "\u603B3 after_159"
+  - first:
+      213: -1280682583569930989
+    second: "\u603B3 after_160"
+  - first:
+      213: -880780571306646460
+    second: "\u603B3 after_161"
+  - first:
+      213: 1103619220246116496
+    second: "\u603B3 after_162"
+  - first:
+      213: 1358911944997234444
+    second: "\u603B3 after_163"
+  - first:
+      213: -5327779281402366963
+    second: "\u603B3 after_164"
+  - first:
+      213: 732183328755540463
+    second: "\u603B3 after_165"
+  - first:
+      213: 451813100784451105
+    second: "\u603B3 after_166"
+  - first:
+      213: -98411514574966807
+    second: "\u603B3 after_167"
+  - first:
+      213: 2903678007663370705
+    second: "\u603B3 after_168"
+  - first:
+      213: 4478784241005083054
+    second: "\u603B3 after_169"
+  - first:
+      213: -1834623338498866098
+    second: "\u603B3 after_170"
+  - first:
+      213: 8528099884991502301
+    second: "\u603B3 after_171"
+  - first:
+      213: 8315568115002354711
+    second: "\u603B3 after_172"
+  - first:
+      213: 7580689006249282070
+    second: "\u603B3 after_173"
+  - first:
+      213: -7492735330974522920
+    second: "\u603B3 after_174"
+  - first:
+      213: -3786844174664770563
+    second: "\u603B3 after_175"
+  - first:
+      213: -6081371085543680961
+    second: "\u603B3 after_176"
+  - first:
+      213: -8225262940785432950
+    second: "\u603B3 after_177"
+  - first:
+      213: 1597259590612914284
+    second: "\u603B3 after_178"
+  - first:
+      213: -6886216961609950592
+    second: "\u603B3 after_179"
+  - first:
+      213: 8541977952407287695
+    second: "\u603B3 after_180"
+  - first:
+      213: 8338896966916372632
+    second: "\u603B3 after_181"
+  - first:
+      213: 448493213657252684
+    second: "\u603B3 after_182"
+  - first:
+      213: 1273590733015243462
+    second: "\u603B3 after_183"
+  - first:
+      213: -2679637920365166138
+    second: "\u603B3 after_184"
+  - first:
+      213: 3309309620401486290
+    second: "\u603B3 after_185"
+  - first:
+      213: -7393759481530185371
+    second: "\u603B3 after_186"
+  - first:
+      213: 2631597229055603768
+    second: "\u603B3 after_187"
+  - first:
+      213: 3126615733311668917
+    second: "\u603B3 after_188"
+  - first:
+      213: -2395488477540706468
+    second: "\u603B3 after_189"
+  - first:
+      213: -6044918008151893988
+    second: "\u603B3 after_190"
+  - first:
+      213: -8569558629818593024
+    second: "\u603B3 after_191"
+  - first:
+      213: 5177221526263720465
+    second: "\u603B3 after_192"
+  - first:
+      213: 4290060769183711971
+    second: "\u603B3 after_193"
+  - first:
+      213: 6467030576037821638
+    second: "\u603B3 after_194"
+  - first:
+      213: -9069257151616711584
+    second: "\u603B3 after_195"
+  - first:
+      213: 9054057305176428517
+    second: "\u603B3 after_196"
+  - first:
+      213: -1019485569944386680
+    second: "\u603B3 after_197"
+  - first:
+      213: 8391721672605570254
+    second: "\u603B3 after_198"
+  - first:
+      213: 862876172619237418
+    second: "\u603B3 after_199"
+  - first:
+      213: 5464656642734667630
+    second: "\u603B3 after_200"
+  - first:
+      213: 8822204949972464548
+    second: "\u603B3 after_201"
+  - first:
+      213: -5385251877218753810
+    second: "\u603B3 after_202"
+  - first:
+      213: -7940971447011036643
+    second: "\u603B3 after_203"
+  - first:
+      213: 4246167072507264657
+    second: "\u603B3 after_204"
+  - first:
+      213: -8129966540094221116
+    second: "\u603B3 after_205"
+  - first:
+      213: -3672957200664860682
+    second: "\u603B3 after_206"
+  - first:
+      213: 1274387947515622741
+    second: "\u603B3 after_207"
+  - first:
+      213: -841668688143198459
+    second: "\u603B3 after_208"
+  - first:
+      213: 8005574311175905656
+    second: "\u603B3 after_209"
+  - first:
+      213: 7850505534740407961
+    second: "\u603B3 after_210"
+  - first:
+      213: 5794955162713792165
+    second: "\u603B3 after_211"
+  - first:
+      213: -7658524142760601382
+    second: "\u603B3 after_212"
+  - first:
+      213: -8290272963678986970
+    second: "\u603B3 after_213"
+  - first:
+      213: 7401296167249436289
+    second: "\u603B3 after_214"
+  - first:
+      213: -2467063690780986082
+    second: "\u603B3 after_215"
+  - first:
+      213: -857130020377439654
+    second: "\u603B3 after_216"
+  - first:
+      213: -2993961493948143680
+    second: "\u603B3 after_217"
+  - first:
+      213: -6497611009952796361
+    second: "\u603B3 after_218"
+  - first:
+      213: 6948188045266354975
+    second: "\u603B3 after_219"
+  - first:
+      213: 4449453041616634814
+    second: "\u603B3 after_220"
+  - first:
+      213: 6113692494511444335
+    second: "\u603B3 after_221"
+  - first:
+      213: -577570761770109526
+    second: "\u603B3 after_222"
+  - first:
+      213: -5435877861796881266
+    second: "\u603B3 after_223"
+  - first:
+      213: 7424833575910423433
+    second: "\u603B3 after_224"
+  - first:
+      213: 3291833314588757927
+    second: "\u603B3 after_225"
+  - first:
+      213: 8590475390753081462
+    second: "\u603B3 after_226"
+  - first:
+      213: -6185721792914802646
+    second: "\u603B3 after_227"
+  - first:
+      213: 5065896943109950604
+    second: "\u603B3 after_228"
+  - first:
+      213: -7278821254884518038
+    second: "\u603B3 after_229"
+  - first:
+      213: 4128185567524949311
+    second: "\u603B3 after_230"
+  - first:
+      213: 2452716238073437289
+    second: "\u603B3 after_231"
+  - first:
+      213: 3893688188531596450
+    second: "\u603B3 after_232"
+  - first:
+      213: -3628132824401316211
+    second: "\u603B3 after_233"
+  - first:
+      213: -5121439911991756781
+    second: "\u603B3 after_234"
+  - first:
+      213: -5801204111722335835
+    second: "\u603B3 after_235"
+  - first:
+      213: -545229749633818180
+    second: "\u603B3 after_236"
+  - first:
+      213: -2931061957608787252
+    second: "\u603B3 after_237"
+  - first:
+      213: -1440944902869801033
+    second: "\u603B3 after_238"
+  - first:
+      213: 5529072598578280067
+    second: "\u603B3 after_239"
+  - first:
+      213: -8712126511169652323
+    second: "\u603B3 after_240"
+  - first:
+      213: 7597032100847395613
+    second: "\u603B3 after_241"
+  - first:
+      213: 4088389883859381310
+    second: "\u603B3 after_242"
+  - first:
+      213: -3597208581949717360
+    second: "\u603B3 after_243"
+  - first:
+      213: -7071472191687165357
+    second: "\u603B3 after_244"
+  - first:
+      213: -3889264158656235301
+    second: "\u603B3 after_245"
+  - first:
+      213: -5399328038272367825
+    second: "\u603B3 after_246"
+  - first:
+      213: 4641994364618150864
+    second: "\u603B3 after_247"
+  - first:
+      213: -1136680461878537413
+    second: "\u603B3 after_248"
+  - first:
+      213: -5474018437180841083
+    second: "\u603B3 after_249"
+  - first:
+      213: -5204581250792278205
+    second: "\u603B3 after_250"
+  - first:
+      213: -2695561118048495611
+    second: "\u603B3 after_251"
+  - first:
+      213: -2720459435306658635
+    second: "\u603B3 after_252"
+  - first:
+      213: -826973004713569103
+    second: "\u603B3 after_253"
+  - first:
+      213: 852489223176327483
+    second: "\u603B3 after_254"
+  - first:
+      213: -2798960050175010724
+    second: "\u603B3 after_255"
+  - first:
+      213: 5334592969350176938
+    second: "\u603B3 after_256"
+  - first:
+      213: 3953820110830212358
+    second: "\u603B3 after_257"
+  - first:
+      213: 2596389628477279407
+    second: "\u603B3 after_258"
+  - first:
+      213: 6822763261122446660
+    second: "\u603B3 after_259"
+  - first:
+      213: -8983135574559984405
+    second: "\u603B3 after_260"
+  - first:
+      213: 7180514376447029563
+    second: "\u603B3 after_261"
+  - first:
+      213: -1209981258397431790
+    second: "\u603B3 after_262"
+  - first:
+      213: 5064542039668269563
+    second: "\u603B3 after_263"
+  - first:
+      213: 4103247557944994169
+    second: "\u603B3 after_264"
+  - first:
+      213: 1165052373289234291
+    second: "\u603B3 after_265"
+  - first:
+      213: 4976451228226440238
+    second: "\u603B3 after_266"
+  - first:
+      213: 6966965813670767728
+    second: "\u603B3 after_267"
+  - first:
+      213: 1300551713748609236
+    second: "\u603B3 after_268"
+  - first:
+      213: -6926053551695844638
+    second: "\u603B3 after_269"
+  - first:
+      213: -4850826378044485306
+    second: "\u603B3 after_270"
+  - first:
+      213: -9161305609773181567
+    second: "\u603B3 after_271"
+  - first:
+      213: -6664143867405840275
+    second: "\u603B3 after_272"
+  - first:
+      213: 7444732945168420512
+    second: "\u603B3 after_273"
+  - first:
+      213: 3800931737659991763
+    second: "\u603B3 after_274"
+  - first:
+      213: -7127104206620581189
+    second: "\u603B3 after_275"
+  - first:
+      213: -5141733909154667102
+    second: "\u603B3 after_276"
+  - first:
+      213: -3287477357144481135
+    second: "\u603B3 after_277"
+  - first:
+      213: 1385232346023712166
+    second: "\u603B3 after_278"
+  - first:
+      213: -705467103917004153
+    second: "\u603B3 after_279"
+  - first:
+      213: -3902311320099667510
+    second: "\u603B3 after_280"
+  - first:
+      213: 4629080065909588282
+    second: "\u603B3 after_281"
+  - first:
+      213: 1415888057453987970
+    second: "\u603B3 after_282"
+  - first:
+      213: 2525699177798510203
+    second: "\u603B3 after_283"
+  - first:
+      213: -3492429269702521381
+    second: "\u603B3 after_284"
+  - first:
+      213: -1305315432904433798
+    second: "\u603B3 after_285"
+  - first:
+      213: 4814352475683383001
+    second: "\u603B3 after_286"
+  - first:
+      213: 5721134377391421410
+    second: "\u603B3 after_287"
+  - first:
+      213: 3904243537091730744
+    second: "\u603B3 after_288"
+  - first:
+      213: 2405588854687611658
+    second: "\u603B3 after_289"
+  - first:
+      213: -8948547240542589462
+    second: "\u603B3 after_290"
+  - first:
+      213: 2924924038495763816
+    second: "\u603B3 after_291"
+  - first:
+      213: -5912160339961641092
+    second: "\u603B3 after_292"
+  - first:
+      213: -5101745250312328842
+    second: "\u603B3 after_293"
+  - first:
+      213: -8031520035414438750
+    second: "\u603B3 after_294"
+  - first:
+      213: -286577917504452031
+    second: "\u603B3 after_295"
+  - first:
+      213: 742403091488419472
+    second: "\u603B3 after_296"
+  - first:
+      213: 6610276809250910140
+    second: "\u603B3 after_297"
+  - first:
+      213: -8523898731318127766
+    second: "\u603B3 after_298"
+  - first:
+      213: -1231329327553846000
+    second: "\u603B3 after_299"
+  - first:
+      213: 6982629583026103687
+    second: "\u603B3 after_300"
+  - first:
+      213: -7968404141634823998
+    second: "\u603B3 after_301"
+  - first:
+      213: 1162887447994446574
+    second: "\u603B3 after_302"
+  - first:
+      213: -4594462418829311848
+    second: "\u603B3 after_303"
+  - first:
+      213: -6573209520114074310
+    second: "\u603B3 after_304"
+  - first:
+      213: -4610597906959057457
+    second: "\u603B3 after_305"
+  - first:
+      213: -7745173374896241085
+    second: "\u603B3 after_306"
+  - first:
+      213: 5365177319499711598
+    second: "\u603B3 after_307"
+  - first:
+      213: -8201043848790048590
+    second: "\u603B3 after_308"
+  - first:
+      213: -3208358819676208327
+    second: "\u603B3 after_309"
+  - first:
+      213: 7740129489591728756
+    second: "\u603B3 after_310"
+  - first:
+      213: 2176371021880447248
+    second: "\u603B3 after_311"
+  - first:
+      213: -4881134958239276051
+    second: "\u603B3 after_312"
+  - first:
+      213: -7927520119773514213
+    second: "\u603B3 after_313"
+  - first:
+      213: -4710813707236961137
+    second: "\u603B3 after_314"
+  - first:
+      213: 3942877242506342512
+    second: "\u603B3 after_315"
+  - first:
+      213: 2639432109873927319
+    second: "\u603B3 after_316"
+  - first:
+      213: -4838551559256090197
+    second: "\u603B3 after_317"
+  - first:
+      213: -3304805474885426570
+    second: "\u603B3 after_318"
+  - first:
+      213: -8519481931495189875
+    second: "\u603B3 after_319"
+  - first:
+      213: -8190631445877155725
+    second: "\u603B3 after_320"
+  - first:
+      213: -6922307436181334926
+    second: "\u603B3 after_321"
+  - first:
+      213: 7531920443006248595
+    second: "\u603B3 after_322"
+  - first:
+      213: 1437923867373531610
+    second: "\u603B3 after_323"
+  - first:
+      213: 2849773808361305790
+    second: "\u603B3 after_324"
+  - first:
+      213: -7389789170628961210
+    second: "\u603B3 after_325"
+  - first:
+      213: 1265407643112306236
+    second: "\u603B3 after_326"
+  - first:
+      213: -9222342017133029190
+    second: "\u603B3 after_327"
+  - first:
+      213: 6270390351151582792
+    second: "\u603B3 after_328"
+  - first:
+      213: -1633391922621398471
+    second: "\u603B3 after_329"
+  - first:
+      213: -8195833361165556353
+    second: "\u603B3 after_330"
+  - first:
+      213: -1014847066050305762
+    second: "\u603B3 after_331"
+  - first:
+      213: -2287743090820380571
+    second: "\u603B3 after_332"
+  - first:
+      213: -1832924392167350846
+    second: "\u603B3 after_333"
+  - first:
+      213: 7070735479349011093
+    second: "\u603B3 after_334"
+  - first:
+      213: 1394125492097366350
+    second: "\u603B3 after_335"
+  - first:
+      213: 736684984097158685
+    second: "\u603B3 after_336"
+  - first:
+      213: -9195630303414450974
+    second: "\u603B3 after_337"
+  - first:
+      213: 54751238840475071
+    second: "\u603B3 after_338"
+  - first:
+      213: -5234766205247544440
+    second: "\u603B3 after_339"
+  - first:
+      213: 9009935814893940959
+    second: "\u603B3 after_340"
+  - first:
+      213: 7647958767857997260
+    second: "\u603B3 after_341"
+  - first:
+      213: 2515701988061531974
+    second: "\u603B3 after_342"
+  - first:
+      213: -409465672671470377
+    second: "\u603B3 after_343"
+  - first:
+      213: -8914132518955919713
+    second: "\u603B3 after_344"
+  - first:
+      213: 5055082100422514247
+    second: "\u603B3 after_345"
+  - first:
+      213: 7656977023788032139
+    second: "\u603B3 after_346"
+  - first:
+      213: -8101603648127622984
+    second: "\u603B3 after_347"
+  - first:
+      213: 7919087916526320278
+    second: "\u603B3 after_348"
+  - first:
+      213: -309454133345147979
+    second: "\u603B3 after_349"
+  - first:
+      213: 3620549309548732537
+    second: "\u603B3 after_350"
+  - first:
+      213: 5490886086541218818
+    second: "\u603B3 after_351"
+  - first:
+      213: 7436351733699307396
+    second: "\u603B3 after_352"
+  - first:
+      213: 6619362790716083190
+    second: "\u603B3 after_353"
+  - first:
+      213: -3651934902463894740
+    second: "\u603B3 after_354"
+  - first:
+      213: -7790354040147516863
+    second: "\u603B3 after_355"
+  - first:
+      213: -2200374286296850143
+    second: "\u603B3 after_356"
+  - first:
+      213: 2587627359385366536
+    second: "\u603B3 after_357"
+  - first:
+      213: 4770168768742356760
+    second: "\u603B3 after_358"
+  - first:
+      213: 4347968212162870722
+    second: "\u603B3 after_359"
+  - first:
+      213: 8187371371106685901
+    second: "\u603B3 after_360"
+  - first:
+      213: 3979736250200941589
+    second: "\u603B3 after_361"
+  - first:
+      213: 7306740928839602244
+    second: "\u603B3 after_362"
+  - first:
+      213: 2129459004829273255
+    second: "\u603B3 after_363"
+  - first:
+      213: -2396793487477261861
+    second: "\u603B3 after_364"
+  - first:
+      213: -5313843206885346886
+    second: "\u603B3 after_365"
+  - first:
+      213: 8661211910773286532
+    second: "\u603B3 after_366"
+  - first:
+      213: 4785122362047202863
+    second: "\u603B3 after_367"
+  - first:
+      213: -3556567839569797793
+    second: "\u603B3 after_368"
+  - first:
+      213: 7887428249209685717
+    second: "\u603B3 after_369"
+  - first:
+      213: 6053911394638885965
+    second: "\u603B3 after_370"
+  - first:
+      213: 2408144832761414968
+    second: "\u603B3 after_371"
+  - first:
+      213: 3482164606985958312
+    second: "\u603B3 after_372"
+  - first:
+      213: 5419739982083389964
+    second: "\u603B3 after_373"
+  - first:
+      213: -5730375500097513611
+    second: "\u603B3 after_374"
+  - first:
+      213: -1416557441994410539
+    second: "\u603B3 after_375"
+  - first:
+      213: -3517188477670322600
+    second: "\u603B3 after_376"
+  - first:
+      213: -6292571423406038679
+    second: "\u603B3 after_377"
+  - first:
+      213: 6122171460556628639
+    second: "\u603B3 after_378"
+  - first:
+      213: -526626010356558503
+    second: "\u603B3 after_379"
+  - first:
+      213: 159842192530722166
+    second: "\u603B3 after_380"
+  - first:
+      213: -1332461845938875442
+    second: "\u603B3 after_381"
+  - first:
+      213: 365738677408264309
+    second: "\u603B3 after_382"
+  - first:
+      213: -8752593160036135985
+    second: "\u603B3 after_383"
+  - first:
+      213: 5866178631045587597
+    second: "\u603B3 after_384"
+  - first:
+      213: -6796248618597736013
+    second: "\u603B3 after_385"
+  - first:
+      213: -3349414505908712348
+    second: "\u603B3 after_386"
+  - first:
+      213: 6437626813037189244
+    second: "\u603B3 after_387"
+  - first:
+      213: 1537559282983590577
+    second: "\u603B3 after_388"
+  - first:
+      213: -5039992801827020038
+    second: "\u603B3 after_389"
+  - first:
+      213: -5450622787618271509
+    second: "\u603B3 after_390"
+  - first:
+      213: -4042763939851935071
+    second: "\u603B3 after_391"
+  - first:
+      213: 7697054668865080671
+    second: "\u603B3 after_392"
+  - first:
+      213: -173335662850279164
+    second: "\u603B3 after_393"
+  - first:
+      213: -5647649569552152253
+    second: "\u603B3 after_394"
+  - first:
+      213: 3693343635881170745
+    second: "\u603B3 after_395"
+  - first:
+      213: 171631232228220579
+    second: "\u603B3 after_396"
+  - first:
+      213: 983688209244308027
+    second: "\u603B3 after_397"
+  - first:
+      213: -4672182797569711450
+    second: "\u603B3 after_398"
+  - first:
+      213: 2297002022700112085
+    second: "\u603B3 after_399"
+  - first:
+      213: 5311266741568000367
+    second: "\u603B3 after_400"
+  - first:
+      213: -5243818895738873345
+    second: "\u603B3 after_401"
+  - first:
+      213: -6451152775443415293
+    second: "\u603B3 after_402"
+  - first:
+      213: -5676055635392014755
+    second: "\u603B3 after_403"
+  - first:
+      213: 7549449032602216313
+    second: "\u603B3 after_404"
+  - first:
+      213: 980269734713734770
+    second: "\u603B3 after_405"
+  - first:
+      213: -7159251966011550931
+    second: "\u603B3 after_406"
+  - first:
+      213: -5359053508511052779
+    second: "\u603B3 after_407"
+  - first:
+      213: -4446091914641713423
+    second: "\u603B3 after_408"
+  - first:
+      213: -6687313906304380879
+    second: "\u603B3 after_409"
+  - first:
+      213: 3303017888058136761
+    second: "\u603B3 after_410"
+  - first:
+      213: 4492577900429239442
+    second: "\u603B3 after_411"
+  - first:
+      213: 6278383865910684541
+    second: "\u603B3 after_412"
+  - first:
+      213: 721024109584457009
+    second: "\u603B3 after_413"
+  - first:
+      213: -9174624111607490284
+    second: "\u603B3 after_414"
+  - first:
+      213: 9042282748783521633
+    second: "\u603B3 after_415"
+  - first:
+      213: -269696440284602713
+    second: "\u603B3 after_416"
+  - first:
+      213: 7003950513795560580
+    second: "\u603B3 after_417"
+  - first:
+      213: 2235813339665195739
+    second: "\u603B3 after_418"
+  - first:
+      213: -8563815741176483400
+    second: "\u603B3 after_419"
+  - first:
+      213: 549061565259220995
+    second: "\u603B3 after_420"
+  - first:
+      213: -306473700395653681
+    second: "\u603B3 after_421"
+  - first:
+      213: 8397574751781628446
+    second: "\u603B3 after_422"
+  - first:
+      213: -875492030706131188
+    second: "\u603B3 after_423"
+  - first:
+      213: 1596426715816058198
+    second: "\u603B3 after_424"
+  - first:
+      213: 5209614324689431147
+    second: "\u603B3 after_425"
+  - first:
+      213: -5877192910707526159
+    second: "\u603B3 after_426"
+  - first:
+      213: -6469952781544332588
+    second: "\u603B3 after_427"
+  - first:
+      213: 5575053165263329956
+    second: "\u603B3 after_428"
+  - first:
+      213: 3272231203390787690
+    second: "\u603B3 after_429"
+  - first:
+      213: 5973983176605689229
+    second: "\u603B3 after_430"
+  - first:
+      213: -3216588832536787236
+    second: "\u603B3 after_431"
+  - first:
+      213: -8527456130674420927
+    second: "\u603B3 after_432"
+  - first:
+      213: 5926566162342795655
+    second: "\u603B3 after_433"
+  - first:
+      213: 4465252070876690375
+    second: "\u603B3 after_434"
+  - first:
+      213: 6497043855539181974
+    second: "\u603B3 after_435"
+  - first:
+      213: -2424151771008624080
+    second: "\u603B3 after_436"
+  - first:
+      213: 7688861412161053998
+    second: "\u603B3 after_437"
+  - first:
+      213: 3635120918312531975
+    second: "\u603B3 after_438"
+  - first:
+      213: -861055266090414196
+    second: "\u603B3 after_439"
+  - first:
+      213: -5062277965903244272
+    second: "\u603B3 after_440"
+  - first:
+      213: -5671001625302670925
+    second: "\u603B3 after_441"
+  - first:
+      213: 6445710607434727372
+    second: "\u603B3 after_442"
+  - first:
+      213: -1877749548617206757
+    second: "\u603B3 after_443"
+  - first:
+      213: 5063715887003118498
+    second: "\u603B3 after_444"
+  - first:
+      213: 6599402538213020314
+    second: "\u603B3 after_445"
+  - first:
+      213: 5985842745682148852
+    second: "\u603B3 after_446"
+  - first:
+      213: 6465172257770436157
+    second: "\u603B3 after_447"
+  - first:
+      213: 3721355561166534167
+    second: "\u603B3 after_448"
+  - first:
+      213: 2837241783392219116
+    second: "\u603B3 after_449"
+  - first:
+      213: 8236438699084470301
+    second: "\u603B3 after_450"
+  - first:
+      213: 6773993433125204056
+    second: "\u603B3 after_451"
+  - first:
+      213: -6979974142941129539
+    second: "\u603B3 after_452"
+  - first:
+      213: -9196191015787205544
+    second: "\u603B3 after_453"
+  - first:
+      213: -1700702420170156779
+    second: "\u603B3 after_454"
+  - first:
+      213: 7483875320833412313
+    second: "\u603B3 after_455"
+  - first:
+      213: -4724517624131120919
+    second: "\u603B3 after_456"
+  - first:
+      213: -8383040234428348518
+    second: "\u603B3 after_457"
+  - first:
+      213: 6790327986586831576
+    second: "\u603B3 after_458"
+  - first:
+      213: -2874119389188421565
+    second: "\u603B3 after_459"
+  - first:
+      213: -1416899536830211657
+    second: "\u603B3 after_460"
+  - first:
+      213: -2659648514801627545
+    second: "\u603B3 after_461"
+  - first:
+      213: -7101595355406024478
+    second: "\u603B3 after_462"
+  - first:
+      213: -3194641606856339514
+    second: "\u603B3 after_463"
+  - first:
+      213: -1746876360400100121
+    second: "\u603B3 after_464"
+  - first:
+      213: 231649750761452559
+    second: "\u603B3 after_465"
+  - first:
+      213: -8097245976033458511
+    second: "\u603B3 after_466"
+  - first:
+      213: 845100125936702308
+    second: "\u603B3 after_467"
+  - first:
+      213: -8546215068958024573
+    second: "\u603B3 after_468"
+  - first:
+      213: 2101577454038469807
+    second: "\u603B3 after_469"
+  - first:
+      213: -8675650619888655517
+    second: "\u603B3 after_470"
+  - first:
+      213: -418673218211415307
+    second: "\u603B3 after_471"
+  - first:
+      213: -7932154531897895613
+    second: "\u603B3 after_472"
+  - first:
+      213: 144725519779852585
+    second: "\u603B3 after_473"
+  - first:
+      213: 6401523196662455921
+    second: "\u603B3 after_474"
+  - first:
+      213: -2186364483238203257
+    second: "\u603B3 after_475"
+  - first:
+      213: 874705742097062967
+    second: "\u603B3 after_476"
+  - first:
+      213: -7364212248125113499
+    second: "\u603B3 after_477"
+  - first:
+      213: -5371944574171293388
+    second: "\u603B3 after_478"
+  - first:
+      213: 6693867904214371308
+    second: "\u603B3 after_479"
+  - first:
+      213: -7710985711796572514
+    second: "\u603B3 after_480"
+  - first:
+      213: 8566589970429876861
+    second: "\u603B3 after_481"
+  - first:
+      213: 4228512014849690485
+    second: "\u603B3 after_482"
+  - first:
+      213: 1142616926834224935
+    second: "\u603B3 after_483"
+  - first:
+      213: -4594583249506118118
+    second: "\u603B3 after_484"
+  - first:
+      213: -2105379245250484711
+    second: "\u603B3 after_485"
+  - first:
+      213: 6289532495065974494
+    second: "\u603B3 after_486"
+  - first:
+      213: 263002093829955052
+    second: "\u603B3 after_487"
+  - first:
+      213: 2502057488700690722
+    second: "\u603B3 after_488"
+  - first:
+      213: -2514483268249242604
+    second: "\u603B3 after_489"
+  - first:
+      213: 3039177351738287059
+    second: "\u603B3 after_490"
+  - first:
+      213: -5955947451722375664
+    second: "\u603B3 after_491"
+  - first:
+      213: -4331136604898463895
+    second: "\u603B3 after_492"
+  - first:
+      213: 1407403022422267910
+    second: "\u603B3 after_493"
+  - first:
+      213: 5139251286144192363
+    second: "\u603B3 after_494"
+  - first:
+      213: 3640794569914336120
+    second: "\u603B3 after_495"
+  - first:
+      213: -7177044256709623535
+    second: "\u603B3 after_496"
+  - first:
+      213: -481417887655964856
+    second: "\u603B3 after_497"
+  - first:
+      213: -5221522045665842076
+    second: "\u603B3 after_498"
+  - first:
+      213: -4738590419216805072
+    second: "\u603B3 after_499"
+  - first:
+      213: -2637983033179038964
+    second: "\u603B3 after_500"
+  - first:
+      213: 906241088855367575
+    second: "\u603B3 after_501"
+  - first:
+      213: -4409839722458463725
+    second: "\u603B3 after_502"
+  - first:
+      213: -5204696692010113653
+    second: "\u603B3 after_503"
+  - first:
+      213: -8959206323073986958
+    second: "\u603B3 after_504"
+  - first:
+      213: -5230955682152062349
+    second: "\u603B3 after_505"
+  - first:
+      213: -2427891726333484099
+    second: "\u603B3 after_506"
+  - first:
+      213: -4416298509904999925
+    second: "\u603B3 after_507"
+  - first:
+      213: -5067712942552030629
+    second: "\u603B3 after_508"
+  - first:
+      213: -7058504162893402857
+    second: "\u603B3 after_509"
+  - first:
+      213: 8811290309011602236
+    second: "\u603B3 after_510"
+  - first:
+      213: 6368505320927762569
+    second: "\u603B3 after_511"
+  - first:
+      213: -6428646123479714983
+    second: "\u603B3 after_512"
+  - first:
+      213: 1238593257337100036
+    second: "\u603B3 after_513"
+  - first:
+      213: -3630421981474587758
+    second: "\u603B3 after_514"
+  - first:
+      213: 1955916351090492854
+    second: "\u603B3 after_515"
+  - first:
+      213: -1365276006152589850
+    second: "\u603B3 after_516"
+  - first:
+      213: -662631972394072537
+    second: "\u603B3 after_517"
+  - first:
+      213: -4399378659723105559
+    second: "\u603B3 after_518"
+  - first:
+      213: -2571339192061257124
+    second: "\u603B3 after_519"
+  - first:
+      213: -4347819295914472040
+    second: "\u603B3 after_520"
+  - first:
+      213: -5135899249764552358
+    second: "\u603B3 after_521"
+  - first:
+      213: -5691673375040080867
+    second: "\u603B3 after_522"
+  - first:
+      213: -7505048022560579047
+    second: "\u603B3 after_523"
+  - first:
+      213: 7988139423330258441
+    second: "\u603B3 after_524"
+  - first:
+      213: 1086771190525929977
+    second: "\u603B3 after_525"
+  - first:
+      213: -7397386822826954856
+    second: "\u603B3 after_526"
+  - first:
+      213: -3022690649704931125
+    second: "\u603B3 after_527"
+  - first:
+      213: 3111542927384116542
+    second: "\u603B3 after_528"
+  - first:
+      213: -7263225478339735584
+    second: "\u603B3 after_529"
+  - first:
+      213: 8458841744396177147
+    second: "\u603B3 after_530"
+  - first:
+      213: -992365081237985707
+    second: "\u603B3 after_531"
+  - first:
+      213: -3300219279165426958
+    second: "\u603B3 after_532"
+  - first:
+      213: -5521715193237832882
+    second: "\u603B3 after_533"
+  - first:
+      213: -3214743531455666896
+    second: "\u603B3 after_534"
+  - first:
+      213: 581223220028163926
+    second: "\u603B3 after_535"
+  - first:
+      213: -7461372780178851570
+    second: "\u603B3 after_536"
+  - first:
+      213: -6713186302472748162
+    second: "\u603B3 after_537"
+  - first:
+      213: 2398205328647888796
+    second: "\u603B3 after_538"
+  - first:
+      213: 3654109184975899131
+    second: "\u603B3 after_539"
+  - first:
+      213: 5001428493757971897
+    second: "\u603B3 after_540"
+  - first:
+      213: -8351277559148810278
+    second: "\u603B3 after_541"
+  - first:
+      213: 7049224570187221653
+    second: "\u603B3 after_542"
+  - first:
+      213: 1073204568448560063
+    second: "\u603B3 after_543"
+  - first:
+      213: -3687868534392061847
+    second: "\u603B3 after_544"
+  - first:
+      213: 1810598824200640789
+    second: "\u603B3 after_545"
+  - first:
+      213: 1704909227367579571
+    second: "\u603B3 after_546"
+  - first:
+      213: -4612021803346547977
+    second: "\u603B3 after_547"
+  - first:
+      213: -6751548989137463947
+    second: "\u603B3 after_548"
+  - first:
+      213: 1202987190080194699
+    second: "\u603B3 after_549"
+  - first:
+      213: 5851476638041386314
+    second: "\u603B3 after_550"
+  - first:
+      213: 2780064483036540391
+    second: "\u603B3 after_551"
+  - first:
+      213: 6576186367511764439
+    second: "\u603B3 after_552"
+  - first:
+      213: 4646479087556789536
+    second: "\u603B3 after_553"
+  - first:
+      213: 6820034971951322297
+    second: "\u603B3 after_554"
+  - first:
+      213: -8684814032606320265
+    second: "\u603B3 after_555"
+  - first:
+      213: 1337733858007379295
+    second: "\u603B3 after_556"
+  - first:
+      213: 8502146504225498035
+    second: "\u603B3 after_557"
+  - first:
+      213: -7951385231039621291
+    second: "\u603B3 after_558"
+  - first:
+      213: 4926687228688349329
+    second: "\u603B3 after_559"
+  - first:
+      213: 8867989487318487145
+    second: "\u603B3 after_560"
+  - first:
+      213: 343570479220684662
+    second: "\u603B3 after_561"
+  - first:
+      213: 5071894695564606926
+    second: "\u603B3 after_562"
+  - first:
+      213: 3044331598009773401
+    second: "\u603B3 after_563"
+  - first:
+      213: -704226490914544686
+    second: "\u603B3 after_564"
+  - first:
+      213: 2689264280778341531
+    second: "\u603B3 after_565"
+  - first:
+      213: -9109152157428549066
+    second: "\u603B3 after_566"
+  - first:
+      213: -1110968183819112470
+    second: "\u603B3 after_567"
+  - first:
+      213: 756248716128474374
+    second: "\u603B3 after_568"
+  - first:
+      213: -8537465964069405790
+    second: "\u603B3 after_569"
+  - first:
+      213: 3115849226924092635
+    second: "\u603B3 after_570"
+  - first:
+      213: -7775894977623006367
+    second: "\u603B3 after_571"
+  - first:
+      213: -8407798532169046111
+    second: "\u603B3 after_572"
+  - first:
+      213: 5099805398878104047
+    second: "\u603B3 after_573"
+  - first:
+      213: 4072183757966593300
+    second: "\u603B3 after_574"
+  - first:
+      213: -914146944270372690
+    second: "\u603B3 after_575"
+  - first:
+      213: 5822997179321658880
+    second: "\u603B3 after_576"
+  - first:
+      213: -514344426395979597
+    second: "\u603B3 after_577"
+  - first:
+      213: -1393150140654194658
+    second: "\u603B3 after_578"
+  - first:
+      213: 5428896205662731833
+    second: "\u603B3 after_579"
+  - first:
+      213: -3190554783508990679
+    second: "\u603B3 after_580"
+  - first:
+      213: -3812366379909159850
+    second: "\u603B3 after_581"
+  - first:
+      213: -6163574254516997917
+    second: "\u603B3 after_582"
+  - first:
+      213: -6707597183703559799
+    second: "\u603B3 after_583"
+  - first:
+      213: 4015738201299319651
+    second: "\u603B3 after_584"
+  - first:
+      213: 3995665691524387777
+    second: "\u603B3 after_585"
+  - first:
+      213: -2223357794885316361
+    second: "\u603B3 after_586"
+  - first:
+      213: 3201249857907011521
+    second: "\u603B3 after_587"
+  - first:
+      213: -1096870070707578192
+    second: "\u603B3 after_588"
+  - first:
+      213: 57343880606981291
+    second: "\u603B3 after_589"
+  - first:
+      213: 1406114578645330207
+    second: "\u603B3 after_590"
+  - first:
+      213: 7103394337441526864
+    second: "\u603B3 after_591"
+  - first:
+      213: 4126083522270301346
+    second: "\u603B3 after_592"
+  - first:
+      213: 3137885156859293506
+    second: "\u603B3 after_593"
+  - first:
+      213: 2625398972964901306
+    second: "\u603B3 after_594"
+  - first:
+      213: 6420259400437040790
+    second: "\u603B3 after_595"
+  - first:
+      213: -3705680870893604627
+    second: "\u603B3 after_596"
+  - first:
+      213: 5264068779815353382
+    second: "\u603B3 after_597"
+  - first:
+      213: -9054697182168521206
+    second: "\u603B3 after_598"
+  - first:
+      213: -6022647680563869931
+    second: "\u603B3 after_599"
+  - first:
+      213: -8790085151401708928
+    second: "\u603B3 after_600"
+  - first:
+      213: 3146683438979641727
+    second: "\u603B3 after_601"
+  - first:
+      213: -523831059958515304
+    second: "\u603B3 after_602"
+  - first:
+      213: -2423051931021283899
+    second: "\u603B3 after_603"
+  - first:
+      213: 6814651410088827993
+    second: "\u603B3 after_604"
+  - first:
+      213: -7294816771234711800
+    second: "\u603B3 after_605"
+  - first:
+      213: 5039826842046709493
+    second: "\u603B3 after_606"
+  - first:
+      213: 7857114407072579947
+    second: "\u603B3 after_607"
+  - first:
+      213: -5577025073452210340
+    second: "\u603B3 after_608"
+  - first:
+      213: 6510709351870148405
+    second: "\u603B3 after_609"
+  - first:
+      213: -8419502278236900928
+    second: "\u603B3 after_610"
+  - first:
+      213: -2177657332983151841
+    second: "\u603B3 after_611"
+  - first:
+      213: 3924132160370455872
+    second: "\u603B3 after_612"
+  - first:
+      213: 865459636938175120
+    second: "\u603B3 after_613"
+  - first:
+      213: -652154228306519304
+    second: "\u603B3 after_614"
+  - first:
+      213: 2382660154371184078
+    second: "\u603B3 after_615"
+  - first:
+      213: 5712299390071190845
+    second: "\u603B3 after_616"
+  - first:
+      213: 8369015236536035126
+    second: "\u603B3 after_617"
+  - first:
+      213: 5542565120070733349
+    second: "\u603B3 after_618"
+  - first:
+      213: 8892627048936847670
+    second: "\u603B3 after_619"
+  - first:
+      213: -7453510999015386943
+    second: "\u603B3 after_620"
+  - first:
+      213: 4128367239318442704
+    second: "\u603B3 after_621"
+  - first:
+      213: 723610542959833680
+    second: "\u603B3 after_622"
+  - first:
+      213: 5301921768951447671
+    second: "\u603B3 after_623"
+  - first:
+      213: -6458736317074127441
+    second: "\u603B3 after_624"
+  - first:
+      213: -530317450535560991
+    second: "\u603B3 after_625"
+  - first:
+      213: 6640296393908094820
+    second: "\u603B3 after_626"
+  - first:
+      213: -3474430481311984620
+    second: "\u603B3 after_627"
+  - first:
+      213: -1951530624582112817
+    second: "\u603B3 after_628"
+  - first:
+      213: 7057001429545040927
+    second: "\u603B3 after_629"
+  - first:
+      213: -4802233818248834466
+    second: "\u603B3 after_630"
+  - first:
+      213: 9067333247732464639
+    second: "\u603B3 after_631"
+  - first:
+      213: 8526733641045857500
+    second: "\u603B3 after_632"
+  - first:
+      213: 8364372756336879030
+    second: "\u603B3 after_633"
+  - first:
+      213: 2338106574066532393
+    second: "\u603B3 after_634"
+  - first:
+      213: 3473410527512789095
+    second: "\u603B3 after_635"
+  - first:
+      213: 5475636236409199764
+    second: "\u603B3 after_636"
+  - first:
+      213: -2838906824941604469
+    second: "\u603B3 after_637"
+  - first:
+      213: -8361630392985048394
+    second: "\u603B3 after_638"
+  - first:
+      213: 3636194225692504867
+    second: "\u603B3 after_639"
+  - first:
+      213: 6887008414884490773
+    second: "\u603B3 after_640"
+  - first:
+      213: -5877371352352584924
+    second: "\u603B3 after_641"
+  - first:
+      213: 2035381468523310080
+    second: "\u603B3 after_642"
+  - first:
+      213: 1937158628848163096
+    second: "\u603B3 after_643"
+  - first:
+      213: -6881712965581535523
+    second: "\u603B3 after_644"
+  - first:
+      213: -1205703683821894929
+    second: "\u603B3 after_645"
+  - first:
+      213: 7231129672928394958
+    second: "\u603B3 after_646"
+  - first:
+      213: 6590434472040406142
+    second: "\u603B3 after_647"
+  - first:
+      213: 6555524155819302939
+    second: "\u603B3 after_648"
+  - first:
+      213: -7286221023027151242
+    second: "\u603B3 after_649"
+  - first:
+      213: -8715001462608748821
+    second: "\u603B3 after_650"
+  - first:
+      213: -3606206379185024918
+    second: "\u603B3 after_651"
+  - first:
+      213: 7221859329132905536
+    second: "\u603B3 after_652"
+  - first:
+      213: -6008654786220797716
+    second: "\u603B3 after_653"
+  - first:
+      213: 2608292530439745396
+    second: "\u603B3 after_654"
+  - first:
+      213: 3724643227395165753
+    second: "\u603B3 after_655"
+  - first:
+      213: -8833637044356232866
+    second: "\u603B3 after_656"
+  - first:
+      213: -2668159906231027404
+    second: "\u603B3 after_657"
+  - first:
+      213: 1580248359450591341
+    second: "\u603B3 after_658"
+  - first:
+      213: 171710526229261998
+    second: "\u603B3 after_659"
+  - first:
+      213: -6472862487495376985
+    second: "\u603B3 after_660"
+  - first:
+      213: -7919045696122989222
+    second: "\u603B3 after_661"
+  - first:
+      213: -4996872114937991513
+    second: "\u603B3 after_662"
+  - first:
+      213: 692618254173607750
+    second: "\u603B3 after_663"
+  - first:
+      213: 5949776478557219713
+    second: "\u603B3 after_664"
+  - first:
+      213: -6111584285161835401
+    second: "\u603B3 after_665"
+  - first:
+      213: -6577309732788778765
+    second: "\u603B3 after_666"
+  - first:
+      213: -6494613545753695513
+    second: "\u603B3 after_667"
+  - first:
+      213: -2112138880449086263
+    second: "\u603B3 after_668"
+  - first:
+      213: -9201248335693989457
+    second: "\u603B3 after_669"
+  - first:
+      213: 8314433417503600477
+    second: "\u603B3 after_670"
+  - first:
+      213: -3851328164090292096
+    second: "\u603B3 after_671"
+  - first:
+      213: -3916184685171206380
+    second: "\u603B3 after_672"
+  - first:
+      213: 1502624721315521619
+    second: "\u603B3 after_673"
+  - first:
+      213: 5005761899865439688
+    second: "\u603B3 after_674"
+  - first:
+      213: -6539241295094240252
+    second: "\u603B3 after_675"
+  - first:
+      213: -8015412621687431216
+    second: "\u603B3 after_676"
+  - first:
+      213: 737682021064609308
+    second: "\u603B3 after_677"
+  - first:
+      213: 6547032655010579387
+    second: "\u603B3 after_678"
+  - first:
+      213: 6596854298341768841
+    second: "\u603B3 after_679"
+  - first:
+      213: -9025557210620081359
+    second: "\u603B3 after_680"
+  - first:
+      213: -6740088431254454315
+    second: "\u603B3 after_681"
+  - first:
+      213: 7644906930283584430
+    second: "\u603B3 after_682"
+  - first:
+      213: -5809102338526686019
+    second: "\u603B3 after_683"
+  - first:
+      213: -5014676961988709565
+    second: "\u603B3 after_684"
+  - first:
+      213: -5893792876340593351
+    second: "\u603B3 after_685"
+  - first:
+      213: -8294009782303096784
+    second: "\u603B3 after_686"
+  - first:
+      213: 2752605187039970997
+    second: "\u603B3 after_687"
+  - first:
+      213: -4509974498833448883
+    second: "\u603B3 after_688"
+  - first:
+      213: -909722461636946770
+    second: "\u603B3 after_689"
+  - first:
+      213: -1132499330455640145
+    second: "\u603B3 after_690"
+  - first:
+      213: -8410049837127041416
+    second: "\u603B3 after_691"
+  - first:
+      213: 6524259294908025187
+    second: "\u603B3 after_692"
+  - first:
+      213: 2472906298977431832
+    second: "\u603B3 after_693"
+  - first:
+      213: -6184690557966771813
+    second: "\u603B3 after_694"
+  - first:
+      213: -7597626401364566349
+    second: "\u603B3 after_695"
+  - first:
+      213: 8498960302535884047
+    second: "\u603B3 after_696"
+  - first:
+      213: -4856483719173635493
+    second: "\u603B3 after_697"
+  - first:
+      213: -3721141961658529988
+    second: "\u603B3 after_698"
+  - first:
+      213: 4818546639648269282
+    second: "\u603B3 after_699"
+  - first:
+      213: 6782327314517622515
+    second: "\u603B3 after_700"
+  - first:
+      213: 8724538264509174653
+    second: "\u603B3 after_701"
+  - first:
+      213: -344703039953195754
+    second: "\u603B3 after_702"
+  - first:
+      213: 1921842828613607614
+    second: "\u603B3 after_703"
+  - first:
+      213: 708234335149510932
+    second: "\u603B3 after_704"
+  - first:
+      213: 1782547264352978193
+    second: "\u603B3 after_705"
+  - first:
+      213: 6417366284061693737
+    second: "\u603B3 after_706"
+  - first:
+      213: 3786806818153760491
+    second: "\u603B3 after_707"
+  - first:
+      213: -6074992273730203015
+    second: "\u603B3 after_708"
+  - first:
+      213: -7450191326616247832
+    second: "\u603B3 after_709"
+  - first:
+      213: 5079258413020252437
+    second: "\u603B3 after_710"
+  - first:
+      213: 5242625358493433513
+    second: "\u603B3 after_711"
+  - first:
+      213: 9082044504538335359
+    second: "\u603B3 after_712"
+  - first:
+      213: 2172634760274917250
+    second: "\u603B3 after_713"
+  - first:
+      213: -5686338822019993534
+    second: "\u603B3 after_714"
+  - first:
+      213: 6536521419572557176
+    second: "\u603B3 after_715"
+  - first:
+      213: -2506021707209871325
+    second: "\u603B3 after_716"
+  - first:
+      213: 6743738229209048995
+    second: "\u603B3 after_717"
+  - first:
+      213: 8976183851084358796
+    second: "\u603B3 after_718"
+  - first:
+      213: -7449339420944195517
+    second: "\u603B3 after_719"
+  - first:
+      213: 4630082147168923740
+    second: "\u603B3 after_720"
+  - first:
+      213: 4789686357444094432
+    second: "\u603B3 after_721"
+  - first:
+      213: -4819428468736683884
+    second: "\u603B3 after_722"
+  - first:
+      213: -7907722912791666549
+    second: "\u603B3 after_723"
+  - first:
+      213: 7817373123663882033
+    second: "\u603B3 after_724"
+  - first:
+      213: -8237258981594424732
+    second: "\u603B3 after_725"
+  - first:
+      213: 2305987045340466754
+    second: "\u603B3 after_726"
+  - first:
+      213: 4420188824023956966
+    second: "\u603B3 after_727"
+  - first:
+      213: -5104248884905316573
+    second: "\u603B3 after_728"
+  - first:
+      213: 8023017597687475122
+    second: "\u603B3 after_729"
+  - first:
+      213: 3103055750379776194
+    second: "\u603B3 after_730"
+  - first:
+      213: 777264004188668652
+    second: "\u603B3 after_731"
+  - first:
+      213: 7583595566678762351
+    second: "\u603B3 after_732"
+  - first:
+      213: -7654701556837893533
+    second: "\u603B3 after_733"
+  - first:
+      213: -7764759347188719123
+    second: "\u603B3 after_734"
+  - first:
+      213: 690994763504169160
+    second: "\u603B3 after_735"
+  - first:
+      213: 8768306541586791893
+    second: "\u603B3 after_736"
+  - first:
+      213: 4959995730465993997
+    second: "\u603B3 after_737"
+  - first:
+      213: 3474091248578807160
+    second: "\u603B3 after_738"
+  - first:
+      213: -6657426955731453613
+    second: "\u603B3 after_739"
+  - first:
+      213: -2013073446575933055
+    second: "\u603B3 after_740"
+  - first:
+      213: 1778080322247101240
+    second: "\u603B3 after_741"
+  - first:
+      213: 6117342804910614034
+    second: "\u603B3 after_742"
+  - first:
+      213: -8424852989517654860
+    second: "\u603B3 after_743"
+  - first:
+      213: 442218768454560445
+    second: "\u603B3 after_744"
+  - first:
+      213: 7046412713103843683
+    second: "\u603B3 after_745"
+  - first:
+      213: 3863696046264106678
+    second: "\u603B3 after_746"
+  - first:
+      213: -6474709719247370391
+    second: "\u603B3 after_747"
+  - first:
+      213: -9078713306088877368
+    second: "\u603B3 after_748"
+  - first:
+      213: -2758338032933587819
+    second: "\u603B3 after_749"
+  - first:
+      213: 1750342481094044702
+    second: "\u603B3 after_750"
+  - first:
+      213: 8898028992471771297
+    second: "\u603B3 after_751"
+  - first:
+      213: 5454739245038283262
+    second: "\u603B3 after_752"
+  - first:
+      213: -5854082315187488188
+    second: "\u603B3 after_753"
+  - first:
+      213: 6261889733884723250
+    second: "\u603B3 after_754"
+  - first:
+      213: 406096565409041553
+    second: "\u603B3 after_755"
+  - first:
+      213: 6104441872575519876
+    second: "\u603B3 after_756"
+  - first:
+      213: -8874840683896741577
+    second: "\u603B3 after_757"
+  - first:
+      213: 8865275318496444717
+    second: "\u603B3 after_758"
+  - first:
+      213: -4586719666655850154
+    second: "\u603B3 after_759"
+  - first:
+      213: 3088123272967118194
+    second: "\u603B3 after_760"
+  - first:
+      213: -1897590035393870660
+    second: "\u603B3 after_761"
+  - first:
+      213: 4348251255994669440
+    second: "\u603B3 after_762"
+  - first:
+      213: 7485257192206970006
+    second: "\u603B3 after_763"
+  - first:
+      213: 3722074560092037735
+    second: "\u603B3 after_764"
+  - first:
+      213: -5792058343474299835
+    second: "\u603B3 after_765"
+  - first:
+      213: 3099848724865068167
+    second: "\u603B3 after_766"
+  - first:
+      213: -3797051308529804753
+    second: "\u603B3 after_767"
+  - first:
+      213: -8891420113943184585
+    second: "\u603B3 after_768"
+  - first:
+      213: -509547857517419062
+    second: "\u603B3 after_769"
+  - first:
+      213: 2188759665027254672
+    second: "\u603B3 after_770"
+  - first:
+      213: 4747486741385418017
+    second: "\u603B3 after_771"
+  - first:
+      213: 3738804216274617510
+    second: "\u603B3 after_772"
+  - first:
+      213: 2870682435198560429
+    second: "\u603B3 after_773"
+  - first:
+      213: 6006137186687630010
+    second: "\u603B3 after_774"
+  - first:
+      213: 9198518721402992637
+    second: "\u603B3 after_775"
+  - first:
+      213: -4613187133449854775
+    second: "\u603B3 after_776"
+  - first:
+      213: -170790423935713738
+    second: "\u603B3 after_777"
+  - first:
+      213: -2669666238984557746
+    second: "\u603B3 after_778"
+  - first:
+      213: -6994312138612514129
+    second: "\u603B3 after_779"
+  - first:
+      213: -6232864939618176163
+    second: "\u603B3 after_780"
+  - first:
+      213: -1357106898672461568
+    second: "\u603B3 after_781"
+  - first:
+      213: 2999485281106684521
+    second: "\u603B3 after_782"
+  - first:
+      213: -1258302911837357307
+    second: "\u603B3 after_783"
+  - first:
+      213: 8475215393254219683
+    second: "\u603B3 after_784"
+  - first:
+      213: 9106842395759539397
+    second: "\u603B3 after_785"
+  - first:
+      213: 4280677325477467834
+    second: "\u603B3 after_786"
+  - first:
+      213: 2906482333913050296
+    second: "\u603B3 after_787"
+  - first:
+      213: 8844330993716652112
+    second: "\u603B3 after_788"
+  - first:
+      213: -8110585724842644858
+    second: "\u603B3 after_789"
+  - first:
+      213: -1013099773354741502
+    second: "\u603B3 after_790"
+  - first:
+      213: 6832682344342021587
+    second: "\u603B3 after_791"
+  - first:
+      213: 2570282550184728532
+    second: "\u603B3 after_792"
+  - first:
+      213: 2359704819110252785
+    second: "\u603B3 after_793"
+  - first:
+      213: 5168157278875236490
+    second: "\u603B3 after_794"
+  - first:
+      213: -7900530194187243327
+    second: "\u603B3 after_795"
+  - first:
+      213: -8405306380700446105
+    second: "\u603B3 after_796"
+  - first:
+      213: 3725427415682554796
+    second: "\u603B3 after_797"
+  - first:
+      213: -2224042418093215549
+    second: "\u603B3 after_798"
+  - first:
+      213: -8757114149041988239
+    second: "\u603B3 after_799"
+  - first:
+      213: 7134897315103084120
+    second: "\u603B3 after_800"
+  - first:
+      213: -6154248121588488276
+    second: "\u603B3 after_801"
+  - first:
+      213: -7117769861269491063
+    second: "\u603B3 after_802"
+  - first:
+      213: -7336943086314767052
+    second: "\u603B3 after_803"
+  - first:
+      213: 4002686909092828138
+    second: "\u603B3 after_804"
+  - first:
+      213: -3741625649426623164
+    second: "\u603B3 after_805"
+  - first:
+      213: -731045653692889480
+    second: "\u603B3 after_806"
+  - first:
+      213: -976090985531084681
+    second: "\u603B3 after_807"
+  - first:
+      213: -4373664695000664004
+    second: "\u603B3 after_808"
+  - first:
+      213: 5243349321944934928
+    second: "\u603B3 after_809"
+  - first:
+      213: -8015865955858169139
+    second: "\u603B3 after_810"
+  - first:
+      213: 386481155709583703
+    second: "\u603B3 after_811"
+  - first:
+      213: -4070288181932793104
+    second: "\u603B3 after_812"
+  - first:
+      213: -4499153984976676922
+    second: "\u603B3 after_813"
+  - first:
+      213: -9077829471065756386
+    second: "\u603B3 after_814"
+  - first:
+      213: 7258807614674934366
+    second: "\u603B3 after_815"
+  - first:
+      213: -5136279337415863454
+    second: "\u603B3 after_816"
+  - first:
+      213: 6678791099125218146
+    second: "\u603B3 after_817"
+  - first:
+      213: 233019739664412781
+    second: "\u603B3 after_818"
+  - first:
+      213: -2396573653492069232
+    second: "\u603B3 after_819"
+  - first:
+      213: -2953785154629596272
+    second: "\u603B3 after_820"
+  - first:
+      213: -7854866919653885894
+    second: "\u603B3 after_821"
+  - first:
+      213: 374781871266380776
+    second: "\u603B3 after_822"
+  - first:
+      213: -6665243441017350747
+    second: "\u603B3 after_823"
+  - first:
+      213: 251656569810749722
+    second: "\u603B3 after_824"
+  - first:
+      213: -5361362713309908615
+    second: "\u603B3 after_825"
+  - first:
+      213: 2628321888052936787
+    second: "\u603B3 after_826"
+  - first:
+      213: -8776388841018805041
+    second: "\u603B3 after_827"
+  - first:
+      213: -611766488209472910
+    second: "\u603B3 after_828"
+  - first:
+      213: 3347056768449830892
+    second: "\u603B3 after_829"
+  - first:
+      213: -3794271445132285079
+    second: "\u603B3 after_830"
+  - first:
+      213: 6602640460352223807
+    second: "\u603B3 after_831"
+  - first:
+      213: 275451466857720616
+    second: "\u603B3 after_832"
+  - first:
+      213: 248404112726909443
+    second: "\u603B3 after_833"
+  - first:
+      213: 4107697227838218782
+    second: "\u603B3 after_834"
+  - first:
+      213: 5051978338457610933
+    second: "\u603B3 after_835"
+  - first:
+      213: 717469168469814870
+    second: "\u603B3 after_836"
+  - first:
+      213: -7011967054392312273
+    second: "\u603B3 after_837"
+  - first:
+      213: 4217468921853260052
+    second: "\u603B3 after_838"
+  - first:
+      213: -4454552835902776818
+    second: "\u603B3 after_839"
+  - first:
+      213: 9178896386197162880
+    second: "\u603B3 after_840"
+  - first:
+      213: -6835133473973630415
+    second: "\u603B3 after_841"
+  - first:
+      213: 3618971921245434507
+    second: "\u603B3 after_842"
+  - first:
+      213: 8390237635452039326
+    second: "\u603B3 after_843"
+  - first:
+      213: -4704771050038954272
+    second: "\u603B3 after_844"
+  - first:
+      213: -6517298181072261113
+    second: "\u603B3 after_845"
+  - first:
+      213: 4233956763197435962
+    second: "\u603B3 after_846"
+  - first:
+      213: 2996827434299994522
+    second: "\u603B3 after_847"
+  - first:
+      213: -7099096284953503013
+    second: "\u603B3 after_848"
+  - first:
+      213: -5893115056815442021
+    second: "\u603B3 after_849"
+  - first:
+      213: 2678038840661549401
+    second: "\u603B3 after_850"
+  - first:
+      213: -3285993402940145528
+    second: "\u603B3 after_851"
+  - first:
+      213: -7016611028186973322
+    second: "\u603B3 after_852"
+  - first:
+      213: 7162120401938813269
+    second: "\u603B3 after_853"
+  - first:
+      213: -6968351541243083019
+    second: "\u603B3 after_854"
+  - first:
+      213: 8235670545596421596
+    second: "\u603B3 after_855"
+  - first:
+      213: 2280787389107661246
+    second: "\u603B3 after_856"
+  - first:
+      213: 5999525919255959176
+    second: "\u603B3 after_857"
+  - first:
+      213: 4692131903180488872
+    second: "\u603B3 after_858"
+  - first:
+      213: 7161457187829561035
+    second: "\u603B3 after_859"
+  - first:
+      213: -6479261265671206407
+    second: "\u603B3 after_860"
+  - first:
+      213: 8777356511958037056
+    second: "\u603B3 after_861"
+  - first:
+      213: -1001355556943592369
+    second: "\u603B3 after_862"
+  - first:
+      213: -7025214881131257900
+    second: "\u603B3 after_863"
+  - first:
+      213: -1958828976546563811
+    second: "\u603B3 after_864"
+  - first:
+      213: -6654444301016821734
+    second: "\u603B3 after_865"
+  - first:
+      213: -7555292502102443322
+    second: "\u603B3 after_866"
+  - first:
+      213: -2494547525975339387
+    second: "\u603B3 after_867"
+  - first:
+      213: 6757796926731529966
+    second: "\u603B3 after_868"
+  - first:
+      213: 6719295979813254407
+    second: "\u603B3 after_869"
+  - first:
+      213: 3954863896411270718
+    second: "\u603B3 after_870"
+  - first:
+      213: -6203784406658306665
+    second: "\u603B3 after_871"
+  - first:
+      213: 1706023533018001614
+    second: "\u603B3 after_872"
+  - first:
+      213: 6340991800842252341
+    second: "\u603B3 after_873"
+  - first:
+      213: 596405787968488823
+    second: "\u603B3 after_874"
+  - first:
+      213: -2770558546527105908
+    second: "\u603B3 after_875"
+  - first:
+      213: -7587129176035200824
+    second: "\u603B3 after_876"
+  - first:
+      213: 9214092565353480969
+    second: "\u603B3 after_877"
+  - first:
+      213: -564150247031298820
+    second: "\u603B3 after_878"
+  - first:
+      213: -5875699281566541677
+    second: "\u603B3 after_879"
+  - first:
+      213: 4588547392114149681
+    second: "\u603B3 after_880"
+  - first:
+      213: 6426528459139909244
+    second: "\u603B3 after_881"
+  - first:
+      213: -2641648684435296651
+    second: "\u603B3 after_882"
+  - first:
+      213: 3401155387477537542
+    second: "\u603B3 after_883"
+  - first:
+      213: -751320284993085770
+    second: "\u603B3 after_884"
+  - first:
+      213: 1051008292905141255
+    second: "\u603B3 after_885"
+  - first:
+      213: -2672718348780001227
+    second: "\u603B3 after_886"
+  - first:
+      213: 5063119268146581836
+    second: "\u603B3 after_887"
+  - first:
+      213: 44719875814437779
+    second: "\u603B3 after_888"
+  - first:
+      213: 2934220166363155341
+    second: "\u603B3 after_889"
+  - first:
+      213: -3354379387504555929
+    second: "\u603B3 after_890"
+  - first:
+      213: 6440767683078000055
+    second: "\u603B3 after_891"
+  - first:
+      213: -5828845087220331541
+    second: "\u603B3 after_892"
+  - first:
+      213: 2432937856532504988
+    second: "\u603B3 after_893"
+  - first:
+      213: 1828230543383898437
+    second: "\u603B3 after_894"
+  - first:
+      213: -8912270091244684379
+    second: "\u603B3 after_895"
+  - first:
+      213: -7045521559103076853
+    second: "\u603B3 after_896"
+  - first:
+      213: 5537563319099580744
+    second: "\u603B3 after_897"
+  - first:
+      213: -3472517108419878966
+    second: "\u603B3 after_898"
+  - first:
+      213: 4257933009485605822
+    second: "\u603B3 after_899"
+  - first:
+      213: 7148665209551189842
+    second: "\u603B3 after_900"
+  - first:
+      213: -1919320398381271632
+    second: "\u603B3 after_901"
+  - first:
+      213: 2458910530979097554
+    second: "\u603B3 after_902"
+  - first:
+      213: 7602483365906442510
+    second: "\u603B3 after_903"
+  - first:
+      213: 1070840543524778185
+    second: "\u603B3 after_904"
+  - first:
+      213: -6138758160208237998
+    second: "\u603B3 after_905"
+  - first:
+      213: 2111325833511113892
+    second: "\u603B3 after_906"
+  - first:
+      213: 7350071662683395808
+    second: "\u603B3 after_907"
+  - first:
+      213: -3156721742062431225
+    second: "\u603B3 after_908"
+  - first:
+      213: 1069736605287510259
+    second: "\u603B3 after_909"
+  - first:
+      213: -8287620790468161635
+    second: "\u603B3 after_910"
+  - first:
+      213: -3295762224883396886
+    second: "\u603B3 after_911"
+  - first:
+      213: -185915299821744802
+    second: "\u603B3 after_912"
+  - first:
+      213: 914616744271855853
+    second: "\u603B3 after_913"
+  - first:
+      213: 7837590918665638117
+    second: "\u603B3 after_914"
+  - first:
+      213: -2839833566163875852
+    second: "\u603B3 after_915"
+  - first:
+      213: 7390902647154777878
+    second: "\u603B3 after_916"
+  - first:
+      213: -8582051159533144174
+    second: "\u603B3 after_917"
+  - first:
+      213: -8947079314114715556
+    second: "\u603B3 after_918"
+  - first:
+      213: 1306535775681664803
+    second: "\u603B3 after_919"
+  - first:
+      213: 4534675123315323129
+    second: "\u603B3 after_920"
+  - first:
+      213: 3869965430669855083
+    second: "\u603B3 after_921"
+  - first:
+      213: -3848625214442849933
+    second: "\u603B3 after_922"
+  - first:
+      213: -9076407224547170433
+    second: "\u603B3 after_923"
+  - first:
+      213: -608004206478546832
+    second: "\u603B3 after_924"
+  - first:
+      213: -5050025232255761249
+    second: "\u603B3 after_925"
+  - first:
+      213: -7311542778079659199
+    second: "\u603B3 after_926"
+  - first:
+      213: -4483768102551693883
+    second: "\u603B3 after_927"
+  - first:
+      213: 8044127058494820674
+    second: "\u603B3 after_928"
+  - first:
+      213: 3046971479367436649
+    second: "\u603B3 after_929"
+  - first:
+      213: 6308849793485138529
+    second: "\u603B3 after_930"
+  - first:
+      213: 1089009250343537883
+    second: "\u603B3 after_931"
+  - first:
+      213: -7327181691235734903
+    second: "\u603B3 after_932"
+  - first:
+      213: 5600367098599989319
+    second: "\u603B3 after_933"
+  - first:
+      213: 4827238081048009616
+    second: "\u603B3 after_934"
+  - first:
+      213: 8295416094866396766
+    second: "\u603B3 after_935"
+  - first:
+      213: 3793688140596150399
+    second: "\u603B3 after_936"
+  - first:
+      213: -7651926144828116658
+    second: "\u603B3 after_937"
+  - first:
+      213: -4234294387181729360
+    second: "\u603B3 after_938"
+  - first:
+      213: 6724553149285746450
+    second: "\u603B3 after_939"
+  - first:
+      213: -1299378508035444849
+    second: "\u603B3 after_940"
+  - first:
+      213: -4020682054699886725
+    second: "\u603B3 after_941"
+  - first:
+      213: 3152785194259744039
+    second: "\u603B3 after_942"
+  - first:
+      213: -2146785547050320505
+    second: "\u603B3 after_943"
+  - first:
+      213: 1945434414656856647
+    second: "\u603B3 after_944"
+  - first:
+      213: 8816921262972447961
+    second: "\u603B3 after_945"
+  - first:
+      213: -4612335330182383338
+    second: "\u603B3 after_946"
+  - first:
+      213: -1057715051274065027
+    second: "\u603B3 after_947"
+  - first:
+      213: -578365209443920808
+    second: "\u603B3 after_948"
+  - first:
+      213: -7321002315262540187
+    second: "\u603B3 after_949"
+  - first:
+      213: 7950360126591776900
+    second: "\u603B3 after_950"
+  - first:
+      213: 5141692099212243505
+    second: "\u603B3 after_951"
+  - first:
+      213: -3814672573543829539
+    second: "\u603B3 after_952"
+  - first:
+      213: -3871190207034375408
+    second: "\u603B3 after_953"
+  - first:
+      213: -5047766936209472713
+    second: "\u603B3 after_954"
+  - first:
+      213: 7462205378866212037
+    second: "\u603B3 after_955"
+  - first:
+      213: 5375672382259452562
+    second: "\u603B3 after_956"
+  - first:
+      213: -5873303301351763067
+    second: "\u603B3 after_957"
+  - first:
+      213: -6087691165194663794
+    second: "\u603B3 after_958"
+  - first:
+      213: 4015377805568778053
+    second: "\u603B3 after_959"
+  - first:
+      213: -5136815638077268235
+    second: "\u603B3 after_960"
+  - first:
+      213: 8603196291101409856
+    second: "\u603B3 after_961"
+  - first:
+      213: -9103825987765630908
+    second: "\u603B3 after_962"
+  - first:
+      213: 4372635738849903429
+    second: "\u603B3 after_963"
+  - first:
+      213: -585186065492025603
+    second: "\u603B3 after_964"
+  - first:
+      213: -8841028034627557300
+    second: "\u603B3 after_965"
+  - first:
+      213: -3261561408118511766
+    second: "\u603B3 after_966"
+  - first:
+      213: -5163633707413675313
+    second: "\u603B3 after_967"
+  - first:
+      213: -6074644648307408615
+    second: "\u603B3 after_968"
+  - first:
+      213: -4476660293424205106
+    second: "\u603B3 after_969"
+  - first:
+      213: 6896024670235815051
+    second: "\u603B3 after_970"
+  - first:
+      213: -7922307144731650290
+    second: "\u603B3 after_971"
+  - first:
+      213: 1108682711324354239
+    second: "\u603B3 after_972"
+  - first:
+      213: -432512350690251635
+    second: "\u603B3 after_973"
+  - first:
+      213: 1111574325954816367
+    second: "\u603B3 after_974"
+  - first:
+      213: 1476216707922397394
+    second: "\u603B3 after_975"
+  - first:
+      213: -3306722443295019812
+    second: "\u603B3 after_976"
+  - first:
+      213: -6927451511602052595
+    second: "\u603B3 after_977"
+  - first:
+      213: -5994089514316004880
+    second: "\u603B3 after_978"
+  - first:
+      213: 2082075170322610932
+    second: "\u603B3 after_979"
+  - first:
+      213: 3527713887175594553
+    second: "\u603B3 after_980"
+  - first:
+      213: 3874363181684383484
+    second: "\u603B3 after_981"
+  - first:
+      213: -2087044704396093333
+    second: "\u603B3 after_982"
+  - first:
+      213: -2427339292494176377
+    second: "\u603B3 after_983"
+  - first:
+      213: -6472288089051644798
+    second: "\u603B3 after_984"
+  - first:
+      213: -7549150625782907590
+    second: "\u603B3 after_985"
+  - first:
+      213: -4074115462673024772
+    second: "\u603B3 after_986"
+  - first:
+      213: -5246401427230823525
+    second: "\u603B3 after_987"
+  - first:
+      213: -6584146716856157886
+    second: "\u603B3 after_988"
+  - first:
+      213: -984537742508195827
+    second: "\u603B3 after_989"
+  - first:
+      213: 6701139017969794238
+    second: "\u603B3 after_990"
+  - first:
+      213: 8678883945136155162
+    second: "\u603B3 after_991"
+  - first:
+      213: -7149374201668723787
+    second: "\u603B3 after_992"
+  - first:
+      213: -1337898008023402665
+    second: "\u603B3 after_993"
+  - first:
+      213: -3245319060283535992
+    second: "\u603B3 after_994"
+  - first:
+      213: -8116335592674711678
+    second: "\u603B3 after_995"
+  - first:
+      213: -2764644284347589900
+    second: "\u603B3 after_996"
+  - first:
+      213: -4667096906885680557
+    second: "\u603B3 after_997"
+  - first:
+      213: 7957428428032077304
+    second: "\u603B3 after_998"
+  - first:
+      213: 6370760978728082644
+    second: "\u603B3 after_999"
+  - first:
+      213: -4112450830834175502
+    second: "\u603B3 after_1000"
+  - first:
+      213: -610810612430680485
+    second: "\u603B3 after_1001"
+  - first:
+      213: -81676226903038197
+    second: "\u603B3 after_1002"
+  - first:
+      213: 7976028690711673219
+    second: "\u603B3 after_1003"
+  - first:
+      213: -1076518761174686916
+    second: "\u603B3 after_1004"
+  - first:
+      213: -8750594836000135989
+    second: "\u603B3 after_1005"
+  - first:
+      213: -5505652645697011429
+    second: "\u603B3 after_1006"
+  - first:
+      213: -5510090510433136096
+    second: "\u603B3 after_1007"
+  - first:
+      213: -2703617533765771352
+    second: "\u603B3 after_1008"
+  - first:
+      213: -7800898979782809135
+    second: "\u603B3 after_1009"
+  - first:
+      213: 5996440455629483696
+    second: "\u603B3 after_1010"
+  - first:
+      213: -3092418734372980437
+    second: "\u603B3 after_1011"
+  - first:
+      213: -169454855854759328
+    second: "\u603B3 after_1012"
+  - first:
+      213: 6208650754300377404
+    second: "\u603B3 after_1013"
+  - first:
+      213: -935294379543339306
+    second: "\u603B3 after_1014"
+  - first:
+      213: 6283551750443339830
+    second: "\u603B3 after_1015"
+  - first:
+      213: -3853494608052608542
+    second: "\u603B3 after_1016"
+  - first:
+      213: -8928741383885024854
+    second: "\u603B3 after_1017"
+  - first:
+      213: -5288888787317608558
+    second: "\u603B3 after_1018"
+  - first:
+      213: -3999805952333884197
+    second: "\u603B3 after_1019"
+  - first:
+      213: 9174975382639473995
+    second: "\u603B3 after_1020"
+  - first:
+      213: 3606676713372436481
+    second: "\u603B3 after_1021"
+  - first:
+      213: 8293271418073659902
+    second: "\u603B3 after_1022"
+  - first:
+      213: -2569788990694077228
+    second: "\u603B3 after_1023"
+  - first:
+      213: -7697922379570186127
+    second: "\u603B3 after_1024"
+  - first:
+      213: -7081292393558538878
+    second: "\u603B3 after_1025"
+  - first:
+      213: -3803612572155969070
+    second: "\u603B3 after_1026"
+  - first:
+      213: -149735392202286025
+    second: "\u603B3 after_1027"
+  - first:
+      213: -4284799451124279651
+    second: "\u603B3 after_1028"
+  - first:
+      213: -6554654927218377592
+    second: "\u603B3 after_1029"
+  - first:
+      213: -5765442044429811302
+    second: "\u603B3 after_1030"
+  - first:
+      213: 7935081354105897235
+    second: "\u603B3 after_1031"
+  - first:
+      213: 6532590153317882381
+    second: "\u603B3 after_1032"
+  - first:
+      213: 6284012942518730899
+    second: "\u603B3 after_1033"
+  - first:
+      213: 8191234914184940233
+    second: "\u603B3 after_1034"
+  - first:
+      213: 6583764100307313304
+    second: "\u603B3 after_1035"
+  - first:
+      213: -2819123829699444187
+    second: "\u603B3 after_1036"
+  - first:
+      213: -7026047340860574313
+    second: "\u603B3 after_1037"
+  - first:
+      213: 7516945192509680946
+    second: "\u603B3 after_1038"
+  - first:
+      213: -6470190272496713062
+    second: "\u603B3 after_1039"
+  - first:
+      213: 666519338565694072
+    second: "\u603B3 after_1040"
+  - first:
+      213: 4434186416690780898
+    second: "\u603B3 after_1041"
+  - first:
+      213: -3365508629620220597
+    second: "\u603B3 after_1042"
+  - first:
+      213: -3738414797022744921
+    second: "\u603B3 after_1043"
+  - first:
+      213: -7393450196860947584
+    second: "\u603B3 after_1044"
+  - first:
+      213: -44848031312811075
+    second: "\u603B3 after_1045"
+  - first:
+      213: -4152980777024505258
+    second: "\u603B3 after_1046"
+  - first:
+      213: 8414697873030677196
+    second: "\u603B3 after_1047"
+  - first:
+      213: 4007744436301720558
+    second: "\u603B3 after_1048"
+  - first:
+      213: -6102652259631289169
+    second: "\u603B3 after_1049"
+  - first:
+      213: 2613662774846275791
+    second: "\u603B3 after_1050"
+  - first:
+      213: 4340253445468231152
+    second: "\u603B3 after_1051"
+  - first:
+      213: -2578725017148173456
+    second: "\u603B3 after_1052"
+  - first:
+      213: -7950765711900612156
+    second: "\u603B3 after_1053"
+  - first:
+      213: 2177881712835915014
+    second: "\u603B3 after_1054"
+  - first:
+      213: -4045617085774975354
+    second: "\u603B3 after_1055"
+  - first:
+      213: -6854650144465998366
+    second: "\u603B3 after_1056"
+  - first:
+      213: 4201478881085905395
+    second: "\u603B3 after_1057"
+  - first:
+      213: -2974206925058250230
+    second: "\u603B3 after_1058"
+  - first:
+      213: -8494683132787964426
+    second: "\u603B3 after_1059"
+  - first:
+      213: -4951029781856516467
+    second: "\u603B3 after_1060"
+  - first:
+      213: -8348912476218562698
+    second: "\u603B3 after_1061"
+  - first:
+      213: 5703364594408869528
+    second: "\u603B3 after_1062"
+  - first:
+      213: 1723381107754600116
+    second: "\u603B3 after_1063"
+  - first:
+      213: 2551580053033372217
+    second: "\u603B3 after_1064"
+  - first:
+      213: 3608778248326854007
+    second: "\u603B3 after_1065"
+  - first:
+      213: -9010471052938477079
+    second: "\u603B3 after_1066"
+  - first:
+      213: -2030189228496551211
+    second: "\u603B3 after_1067"
+  - first:
+      213: 7335634014339147541
+    second: "\u603B3 after_1068"
+  - first:
+      213: 9006940665343877204
+    second: "\u603B3 after_1069"
+  - first:
+      213: -8687922436301271798
+    second: "\u603B3 after_1070"
+  - first:
+      213: 9222581076518536125
+    second: "\u603B3 after_1071"
+  - first:
+      213: 6663336704354028084
+    second: "\u603B3 after_1072"
+  - first:
+      213: 8270414070542740815
+    second: "\u603B3 after_1073"
+  - first:
+      213: 4285652542989049910
+    second: "\u603B3 after_1074"
+  - first:
+      213: 1658295265931087166
+    second: "\u603B3 after_1075"
+  - first:
+      213: -3353901479872898467
+    second: "\u603B3 after_1076"
+  - first:
+      213: 3216352952291715803
+    second: "\u603B3 after_1077"
+  - first:
+      213: 2177947790069074560
+    second: "\u603B3 after_1078"
+  - first:
+      213: 3428378361645370650
+    second: "\u603B3 after_1079"
+  - first:
+      213: 8995425932275549006
+    second: "\u603B3 after_1080"
+  - first:
+      213: 8799073865219413976
+    second: "\u603B3 after_1081"
+  - first:
+      213: 728567224347792137
+    second: "\u603B3 after_1082"
+  - first:
+      213: 1074472680447303064
+    second: "\u603B3 after_1083"
+  - first:
+      213: -4086922539930539961
+    second: "\u603B3 after_1084"
+  - first:
+      213: 5534458118935426484
+    second: "\u603B3 after_1085"
+  - first:
+      213: 2599596464164015523
+    second: "\u603B3 after_1086"
+  - first:
+      213: 7510258735849946823
+    second: "\u603B3 after_1087"
+  - first:
+      213: 1399096835926596947
+    second: "\u603B3 after_1088"
+  - first:
+      213: 1120131246823262807
+    second: "\u603B3 after_1089"
+  - first:
+      213: 1032803743193394320
+    second: "\u603B3 after_1090"
+  - first:
+      213: 6720902198287772245
+    second: "\u603B3 after_1091"
+  - first:
+      213: 2753318273248121905
+    second: "\u603B3 after_1092"
+  - first:
+      213: -5948800040694241819
+    second: "\u603B3 after_1093"
+  - first:
+      213: -697312730516190972
+    second: "\u603B3 after_1094"
+  - first:
+      213: -258596024102917244
+    second: "\u603B3 after_1095"
+  - first:
+      213: 7020165366995030422
+    second: "\u603B3 after_1096"
+  - first:
+      213: 6575939505498492466
+    second: "\u603B3 after_1097"
+  - first:
+      213: -2759823937190590737
+    second: "\u603B3 after_1098"
+  - first:
+      213: 3953627909392952405
+    second: "\u603B3 after_1099"
+  - first:
+      213: 8124299195897101750
+    second: "\u603B3 after_1100"
+  - first:
+      213: -3855743890759503014
+    second: "\u603B3 after_1101"
+  - first:
+      213: 7236141584248463500
+    second: "\u603B3 after_1102"
+  - first:
+      213: 7023885153275078907
+    second: "\u603B3 after_1103"
+  - first:
+      213: 4822844320761657602
+    second: "\u603B3 after_1104"
+  - first:
+      213: -3387794060705728552
+    second: "\u603B3 after_1105"
+  - first:
+      213: -5459212309532147824
+    second: "\u603B3 after_1106"
+  - first:
+      213: -593534716230118812
+    second: "\u603B3 after_1107"
+  - first:
+      213: 3008805130215937070
+    second: "\u603B3 after_1108"
+  - first:
+      213: -7861200495541326396
+    second: "\u603B3 after_1109"
+  - first:
+      213: 3781304440417628306
+    second: "\u603B3 after_1110"
+  - first:
+      213: 8419115035946200157
+    second: "\u603B3 after_1111"
+  - first:
+      213: 736462995869874132
+    second: "\u603B3 after_1112"
+  - first:
+      213: -1936929624702098897
+    second: "\u603B3 after_1113"
+  - first:
+      213: -448705431409604977
+    second: "\u603B3 after_1114"
+  - first:
+      213: -1560101938390771733
+    second: "\u603B3 after_1115"
+  - first:
+      213: -5529752653626447655
+    second: "\u603B3 after_1116"
+  - first:
+      213: -5528966834022250701
+    second: "\u603B3 after_1117"
+  - first:
+      213: -3191284739677677634
+    second: "\u603B3 after_1118"
+  - first:
+      213: -2773717360251083383
+    second: "\u603B3 after_1119"
+  - first:
+      213: 1025859596131429118
+    second: "\u603B3 after_1120"
+  - first:
+      213: 6942010229369256093
+    second: "\u603B3 after_1121"
+  - first:
+      213: -7573551197214513248
+    second: "\u603B3 after_1122"
+  - first:
+      213: -4751036930574609015
+    second: "\u603B3 after_1123"
+  - first:
+      213: 1668211034098512404
+    second: "\u603B3 after_1124"
+  - first:
+      213: -1941581267047552167
+    second: "\u603B3 after_1125"
+  - first:
+      213: -1019517621073303731
+    second: "\u603B3 after_1126"
+  - first:
+      213: -5863372214967461030
+    second: "\u603B3 after_1127"
+  - first:
+      213: 4262882738689433176
+    second: "\u603B3 after_1128"
+  - first:
+      213: 1784925136069060972
+    second: "\u603B3 after_1129"
+  - first:
+      213: 4352050131154801353
+    second: "\u603B3 after_1130"
+  - first:
+      213: 8136217632669702947
+    second: "\u603B3 after_1131"
+  - first:
+      213: -1355850316423850901
+    second: "\u603B3 after_1132"
+  - first:
+      213: 4115879907679381996
+    second: "\u603B3 after_1133"
+  - first:
+      213: -9212064356505769138
+    second: "\u603B3 after_1134"
+  - first:
+      213: 5279762461231293842
+    second: "\u603B3 after_1135"
+  - first:
+      213: 7573063009733704981
+    second: "\u603B3 after_1136"
+  - first:
+      213: 6696419111724472341
+    second: "\u603B3 after_1137"
+  - first:
+      213: 558705913872344387
+    second: "\u603B3 after_1138"
+  - first:
+      213: -8939032414226273633
+    second: "\u603B3 after_1139"
+  - first:
+      213: -1660880916909260949
+    second: "\u603B3 after_1140"
+  - first:
+      213: 8043735009936502403
+    second: "\u603B3 after_1141"
+  - first:
+      213: 8971156021936587074
+    second: "\u603B3 after_1142"
+  - first:
+      213: 4994859737208866921
+    second: "\u603B3 after_1143"
+  - first:
+      213: -3434473748533217573
+    second: "\u603B3 after_1144"
+  - first:
+      213: 714298303284536807
+    second: "\u603B3 after_1145"
+  - first:
+      213: 76987296421626030
+    second: "\u603B3 after_1146"
+  - first:
+      213: -2849226083371252494
+    second: "\u603B3 after_1147"
+  - first:
+      213: -4857627199889592480
+    second: "\u603B3 after_1148"
+  - first:
+      213: -1336989272935526890
+    second: "\u603B3 after_1149"
+  - first:
+      213: 7761968881082583483
+    second: "\u603B3 after_1150"
+  - first:
+      213: 7826892084333575343
+    second: "\u603B3 after_1151"
+  - first:
+      213: -5777771400781199748
+    second: "\u603B3 after_1152"
+  - first:
+      213: -7319938513349348085
+    second: "\u603B3 after_1153"
+  - first:
+      213: 5643373217597785923
+    second: "\u603B3 after_1154"
+  - first:
+      213: 2756105195071500229
+    second: "\u603B3 after_1155"
+  - first:
+      213: 3622386695817352557
+    second: "\u603B3 after_1156"
+  - first:
+      213: -4375049847205691842
+    second: "\u603B3 after_1157"
+  - first:
+      213: 6503856922662325068
+    second: "\u603B3 after_1158"
+  - first:
+      213: 2662995979160331477
+    second: "\u603B3 after_1159"
+  - first:
+      213: -5147264757815645644
+    second: "\u603B3 after_1160"
+  - first:
+      213: 624870546151867284
+    second: "\u603B3 after_1161"
+  - first:
+      213: -6866473547543460749
+    second: "\u603B3 after_1162"
+  - first:
+      213: -7122923959579595742
+    second: "\u603B3 after_1163"
+  - first:
+      213: -2824981339962536538
+    second: "\u603B3 after_1164"
+  - first:
+      213: 2226079065071606839
+    second: "\u603B3 after_1165"
+  - first:
+      213: 4389637398315868362
+    second: "\u603B3 after_1166"
+  - first:
+      213: 1471801595105456416
+    second: "\u603B3 after_1167"
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "\u603B3 after_0"
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1071
+        width: 67
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56d2e81e429e6aa0800000000000000
+      internalID: -6165829975701006757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u603B3 after_1"
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 975
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 253e62e0ee1cc4010800000000000000
+      internalID: 1174526831020663634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u603B3 after_2"
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 867
+        width: 112
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b18087ee951dc80800000000000000
+      internalID: -8299753757516227762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u603B3 after_3"
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1007
+        width: 161
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2667443ea123c2030800000000000000
+      internalID: 3471204503859263074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u603B3 after_4"
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 943
+        width: 96
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8cb95adc8051b3a0800000000000000
+      internalID: -6651446608760554353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u603B3 after_5"
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 943
+        width: 161
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e0a88481547b4bf0800000000000000
+      internalID: -339049453471620894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u603B3 after_6"
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 911
+        width: 96
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e744bfe76b52ca00800000000000000
+      internalID: 775282587822475239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u603B3 after_7"
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 895
+        width: 80
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1d41afcbc7e7140800000000000000
+      internalID: 4719346610622222814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u603B3 after_8"
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 879
+        width: 96
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f3adedad6a607ea0800000000000000
+      internalID: -5877080494416485389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u603B3 after_9"
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 799
+        width: 161
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a53efb5940a561a50800000000000000
+      internalID: 6491474888639898458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u603B3 after_10"
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 831
+        width: 112
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc5c25d3bc0d77a0800000000000000
+      internalID: -6377927530771620652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u603B3 after_11"
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 735
+        width: 161
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1767c2f8f1bb2dd0800000000000000
+      internalID: -2509716684545759460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u603B3 after_12"
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 767
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40787466427f854e0800000000000000
+      internalID: -1992571099404597500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u603B3 after_13"
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 687
+        width: 80
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 119774aabf219d630800000000000000
+      internalID: 3952211020097222929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u603B3 after_14"
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 658
+        width: 173
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a07c07169e7cf6b0800000000000000
+      internalID: -5261191081578696535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u603B3 after_15"
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 623
+        width: 112
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74786ce9b3e2eba90800000000000000
+      internalID: -7296343512691865785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u603B3 after_16"
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 625
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b327960b0f882ec0800000000000000
+      internalID: -3591463425309989966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u603B3 after_17"
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 625
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f657cb6f16c5cf0800000000000000
+      internalID: -262226965942669413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u603B3 after_18"
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 625
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f70a97dc908fd0850800000000000000
+      internalID: 6345000171020591231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u603B3 after_19"
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 625
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18c8f050995eddc40800000000000000
+      internalID: 5538835562113240193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u603B3 after_20"
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 625
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a41fb2a430623b260800000000000000
+      internalID: 7112070032119296330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u603B3 after_21"
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 625
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdfed5d388a46f2b0800000000000000
+      internalID: -5551167541681983524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u603B3 after_22"
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 625
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5749f21a92a77990800000000000000
+      internalID: -7388257881051019425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u603B3 after_23"
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 559
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3b2d75013ba2dda0800000000000000
+      internalID: -5921482333004944578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u603B3 after_24"
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 601
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d172c583c24475a0800000000000000
+      internalID: -6524516552622837294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u603B3 after_25"
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 601
+        width: 5
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168fa13bdaade2270800000000000000
+      internalID: 8227754008821561441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u603B3 after_26"
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 601
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69fecf1bc3826f390800000000000000
+      internalID: -7784990664714031210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u603B3 after_27"
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 87
+        width: 209
+        height: 489
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1900d465b4f5520800000000000000
+      internalID: 2692953936221999605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u603B3 after_28"
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 191
+        width: 209
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8745c3ef13818f150800000000000000
+      internalID: 5906497514294236280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
