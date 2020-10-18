@@ -76,5 +76,10 @@ namespace Core
       this.gameManager.storysystem.setText(t);
       this.IsStory = true;
     }
+
+    public void SwitchScene(int SceneIndex)
+    {
+      gameManager.SwitchScene(SceneIndex);
+    }
   }
 }

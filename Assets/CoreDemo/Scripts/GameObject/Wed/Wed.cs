@@ -22,6 +22,8 @@ namespace Core.Character
     public Transform wedTransform;
     //角色顶部碰撞检测
     public GroundedTester upTester;
+    //声音组件
+    public AudioComponent audioComponent;
 
     /* 角色动作参数 */
     // 行走增量

@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
   void GameInit()
   {
     // Temp
-    // SetBound();
+    SetBound();
   }
 
   public bool IsPlayerDead()

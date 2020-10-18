@@ -15,6 +15,7 @@ public class LightFlick : MonoBehaviour
   void Start()
   {
     Init();
+    //Core.AudioManager._instance.PlayAudioByName("light_flick2", this.transform.position);
   }
 
   // Update is called once per frame
@@ -26,6 +27,7 @@ public class LightFlick : MonoBehaviour
   private void FixedUpdate()
   {
     lightFlick();
+
   }
 
   void lightFlick()

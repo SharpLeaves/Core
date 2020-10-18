@@ -20,11 +20,14 @@ namespace Core
     }
 
     //在指定位置播放音频 PlayClipAtPoint()
-    public void PlayAudioByName(string name)
+    public void PlayAudioByName(string name, Vector2 position)
     {
       //这里目标文件处在 Resources/Sounds/目标文件name
       AudioClip clip = Resources.Load<AudioClip>("Sounds/" + name);
-      AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position);
+      if (position == null)
+        AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position);
+      else
+        AudioSource.PlayClipAtPoint(clip, position);
     }
 
     //如果当前有其他音频正在播放，停止当前音频，播放下一个
@@ -39,7 +42,6 @@ namespace Core
 
       audiosource.clip = clip;
       audiosource.Play();
-
     }
   }
 }

@@ -36,6 +36,7 @@ public class StorySystem : MonoBehaviour
       dialog.GetComponent<StoryBase>().setTextFile(text);
       isDialogStart = true;
     }
+    Core.AudioManager._instance.PlayAudioByName("remind1", Camera.main.transform.position);
     isDialogStart = dialog.GetComponent<StoryBase>().Dialog();
     if (!isDialogStart)
       IsDialogEnd = true;
