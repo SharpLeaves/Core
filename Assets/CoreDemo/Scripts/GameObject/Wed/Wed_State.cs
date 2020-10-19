@@ -55,7 +55,7 @@ namespace Core.Character
       if (main.inputController.Jump)
       {
 
-        main.audioComponent.PlayOnPoint("wed_jump", Camera.main.transform.position, 5f);
+        main.audioComponent.PlayOnPoint("wed_jump", Camera.main.transform.position, 1f);
         main.physicsController.addPosition(0, 0.05f);
         main.physicsController.addVelocity(0, main.jump);
       }
@@ -218,7 +218,7 @@ namespace Core.Character
 
     public override void onExit()
     {
-      main.audioComponent.PlayOneShot("wed_fall", 0.5f);
+      main.audioComponent.PlayOnPoint("wed_fall", Camera.main.transform.position, 1f);
     }
   }
 
