@@ -319,4 +319,38 @@ namespace Core.Character
   }
 
 
+  public class Wed_ReModel : Wed_State
+  {
+    public Wed_ReModel(Wed mainController)
+    {
+      main = mainController;
+    }
+    public override string getName()
+    {
+      return "remodel";
+    }
+
+    public override void onEnter()
+    {
+
+      main.animationController.play = "remodel";
+    }
+
+    public override void update()
+    {
+      if (main.animationController.animInfo.IsName("remodel") && main.animationController.animInfo.normalizedTime >= 1.0f)
+        main.animationController.play = "remodelKeep";
+      if (!main.inputController.InteractInput)
+      {
+        this.Container.switchState("idle");
+      }
+
+    }
+
+    public override void onExit()
+    {
+
+    }
+  }
+
 }

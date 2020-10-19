@@ -59,10 +59,11 @@ namespace Core
 
       foreach (GameObject gameObject in effectedObjects)
       {
-        if (gameObject.tag == "Player")
+        if (gameObject.tag == "Player" && !IsRecycleStart)
         {
           Player = gameObject;
           IsRecycleStart = true;
+          Player.GetComponentInChildren<Core.Character.Wed>().GetStateMachine.switchState("remodel");
         }
       }
     }
@@ -73,7 +74,6 @@ namespace Core
       {
         this.RecycleProcess += this.RecycleSpeed * Time.deltaTime;
         this.FeedBackLight.intensity += 50 * Time.deltaTime;
-        Debug.Log(RecycleProcess);
         if (this.RecycleProcess >= this.RecycleDestination)
         {
           switchEquipment(EquipmentName);

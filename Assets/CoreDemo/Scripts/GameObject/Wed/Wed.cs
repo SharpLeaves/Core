@@ -55,6 +55,7 @@ namespace Core.Character
       this.stateMachine.addState(new Wed_Crouch(this));
       this.stateMachine.addState(new Wed_LookUp(this));
       this.stateMachine.addState(new Wed_Dead(this));
+      this.stateMachine.addState(new Wed_ReModel(this));
 
       this.stateMachine.switchState("idle");
     }
