@@ -18,9 +18,10 @@ namespace Core.Character
     {
         bool death = false;
         Rigidbody2D otherRigidbody = other.gameObject.GetComponentInChildren<Rigidbody2D>();
+
         if( otherRigidbody != null){
             if(otherRigidbody.tag == "Wall"){
-            
+                
 
                 if(main.groundedTester.IsGrounded){
                     if(Mathf.Abs(main.rigidbodyComponent.velocity.y - otherRigidbody.velocity.y) > verticalGroundMax){

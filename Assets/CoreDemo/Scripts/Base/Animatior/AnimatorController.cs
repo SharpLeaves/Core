@@ -34,7 +34,7 @@ namespace Core
       }
     }
 
-    private bool overrideThisFrame;
+    private bool overrideThisFrame = false;
     public void OverrideThisFrame()
     {
       overrideThisFrame = true;
@@ -42,10 +42,13 @@ namespace Core
 
     private void Update()
     {
-      animator.speed = playSpeed;
-      animator.Play(curPlay);
-      animInfo = animator.GetCurrentAnimatorStateInfo(0);
+      if(!overrideThisFrame){
+        animator.speed = playSpeed;
+        animator.Play(curPlay);
+        animInfo = animator.GetCurrentAnimatorStateInfo(0);
+      }
 
+      overrideThisFrame = false;
     }
 
     // 自适应动画播放速度		
