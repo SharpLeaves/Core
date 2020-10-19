@@ -139,13 +139,13 @@ namespace Core.Dog
     {
         this.main.animationController.play = "chargestart";
         
-        TimerManager.instance.addSustainTask(new Task(0.6f, ()=>{
+        TimerManager.instance.addSustainTask(new Task(0.66f, ()=>{
           Vector2 velovity = this.main.disk.velocity;
           velovity.y = 10f;
           this.main.disk.velocity = velovity;
         }));
 
-        TimerManager.instance.addTask(new Task(0.6f, ()=>{
+        TimerManager.instance.addTask(new Task(0.66f, ()=>{
           Vector2 velovity = this.main.disk.velocity;
           velovity.y = 0f;
           this.main.disk.velocity = velovity;

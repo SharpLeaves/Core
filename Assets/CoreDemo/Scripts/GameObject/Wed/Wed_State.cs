@@ -55,7 +55,7 @@ namespace Core.Character
       if (main.inputController.Jump)
       {
 
-        main.audioComponent.PlayOnPoint("wed_jump", Camera.main.transform.position, 1f);
+        // main.audioComponent.PlayOnPoint("wed_jump", Camera.main.transform.position, 1f);
         main.physicsController.addPosition(0, 0.05f);
         main.physicsController.addVelocity(0, main.jump);
       }
@@ -125,7 +125,7 @@ namespace Core.Character
     }
     public override void onEnter()
     {
-      main.audioComponent.Play("wed_walk", true);
+      // main.audioComponent.Play("wed_walk", true);
       base.onEnter();
     }
     public override void update()
@@ -139,7 +139,7 @@ namespace Core.Character
     }
     public override void onExit()
     {
-      main.audioComponent.Stop();
+      // main.audioComponent.Stop();
     }
   }
 
@@ -155,7 +155,7 @@ namespace Core.Character
     }
     public override void onEnter()
     {
-      main.audioComponent.Play("wed_run", true);
+      // main.audioComponent.Play("wed_run", true);
       base.onEnter();
 
     }
@@ -168,7 +168,7 @@ namespace Core.Character
     }
     public override void onExit()
     {
-      main.audioComponent.Stop();
+      // main.audioComponent.Stop();
     }
   }
 
@@ -218,7 +218,7 @@ namespace Core.Character
 
     public override void onExit()
     {
-      main.audioComponent.PlayOnPoint("wed_fall", Camera.main.transform.position, 1f);
+      // main.audioComponent.PlayOnPoint("wed_fall", Camera.main.transform.position, 1f);
     }
   }
 

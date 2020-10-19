@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
   void GameInit()
   {
     // Temp
-    SetBound();
+    // SetBound();
   }
 
   public bool IsPlayerDead()
@@ -83,9 +83,9 @@ public class GameManager : MonoBehaviour
     GameManagerData.GetInstance().IsSetSpwanPoint = false;
   }
 
-  public void SetBound()
-  {
-    this.boundSwitchManager.SetBoundByNumber(GameManagerData.GetInstance().gameBoundNumber);
-  }
+  // public void SetBound()
+  // {
+  //   this.boundSwitchManager.SetBoundByNumber(GameManagerData.GetInstance().gameBoundNumber);
+  // }
 
 }
