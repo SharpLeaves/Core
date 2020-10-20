@@ -25,6 +25,14 @@ namespace Core.Character
     //声音组件
     public AudioComponent audioComponent;
 
+    public bool chargeOver = false;
+
+    public float chargeTime = 2.0f;
+
+    public float chargeTimer = 0.0f;
+
+    public float chargeDuration = 5.0f;
+
     /* 角色动作参数 */
     // 行走增量
     public float walkForce = 10f;
@@ -56,6 +64,7 @@ namespace Core.Character
       this.stateMachine.addState(new Wed_LookUp(this));
       this.stateMachine.addState(new Wed_Dead(this));
       this.stateMachine.addState(new Wed_ReModel(this));
+      this.stateMachine.addState(new Wed_Charge(this));
 
       this.stateMachine.switchState("idle");
     }
@@ -73,7 +82,6 @@ namespace Core.Character
     {
       this.stateMachine.update();
 
-      // Debug.Log(this.stateMachine.curState.getName());
     }
 
     public void Wed_Die()

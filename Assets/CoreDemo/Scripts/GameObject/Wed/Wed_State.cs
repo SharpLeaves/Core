@@ -7,6 +7,47 @@ namespace Core.Character
     protected Wed main { get; set; }
   }
 
+  public class Wed_Charge : Wed_State{
+    public Wed_Charge(Wed main){
+      this.main = main;
+    }
+
+    public override void onEnter(){
+      this.main.animationController.play = "charge";
+    }
+
+    public override void onExit(){
+      
+    }
+
+    public override void update(){
+      if(this.main.inputController.MainHandHeld == false){
+        this.main.chargeTimer = 0.0f;
+        this.stateMachine.switchState("idle");
+      }
+
+      this.main.chargeTimer += Time.deltaTime;
+
+      if(this.main.chargeTimer >= this.main.chargeTime){
+        this.main.chargeTimer = 0.0f;
+        this.main.chargeOver = true;
+
+        TimerManager.instance.addTask(new Task(this.main.chargeDuration, ()=>{
+          this.main.chargeOver = false;
+        }));
+
+        this.stateMachine.switchState("idle");
+      }
+
+
+    }
+
+    public override string getName(){
+      return "charge";
+    }
+
+  }
+
   public abstract class Wed_Ground : Wed_State
   {
     public override void onEnter()
@@ -82,6 +123,11 @@ namespace Core.Character
 
       if (main.groundedTester.IsGrounded == false)
         this.Container.switchState("air");
+
+      if(main.inputController.MainHandHeld && main.chargeOver == false){
+        this.stateMachine.switchState("charge");
+      }
+      
     }
   }
 
