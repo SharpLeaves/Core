@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Core;
-
+using UnityEngine.SceneManagement;
 
 namespace Core
 {
@@ -149,11 +149,17 @@ namespace Core
     }
     public override void onEnter()
     {
-
+      this.gameManager.AnimCTL.play = "fadeOut";
     }
 
     public override void update()
     {
+      if (this.gameManager.AnimCTL.animInfo.IsName("fadeOut") &&
+          this.gameManager.AnimCTL.animInfo.normalizedTime >= 1.0f)
+      {
+        SceneManager.LoadScene(GameManagerData.GetInstance().NextSceneNumber);
+        GameManagerData.GetInstance().IsSetSpwanPoint = false;
+      }
     }
 
     public override void onExit()

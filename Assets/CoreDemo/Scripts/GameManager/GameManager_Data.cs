@@ -30,7 +30,8 @@ namespace Core
     public GameManager gameManager;
     /* 游戏状态机 */
     public Core.StateMachine stateMachine;
-
+    /* 下一个场景 */
+    public int NextSceneNumber;
     /* 角色出生点 */
     private Vector2 spwanpoint;
     public Vector2 SpwanPoint
@@ -79,7 +80,8 @@ namespace Core
 
     public void SwitchScene(int SceneIndex)
     {
-      gameManager.SwitchScene(SceneIndex);
+      NextSceneNumber = SceneIndex;
+      GameManagerData.GetInstance().stateMachine.switchState("switchscenes");
     }
   }
 }

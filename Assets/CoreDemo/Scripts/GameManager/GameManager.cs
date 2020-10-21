@@ -77,12 +77,6 @@ public class GameManager : MonoBehaviour
     SceneManager.LoadScene(CurSceneIndex);
   }
 
-  public void SwitchScene(int Scene)
-  {
-    SceneManager.LoadScene(Scene);
-    GameManagerData.GetInstance().IsSetSpwanPoint = false;
-  }
-
   // public void SetBound()
   // {
   //   this.boundSwitchManager.SetBoundByNumber(GameManagerData.GetInstance().gameBoundNumber);

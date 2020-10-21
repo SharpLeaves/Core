@@ -7,32 +7,40 @@ namespace Core.Character
     protected Wed main { get; set; }
   }
 
-  public class Wed_Charge : Wed_State{
-    public Wed_Charge(Wed main){
+  public class Wed_Charge : Wed_State
+  {
+    public Wed_Charge(Wed main)
+    {
       this.main = main;
     }
 
-    public override void onEnter(){
+    public override void onEnter()
+    {
       this.main.animationController.play = "charge";
     }
 
-    public override void onExit(){
-      
+    public override void onExit()
+    {
+
     }
 
-    public override void update(){
-      if(this.main.inputController.MainHandHeld == false){
+    public override void update()
+    {
+      if (this.main.inputController.MainHandHeld == false)
+      {
         this.main.chargeTimer = 0.0f;
         this.stateMachine.switchState("idle");
       }
 
       this.main.chargeTimer += Time.deltaTime;
 
-      if(this.main.chargeTimer >= this.main.chargeTime){
+      if (this.main.chargeTimer >= this.main.chargeTime)
+      {
         this.main.chargeTimer = 0.0f;
         this.main.chargeOver = true;
 
-        TimerManager.instance.addTask(new Task(this.main.chargeDuration, ()=>{
+        TimerManager.instance.addTask(new Task(this.main.chargeDuration, () =>
+        {
           this.main.chargeOver = false;
         }));
 
@@ -42,7 +50,8 @@ namespace Core.Character
 
     }
 
-    public override string getName(){
+    public override string getName()
+    {
       return "charge";
     }
 
@@ -96,7 +105,7 @@ namespace Core.Character
       if (main.inputController.Jump)
       {
 
-        // main.audioComponent.PlayOnPoint("wed_jump", Camera.main.transform.position, 1f);
+        main.audioComponent.PlayOnPoint("wed_jump", Camera.main.transform.position, 1f);
         main.physicsController.addPosition(0, 0.05f);
         main.physicsController.addVelocity(0, main.jump);
       }
@@ -124,10 +133,11 @@ namespace Core.Character
       if (main.groundedTester.IsGrounded == false)
         this.Container.switchState("air");
 
-      if(main.inputController.MainHandHeld && main.chargeOver == false){
+      if (main.inputController.MainHandHeld && main.chargeOver == false)
+      {
         this.stateMachine.switchState("charge");
       }
-      
+
     }
   }
 
@@ -171,7 +181,7 @@ namespace Core.Character
     }
     public override void onEnter()
     {
-      // main.audioComponent.Play("wed_walk", true);
+      main.audioComponent.Play("wed_walk", true);
       base.onEnter();
     }
     public override void update()
@@ -185,7 +195,7 @@ namespace Core.Character
     }
     public override void onExit()
     {
-      // main.audioComponent.Stop();
+      main.audioComponent.Stop();
     }
   }
 
@@ -201,7 +211,7 @@ namespace Core.Character
     }
     public override void onEnter()
     {
-      // main.audioComponent.Play("wed_run", true);
+      main.audioComponent.Play("wed_run", true);
       base.onEnter();
 
     }
@@ -214,7 +224,7 @@ namespace Core.Character
     }
     public override void onExit()
     {
-      // main.audioComponent.Stop();
+      main.audioComponent.Stop();
     }
   }
 
@@ -264,7 +274,7 @@ namespace Core.Character
 
     public override void onExit()
     {
-      // main.audioComponent.PlayOnPoint("wed_fall", Camera.main.transform.position, 1f);
+      main.audioComponent.PlayOnPoint("wed_fall", Camera.main.transform.position, 1f);
     }
   }
 
@@ -349,6 +359,7 @@ namespace Core.Character
 
     public override void onEnter()
     {
+      main.audioComponent.PlayOnPoint("wed_die", main.wedTransform.position, 1.0f);
       main.IsDead = true;
       main.animationController.play = "dead";
     }

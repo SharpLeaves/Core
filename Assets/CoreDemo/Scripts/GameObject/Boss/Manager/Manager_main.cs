@@ -40,6 +40,7 @@ public class Manager_main : MonoBehaviour
     foreach (Manager_ArmCTL arm in Arms)
     {
       arm.Active = active;
+      arm.laser.line.gameObject.SetActive(true);
     }
   }
 

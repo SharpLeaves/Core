@@ -12,7 +12,14 @@ public class Manager_ArmCTL : MonoBehaviour
   public float MoveSpeed;
   [Header("左右移动范围")]
   public float MoveRange;
-
+  [Header("激光组件")]
+  public Laser_CTL laser;
+  [Header("停歇时间")]
+  public float BreakTime;
+  [Header("运行时间")]
+  public float RunningTime;
+  [Header("时间偏移")]
+  public float TimeOffset;
   public bool Active;
 
   private int rotateDir;
@@ -20,7 +27,7 @@ public class Manager_ArmCTL : MonoBehaviour
   private float currentRotate = 0;
   private float currentMovement = 0;
 
-  private RaycastHit2D hit;
+  private float CurRunningTime;
 
   void Start()
   {
@@ -36,6 +43,7 @@ public class Manager_ArmCTL : MonoBehaviour
       //this.stateMachine.update();
       rotate();
       Move();
+      Break();
     }
 
 
@@ -47,6 +55,7 @@ public class Manager_ArmCTL : MonoBehaviour
   {
     rotateDir = 1;
     moveDir = 1;
+    CurRunningTime = 0;
     Active = false;
   }
   void rotate()
@@ -72,4 +81,25 @@ public class Manager_ArmCTL : MonoBehaviour
       this.currentMovement = 0;
     }
   }
+
+  void Break()
+  {
+    CurRunningTime += Time.deltaTime;
+    if (CurRunningTime >= RunningTime)
+    {
+      this.Active = false;
+      CurRunningTime = 0;
+      this.laser.line.enabled = false;
+      StartCoroutine(BreakTimer());
+    }
+  }
+
+  IEnumerator BreakTimer()
+  {
+    yield return new WaitForSeconds(BreakTime);
+    this.Active = true;
+    this.laser.line.enabled = true;
+  }
+
+
 }

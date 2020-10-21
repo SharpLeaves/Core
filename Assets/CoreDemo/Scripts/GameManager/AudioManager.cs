@@ -15,6 +15,8 @@ namespace Core
       audiosource = gameObject.AddComponent<AudioSource>();
 
       audiosource.playOnAwake = false;  //playOnAwake设为false时，通过调用play()方法启用
+      audiosource.loop = true;
+      audiosource.volume = 0.05f;
 
       _instance = this; //通过Sound._instance.方法调用
     }
@@ -31,7 +33,7 @@ namespace Core
     }
 
     //如果当前有其他音频正在播放，停止当前音频，播放下一个
-    public void PlayMusicByName(string name)
+    public void PlayMusicByName(string name, float vol)
     {
       AudioClip clip = Resources.Load<AudioClip>("Sounds/" + name);
 
@@ -39,7 +41,7 @@ namespace Core
       {
         audiosource.Stop();
       }
-
+      audiosource.volume = vol;
       audiosource.clip = clip;
       audiosource.Play();
     }

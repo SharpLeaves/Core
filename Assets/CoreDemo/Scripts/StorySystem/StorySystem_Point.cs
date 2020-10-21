@@ -24,6 +24,7 @@ public class StorySystem_Point : Effective
       {
         GameManagerData.GetInstance().StartStory(text);
         Destroy(this.gameObject);
+        //Core.AudioManager._instance.PlayMusicByName("depressBGM1");
       }
     }
   }

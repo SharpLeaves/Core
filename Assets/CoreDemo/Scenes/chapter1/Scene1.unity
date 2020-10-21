@@ -7568,6 +7568,11 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 342443840625872570, guid: 8c500e36fd5c0e04782761fdff0e70d0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5949267281864626517, guid: 8c500e36fd5c0e04782761fdff0e70d0,
         type: 3}
       propertyPath: m_TagString
@@ -7578,6 +7583,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 5949267282614788011, guid: 8c500e36fd5c0e04782761fdff0e70d0,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b3d6c79d98931ec48b39850f71d00e07, type: 2}
     - target: {fileID: 5949267283410929991, guid: 8c500e36fd5c0e04782761fdff0e70d0,
         type: 3}
       propertyPath: m_LocalPosition.x

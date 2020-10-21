@@ -64,6 +64,7 @@ namespace Core
           Player = gameObject;
           IsRecycleStart = true;
           Player.GetComponentInChildren<Core.Character.Wed>().GetStateMachine.switchState("remodel");
+          Core.AudioManager._instance.PlayAudioByName("recycleWaste", this.transform.position);
         }
       }
     }
@@ -91,7 +92,7 @@ namespace Core
 
     void switchEquipment(string EquipmentName)
     {
-      Debug.Log("switchEquipment");
+      AudioManager._instance.PlayAudioByName("recycleFinish", this.transform.position);
       IEquipment equipment = container.getByName(EquipmentName);
       EquipmentController[] equipmentControllers = Player.gameObject.GetComponentsInChildren<EquipmentController>();
       foreach (EquipmentController equipmentController in equipmentControllers)
