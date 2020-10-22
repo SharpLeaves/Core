@@ -57,6 +57,48 @@ namespace Core.Character
 
   }
 
+  public class Wed_Purity : Wed_State
+  {
+    public Wed_Purity(Wed main)
+    {
+      this.main = main;
+    }
+
+    public override void onEnter()
+    {
+      this.main.chargeOver = false;
+      this.main.animationController.play = "purity";
+    }
+
+    public override void onExit()
+    {
+
+    }
+
+    public override void update()
+    {
+      if (this.main.animationController.animInfo.IsName("purity") &&
+          this.main.animationController.animInfo.normalizedTime >= 0.7f &&
+          this.main.animationController.animInfo.normalizedTime < 1.0f)
+      {
+        this.main.PurityCol.gameObject.SetActive(true);
+      }
+
+      if (this.main.animationController.animInfo.IsName("purity") &&
+          this.main.animationController.animInfo.normalizedTime >= 1.0f)
+      {
+        this.main.PurityCol.gameObject.SetActive(false);
+        this.stateMachine.switchState("idle");
+      }
+    }
+
+    public override string getName()
+    {
+      return "purity";
+    }
+
+  }
+
   public abstract class Wed_Ground : Wed_State
   {
     public override void onEnter()
@@ -136,6 +178,11 @@ namespace Core.Character
       if (main.inputController.MainHandHeld && main.chargeOver == false)
       {
         this.stateMachine.switchState("charge");
+      }
+
+      if (main.inputController.MainHand && main.chargeOver == true)
+      {
+        this.stateMachine.switchState("purity");
       }
 
     }

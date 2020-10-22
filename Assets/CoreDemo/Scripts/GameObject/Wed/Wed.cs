@@ -18,6 +18,8 @@ namespace Core.Character
     // 死亡判定组件
     public Wed_DeathJudgeBody deathJudgeBody;
     public Wed_DeathJudgeTop deathJudgeTop;
+    //角色净化判断碰撞箱
+    public Collider2D PurityCol;
     //角色的transform
     public Transform wedTransform;
     //角色顶部碰撞检测
@@ -65,6 +67,7 @@ namespace Core.Character
       this.stateMachine.addState(new Wed_Dead(this));
       this.stateMachine.addState(new Wed_ReModel(this));
       this.stateMachine.addState(new Wed_Charge(this));
+      this.stateMachine.addState(new Wed_Purity(this));
 
       this.stateMachine.switchState("idle");
     }
