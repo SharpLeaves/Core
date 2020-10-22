@@ -22,7 +22,6 @@ public class CoreCTL : Effective
   {
     if (gameObject.tag == "pure")
     {
-      Debug.Log("hhh");
       this.IsPure = true;
     }
 

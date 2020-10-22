@@ -8,6 +8,7 @@ TagManager:
   - Trap
   - NPC
   - Wall
+  - pure
   layers:
   - Default
   - TransparentFX
