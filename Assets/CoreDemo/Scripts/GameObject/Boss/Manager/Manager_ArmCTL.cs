@@ -20,6 +20,9 @@ public class Manager_ArmCTL : MonoBehaviour
   public float RunningTime;
   [Header("时间偏移")]
   public float TimeOffset;
+  [Header("声音组件")]
+  public Core.AudioComponent audioComponent;
+
   public bool Active;
 
   private int rotateDir;
@@ -49,6 +52,12 @@ public class Manager_ArmCTL : MonoBehaviour
 
   }
 
+  public void SetActive()
+  {
+    this.Active = true;
+    this.audioComponent.Play("Laser", true);
+    laser.line.gameObject.SetActive(true);
+  }
 
 
   void Init()
@@ -57,6 +66,7 @@ public class Manager_ArmCTL : MonoBehaviour
     moveDir = 1;
     CurRunningTime = 0;
     Active = false;
+
   }
   void rotate()
   {
@@ -65,6 +75,7 @@ public class Manager_ArmCTL : MonoBehaviour
     currentRotate += rotateDir * rotateSpeed;
     if (Mathf.Abs(currentRotate) >= rotateMax)
       rotateDir = -rotateDir;
+
   }
 
   void Move()
@@ -90,6 +101,7 @@ public class Manager_ArmCTL : MonoBehaviour
       this.Active = false;
       CurRunningTime = 0;
       this.laser.line.enabled = false;
+      this.audioComponent.Stop();
       StartCoroutine(BreakTimer());
     }
   }
@@ -99,6 +111,7 @@ public class Manager_ArmCTL : MonoBehaviour
     yield return new WaitForSeconds(BreakTime);
     this.Active = true;
     this.laser.line.enabled = true;
+    this.audioComponent.Play("Laser", true);
   }
 
 
