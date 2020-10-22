@@ -83,6 +83,8 @@ namespace Core.Character
 
     private void FixedUpdate()
     {
+
+      Debug.Log(this.stateMachine.curState.getName());
       this.stateMachine.update();
 
     }

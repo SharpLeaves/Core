@@ -77,6 +77,7 @@ namespace Core.Character
 
     public override void update()
     {
+      
       if (this.main.animationController.animInfo.IsName("purity") &&
           this.main.animationController.animInfo.normalizedTime >= 0.7f &&
           this.main.animationController.animInfo.normalizedTime < 1.0f)
