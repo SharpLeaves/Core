@@ -72,8 +72,8 @@ public class Laser_CTL : TrapBase
   void rotate()
   {
 
-    transform.Rotate(new Vector3(0, 0, rotateDir * rotateSpeed));
-    currentRotate += rotateDir * rotateSpeed;
+    transform.Rotate(new Vector3(0, 0, rotateDir * rotateSpeed * Time.deltaTime));
+    currentRotate += rotateDir * rotateSpeed * Time.deltaTime;
     if (Mathf.Abs(currentRotate) >= rotateMax)
       rotateDir = -rotateDir;
   }

@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/CoreDemo/Scenes/chapter0/chapter0_boss.unity
     guid: 91b473a25f319fc4c9643dbdb0942787
+  - enabled: 1
+    path: Assets/CoreDemo/Scenes/chapter1/chapter1.unity
+    guid: 51fcd25fd91717e4889ce632a3a0d587
+  - enabled: 1
+    path: Assets/CoreDemo/Scenes/chapter1/Scene1.unity
+    guid: 800fcedd2c8d89a468131d8a19fbc869
   m_configObjects: {}

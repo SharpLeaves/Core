@@ -5,6 +5,7 @@ using Core;
 public class SceneSwitch : Effective
 {
   public int TargetSceneIndex;
+
   protected override void processObjectEnter(GameObject gameObject)
   {
     if (gameObject.tag == "Player")
@@ -22,7 +23,6 @@ public class SceneSwitch : Effective
   {
 
   }
-
 
 
 }

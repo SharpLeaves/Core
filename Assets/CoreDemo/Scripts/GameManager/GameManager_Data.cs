@@ -54,7 +54,6 @@ namespace Core
         return this.gameManager.storysystem;
       }
     }
-
     public void statemachineInit()
     {
       this.stateMachine = new Core.StateMachine();
@@ -80,6 +79,7 @@ namespace Core
 
     public void SwitchScene(int SceneIndex)
     {
+      this.gameBoundNumber = -1;
       NextSceneNumber = SceneIndex;
       GameManagerData.GetInstance().stateMachine.switchState("switchscenes");
     }

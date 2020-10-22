@@ -30,10 +30,10 @@ public class GameManager : MonoBehaviour
   public AnimatorController AnimCTL;
   /* WED */
   public Core.Character.Wed wed;
+
   private void Awake()
   {
     GameManagerData.GetInstance().GameManagerInit(this);
-
   }
   // Start is called before the first frame update
   void Start()
@@ -50,8 +50,7 @@ public class GameManager : MonoBehaviour
 
   void GameInit()
   {
-    // Temp
-    // SetBound();
+    SetBound();
   }
 
   public bool IsPlayerDead()
@@ -77,9 +76,10 @@ public class GameManager : MonoBehaviour
     SceneManager.LoadScene(CurSceneIndex);
   }
 
-  // public void SetBound()
-  // {
-  //   this.boundSwitchManager.SetBoundByNumber(GameManagerData.GetInstance().gameBoundNumber);
-  // }
+  public void SetBound()
+  {
+    if (GameManagerData.GetInstance().gameBoundNumber != -1)
+      this.boundSwitchManager.SetBoundByNumber(GameManagerData.GetInstance().gameBoundNumber);
+  }
 
 }

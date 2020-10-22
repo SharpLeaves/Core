@@ -255,7 +255,7 @@ namespace Core.Character
       {
         main.animationController.play = "jump_down";
       }
-      if (main.groundedTester.IsGrounded)
+      if (main.groundedTester.IsGrounded && main.physicsController.Velocity.y <= 0)
         this.Container.switchState("idle");
 
 
