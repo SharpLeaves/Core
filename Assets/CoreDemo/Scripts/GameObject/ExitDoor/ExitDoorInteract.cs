@@ -18,6 +18,6 @@ public class ExitDoorInteract : Core.InteractableC
 
   protected override void processInteract()
   {
-
+    Core.GameManagerData.GetInstance().SwitchScene(4);
   }
 }

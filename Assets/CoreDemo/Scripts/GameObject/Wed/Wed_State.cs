@@ -17,11 +17,12 @@ namespace Core.Character
     public override void onEnter()
     {
       this.main.animationController.play = "charge";
+      this.main.audioComponent.Play("wed_charge", false);
     }
 
     public override void onExit()
     {
-
+      this.main.audioComponent.Stop();
     }
 
     public override void update()
@@ -68,6 +69,7 @@ namespace Core.Character
     {
       this.main.chargeOver = false;
       this.main.animationController.play = "purity";
+      this.main.audioComponent.Play("wed_emit", false);
     }
 
     public override void onExit()
@@ -77,7 +79,7 @@ namespace Core.Character
 
     public override void update()
     {
-      
+
       if (this.main.animationController.animInfo.IsName("purity") &&
           this.main.animationController.animInfo.normalizedTime >= 0.7f &&
           this.main.animationController.animInfo.normalizedTime < 1.0f)
@@ -136,14 +138,14 @@ namespace Core.Character
       //     main.animationController.speed = 1.0f;
       // }
 
-      if (main.inputController.Vertical > 0)
-      {
-        this.Container.switchState("lookup");
-      }
-      if (main.inputController.Vertical < 0)
-      {
-        this.Container.switchState("crouch");
-      }
+      /*       if (main.inputController.Vertical > 0)
+            {
+              this.Container.switchState("lookup");
+            }
+            if (main.inputController.Vertical < 0)
+            {
+              this.Container.switchState("crouch");
+            } */
 
       if (main.inputController.Jump)
       {

@@ -25,6 +25,8 @@ public class Manager_ArmCTL : MonoBehaviour
 
   public bool Active;
 
+  public bool IsPured;
+
   private int rotateDir;
   private int moveDir;
   private float currentRotate = 0;
@@ -41,7 +43,7 @@ public class Manager_ArmCTL : MonoBehaviour
 
   void FixedUpdate()
   {
-    if (Active)
+    if (Active && !IsPured)
     {
       //this.stateMachine.update();
       rotate();
@@ -59,6 +61,14 @@ public class Manager_ArmCTL : MonoBehaviour
     laser.line.gameObject.SetActive(true);
   }
 
+  public void SetPuritied()
+  {
+    this.Active = false;
+    IsPured = true;
+    Destroy(this.audioComponent.gameObject);
+    laser.line.gameObject.SetActive(false);
+  }
+
 
   void Init()
   {
@@ -66,6 +76,7 @@ public class Manager_ArmCTL : MonoBehaviour
     moveDir = 1;
     CurRunningTime = 0;
     Active = false;
+    IsPured = false;
 
   }
   void rotate()

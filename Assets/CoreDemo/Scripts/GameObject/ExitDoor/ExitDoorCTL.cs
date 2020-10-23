@@ -13,16 +13,10 @@ public class ExitDoorCTL : Core.Effective
   void Start()
   {
     IsDoorOpen = false;
-    Active = false;
-    interact.SetActive(false);
-  }
-
-
-  public void Activetrigger()
-  {
     Active = true;
     interact.SetActive(true);
   }
+
 
   protected override void processObjectEnter(GameObject gameObject)
   {

@@ -9,7 +9,7 @@ public class WIndRobotCTL : MonoBehaviour
 
   public Light2D _light;
 
-  public Core.Character.Wed wed;
+  //public Core.Character.Wed wed;
 
   public WindRobot_Wind wind;
   private bool IsPure;
@@ -18,6 +18,7 @@ public class WIndRobotCTL : MonoBehaviour
   {
     IsPure = false;
     wind.Active = false;
+    wind.gameObject.SetActive(false);
   }
 
   // Update is called once per frame
@@ -40,5 +41,6 @@ public class WIndRobotCTL : MonoBehaviour
   {
     this._light.color = new Color(0, 0.7f, 1, 1);
     wind.Active = true;
+    wind.gameObject.SetActive(true);
   }
 }

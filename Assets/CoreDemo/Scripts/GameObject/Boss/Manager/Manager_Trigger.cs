@@ -35,7 +35,8 @@ public class Manager_Trigger : MonoBehaviour
   {
     if (other.tag == "Player")
     {
-      main.SetAllActive(true);
+      main.SetActive();
+
       IsStart = true;
     }
   }
