@@ -20,7 +20,7 @@ public class HydroPress_CTL : TrapBase
   [Header("时间偏移")]
   public float TimeOffset;
 
-  [Header("撞击箱")]
+  [Header("额外撞击箱")]
   public Collider2D col;
 
 
@@ -101,7 +101,7 @@ public class HydroPress_CTL : TrapBase
   {
     if (isPress)
     {
-      this.col.isTrigger = true;
+      this.col.isTrigger = false;
       this.CurrentPressSpeed += this.PressAcceleratedSpeed;
       this.transform.position -= new Vector3(0, CurrentPressSpeed * Time.deltaTime, 0);
       this.CurPressDistance += CurrentPressSpeed * Time.deltaTime;
@@ -115,7 +115,7 @@ public class HydroPress_CTL : TrapBase
   {
     if (!isPress)
     {
-      this.col.isTrigger = false;
+      this.col.isTrigger = true;
       this.transform.position += new Vector3(0, RecallSpeed * Time.deltaTime, 0);
       this.CurPressDistance -= RecallSpeed * Time.deltaTime;
       if (this.CurPressDistance <= 0)

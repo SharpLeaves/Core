@@ -13,10 +13,7 @@ namespace Core
       if (equipment == null)
         return;
 
-      foreach (Transform child in transform)
-      {
-        Destroy(child.gameObject);
-      }
+      ClearEquipment();
 
       IEquipment newEquipment = Instantiate(equipment, this.transform.position, this.transform.rotation, this.transform);
       curEquipment = newEquipment;
@@ -29,6 +26,14 @@ namespace Core
       if (this.name == "HandEquipment")
       {
         GameManagerData.GetInstance().WEDcurEquipmentHand = equipment;
+      }
+    }
+
+    public void ClearEquipment()
+    {
+      foreach (Transform child in transform)
+      {
+        Destroy(child.gameObject);
       }
     }
   }

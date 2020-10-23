@@ -450,6 +450,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -4539550770443152039, guid: 3c6b2a17f610fc84dbee80e1b7c680a7,
         type: 3}
+    - target: {fileID: 6852091477688013188, guid: e6756fa5567dfa046bb5a9e0a989fc30,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6852091477688013188, guid: e6756fa5567dfa046bb5a9e0a989fc30,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6852091477688013188, guid: e6756fa5567dfa046bb5a9e0a989fc30,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6852091477688013188, guid: e6756fa5567dfa046bb5a9e0a989fc30,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6852091477850009026, guid: e6756fa5567dfa046bb5a9e0a989fc30,
         type: 3}
       propertyPath: walkForce
