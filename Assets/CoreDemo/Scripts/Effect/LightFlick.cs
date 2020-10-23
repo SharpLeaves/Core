@@ -11,18 +11,12 @@ public class LightFlick : MonoBehaviour
   private float lightIntensity;
 
 
-  // Start is called before the first frame update
   void Start()
   {
     Init();
     //Core.AudioManager._instance.PlayAudioByName("light_flick2", this.transform.position);
   }
 
-  // Update is called once per frame
-  void Update()
-  {
-
-  }
 
   private void FixedUpdate()
   {
@@ -33,8 +27,10 @@ public class LightFlick : MonoBehaviour
   void lightFlick()
   {
     float rand = Random.Range(0, 100) / 100f;
+    Debug.Log(rand);
     if (rand >= Flickrate)
     {
+      
       this._light.intensity = this.lightIntensity;
     }
     else
