@@ -45,7 +45,6 @@ public class StoryBase : MonoBehaviour
       Destroy(this.gameObject);
       return false;
     }
-    Debug.Log(index);
     text.text = textList.ToArray()[index];
     index++;
     return true;

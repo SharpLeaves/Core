@@ -31,9 +31,9 @@ namespace Core.Dog
 
     public override void update()
     {
-      // if(Mathf.Abs(this.main.aimAt.transform.position.x - this.main.transform.position.x)<30){
+      if(Mathf.Abs(this.main.aimAt.transform.position.x - this.main.transform.position.x)<30){
             this.stateMachine.switchState("powerdecrease");
-      // }
+      }
     }
   }
 
@@ -198,9 +198,9 @@ namespace Core.Dog
       Vector2 velovity = this.main.disk.velocity;
       velovity.y = 0.0f;
       this.main.disk.velocity = velovity;
-      Vector2 positon = this.main.disk.position;
-      positon.y = 25.0f;
-      this.main.disk.position = positon;
+      Vector2 positon = this.main.disk.transform.position;
+      positon.y = 0.0f;
+      this.main.disk.transform.position = positon;
     }
 
     public override void update()

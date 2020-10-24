@@ -27,7 +27,6 @@ public class LightFlick : MonoBehaviour
   void lightFlick()
   {
     float rand = Random.Range(0, 100) / 100f;
-    Debug.Log(rand);
     if (rand >= Flickrate)
     {
       
