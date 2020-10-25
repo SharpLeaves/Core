@@ -11,6 +11,8 @@ namespace Core.Equipment
     public float buffTime = 0.05f;
     public float dashForce = 50f;
 
+    public string WEDState;
+
     public override string getName()
     {
       return "Dash";
@@ -20,12 +22,14 @@ namespace Core.Equipment
     {
       if (main.GetStateMachine.curState.getName() == "air" && dashOK)
       {
+        Core.AudioManager._instance.PlayAudioByName("jet", this.transform.position);
         dashOK = false;
         main.physicsController.addVelocity(dashForce * main.flipController.flipTransform.localScale.x * -1, 0);
         TimerManager.instance.addTask(new Task(dashCD, () =>
         {
           dashOK = true;
         }));
+        this.stateMachine.switchState("active");
       }
     }
 
@@ -40,16 +44,42 @@ namespace Core.Equipment
     void Start()
     {
       StateMachineInit();
+      WEDState = "idle";
     }
     protected void FixedUpdate()
     {
       base.Update();
       this.stateMachine.update();
+      getWEDState();
     }
 
-    // protected void Update()
-    // {
-    //   base.Update();
-    // }
+    void getWEDState()
+    {
+      switch (main.GetStateMachine.curState.getName())
+      {
+        case "walk":
+          this.WEDState = "walk";
+          break;
+        case "run":
+          this.WEDState = "run";
+          break;
+        case "idle":
+          this.WEDState = "idle";
+          break;
+        case "air":
+          this.WEDState = "jump";
+          break;
+        case "charge":
+          this.WEDState = "charge";
+          break;
+        case "purity":
+          this.WEDState = "purity";
+          break;
+        case "remodel":
+          this.WEDState = "remodel";
+          break;
+
+      }
+    }
   }
 }

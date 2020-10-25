@@ -97,7 +97,7 @@ namespace Core
       EquipmentController[] equipmentControllers = Player.gameObject.GetComponentsInChildren<EquipmentController>();
       foreach (EquipmentController equipmentController in equipmentControllers)
       {
-        if (EquipmentType)
+        if (!EquipmentType)
         {
           if (equipmentController.name == "BackEquipment")
           {

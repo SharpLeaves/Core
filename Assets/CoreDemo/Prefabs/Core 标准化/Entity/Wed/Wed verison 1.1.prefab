@@ -101,8 +101,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   main: {fileID: 5949267281988906258}
-  horizontalMax: 90
-  dashAdjust: 15
+  horizontalMax: 200
+  dashAdjust: 80
   onDash: 0
 --- !u!1 &1120810571
 GameObject:

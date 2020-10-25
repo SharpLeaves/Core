@@ -19,7 +19,7 @@ namespace Core.Equipment
     }
     public override void onEnter()
     {
-      main.animationController.play = "ready";
+      main.animationController.play = main.WEDState;
     }
     public override void onExit()
     {
@@ -27,6 +27,7 @@ namespace Core.Equipment
     }
     public override void update()
     {
+      main.animationController.play = main.WEDState;
       if (main.dashOK == false)
       {
         stateMachine.switchState("active");
@@ -46,7 +47,7 @@ namespace Core.Equipment
     }
     public override void onEnter()
     {
-      main.animationController.play = "cd";
+      //main.animationController.play = "cd";
     }
     public override void onExit()
     {
@@ -54,6 +55,7 @@ namespace Core.Equipment
     }
     public override void update()
     {
+      main.animationController.play = main.WEDState;
       if (main.dashOK == true)
       {
         stateMachine.switchState("ready");
@@ -73,7 +75,7 @@ namespace Core.Equipment
     }
     public override void onEnter()
     {
-      main.animationController.play = "active";
+      main.animationController.play = "dash";
     }
     public override void onExit()
     {

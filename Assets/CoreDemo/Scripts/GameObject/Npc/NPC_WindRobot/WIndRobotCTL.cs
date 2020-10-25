@@ -17,7 +17,6 @@ public class WIndRobotCTL : MonoBehaviour
   void Start()
   {
     IsPure = false;
-    wind.Active = false;
     wind.gameObject.SetActive(false);
   }
 
@@ -40,7 +39,7 @@ public class WIndRobotCTL : MonoBehaviour
   void AfterPure()
   {
     this._light.color = new Color(0, 0.7f, 1, 1);
-    wind.Active = true;
     wind.gameObject.SetActive(true);
+
   }
 }

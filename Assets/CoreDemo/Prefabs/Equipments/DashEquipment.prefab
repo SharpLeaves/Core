@@ -24,9 +24,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1889538804899398760}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.100000024, y: 0.3, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1889538805717999575}
   - {fileID: 1889538805168004686}
@@ -48,10 +48,11 @@ MonoBehaviour:
   animationController: {fileID: 1889538805351457762}
   rigidbodyComponent: {fileID: 0}
   main: {fileID: 0}
-  dashCD: 2
+  dashCD: 1
   dashOK: 1
   buffTime: 0.1
   dashForce: 200
+  WEDState: 
 --- !u!1 &1889538805168004681
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,8 +217,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
-  m_Sprite: {fileID: 4923818944117646488, guid: 1505c3c9638dcda479db8b5f89135a1d,
+  m_SortingOrder: 9
+  m_Sprite: {fileID: -251321477678229697, guid: b460d1551f6b6454d87f4de52a8f07a8,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

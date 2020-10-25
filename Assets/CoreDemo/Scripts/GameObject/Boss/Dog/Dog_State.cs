@@ -31,8 +31,9 @@ namespace Core.Dog
 
     public override void update()
     {
-      if(Mathf.Abs(this.main.aimAt.transform.position.x - this.main.transform.position.x)<30){
-            this.stateMachine.switchState("powerdecrease");
+      if (Mathf.Abs(this.main.aimAt.transform.position.x - this.main.transform.position.x) < 30)
+      {
+        this.stateMachine.switchState("powerdecrease");
       }
     }
   }
@@ -50,7 +51,7 @@ namespace Core.Dog
 
     public override void onEnter()
     {
-        
+
     }
 
     public override void onExit()
@@ -60,7 +61,7 @@ namespace Core.Dog
 
     public override void update()
     {
-      
+
     }
   }
 
@@ -78,19 +79,21 @@ namespace Core.Dog
     public override void onEnter()
     {
       this.main.animationController.play = "powerincrease";
+      this.main.audioComponent.Play("wed_charge", true);
     }
 
     public override void onExit()
     {
-
+      this.main.audioComponent.Stop();
     }
 
     public override void update()
     {
-      AnimatorStateInfo info = main.animationController.animInfo;    
-      if (info.normalizedTime >= 1.0f && info.IsName("powerincrease"))  {
-          stateMachine.switchState("chargeover");
-      } 
+      AnimatorStateInfo info = main.animationController.animInfo;
+      if (info.normalizedTime >= 1.0f && info.IsName("powerincrease"))
+      {
+        stateMachine.switchState("chargeover");
+      }
     }
   }
 
@@ -117,10 +120,11 @@ namespace Core.Dog
 
     public override void update()
     {
-      AnimatorStateInfo info = main.animationController.animator.GetCurrentAnimatorStateInfo(0);    
-      if (info.normalizedTime >= 1.0f && info.IsName("powerdecrease"))  {
-          stateMachine.switchState("chargestart");
-      }  
+      AnimatorStateInfo info = main.animationController.animator.GetCurrentAnimatorStateInfo(0);
+      if (info.normalizedTime >= 1.0f && info.IsName("powerdecrease"))
+      {
+        stateMachine.switchState("chargestart");
+      }
     }
   }
 
@@ -137,19 +141,21 @@ namespace Core.Dog
 
     public override void onEnter()
     {
-        this.main.animationController.play = "chargestart";
-        
-        TimerManager.instance.addSustainTask(new Task(0.66f, ()=>{
-          Vector2 velovity = this.main.disk.velocity;
-          velovity.y = 10f;
-          this.main.disk.velocity = velovity;
-        }));
+      this.main.animationController.play = "chargestart";
 
-        TimerManager.instance.addTask(new Task(0.66f, ()=>{
-          Vector2 velovity = this.main.disk.velocity;
-          velovity.y = 0f;
-          this.main.disk.velocity = velovity;
-        }));
+      TimerManager.instance.addSustainTask(new Task(0.66f, () =>
+      {
+        Vector2 velovity = this.main.disk.velocity;
+        velovity.y = 10f;
+        this.main.disk.velocity = velovity;
+      }));
+
+      TimerManager.instance.addTask(new Task(0.66f, () =>
+      {
+        Vector2 velovity = this.main.disk.velocity;
+        velovity.y = 0f;
+        this.main.disk.velocity = velovity;
+      }));
     }
 
     public override void onExit()
@@ -159,10 +165,11 @@ namespace Core.Dog
 
     public override void update()
     {
-        AnimatorStateInfo info = main.animationController.animator.GetCurrentAnimatorStateInfo(0);    
-        if (info.normalizedTime >= 1.0f && info.IsName("chargestart"))  {
-            stateMachine.switchState("powerincrease");
-        }   
+      AnimatorStateInfo info = main.animationController.animator.GetCurrentAnimatorStateInfo(0);
+      if (info.normalizedTime >= 1.0f && info.IsName("chargestart"))
+      {
+        stateMachine.switchState("powerincrease");
+      }
     }
   }
 
@@ -179,18 +186,21 @@ namespace Core.Dog
 
     public override void onEnter()
     {
-        this.main.animationController.play = "chargeover";
-        TimerManager.instance.addTask(new Task(1.0f, ()=>{
+      this.main.animationController.play = "chargeover";
+      TimerManager.instance.addTask(new Task(1.0f, () =>
+      {
 
-          TimerManager.instance.addSustainTask(new Task(0.2f, ()=>{
-            Vector2 velocity = this.main.disk.velocity;
-            velocity.y = -30f;
-            this.main.disk.velocity = velocity;
-          }));
-
-
+        TimerManager.instance.addSustainTask(new Task(0.2f, () =>
+        {
+          Vector2 velocity = this.main.disk.velocity;
+          velocity.y = -30f;
+          this.main.disk.velocity = velocity;
+          this.main.audioComponent.Play("Pang", false);
         }));
-        
+
+
+      }));
+
     }
 
     public override void onExit()
@@ -205,10 +215,11 @@ namespace Core.Dog
 
     public override void update()
     {
-      AnimatorStateInfo info = main.animationController.animator.GetCurrentAnimatorStateInfo(0);    
-        if (info.normalizedTime >= 1.0f && info.IsName("chargeover"))  {
-            stateMachine.switchState("normal");
-        }   
+      AnimatorStateInfo info = main.animationController.animator.GetCurrentAnimatorStateInfo(0);
+      if (info.normalizedTime >= 1.0f && info.IsName("chargeover"))
+      {
+        stateMachine.switchState("normal");
+      }
     }
   }
 

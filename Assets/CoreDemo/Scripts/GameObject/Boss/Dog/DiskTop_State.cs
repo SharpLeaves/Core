@@ -21,7 +21,8 @@ namespace Core.Dog
 
     public override void onEnter()
     {
-      TimerManager.instance.addTask(new Task(this.main.unactiveDuration, ()=>{
+      TimerManager.instance.addTask(new Task(this.main.unactiveDuration, () =>
+      {
         this.main.search = true;
       }));
     }
@@ -33,14 +34,18 @@ namespace Core.Dog
 
     public override void update()
     {
-      if(this.main.search){
-        if(this.main.aimAt.transform.position.x - this.main.transform.position.x > this.main.allowableErrorX){
-          this.main.physicsController.addVelocity(this.main.speed,0);
+      if (this.main.search)
+      {
+        if (this.main.aimAt.transform.position.x - this.main.transform.position.x > this.main.allowableErrorX)
+        {
+          this.main.physicsController.addVelocity(this.main.speed, 0);
         }
-        else if(this.main.aimAt.transform.position.x - this.main.transform.position.x < -this.main.allowableErrorX){
-          this.main.physicsController.addVelocity(-this.main.speed,0);
+        else if (this.main.aimAt.transform.position.x - this.main.transform.position.x < -this.main.allowableErrorX)
+        {
+          this.main.physicsController.addVelocity(-this.main.speed, 0);
         }
-        else{
+        else
+        {
           this.main.search = false;
           this.stateMachine.switchState("active");
         }
@@ -61,26 +66,32 @@ namespace Core.Dog
 
     public override void onEnter()
     {
-      TimerManager.instance.addTask(new Task(this.main.activeDuration, ()=>{
+      TimerManager.instance.addTask(new Task(this.main.activeDuration, () =>
+      {
         this.main.search = true;
       }));
+      this.main.audioSource.Play();
     }
 
     public override void onExit()
     {
-
+      this.main.audioSource.Stop();
     }
 
     public override void update()
     {
-      if(this.main.search){
-        if(this.main.aimAt.transform.position.x - this.main.transform.position.x > this.main.allowableErrorX){
-          this.main.physicsController.addVelocity(this.main.speed,0);
+      if (this.main.search)
+      {
+        if (this.main.aimAt.transform.position.x - this.main.transform.position.x > this.main.allowableErrorX)
+        {
+          this.main.physicsController.addVelocity(this.main.speed, 0);
         }
-        else if(this.main.aimAt.transform.position.x - this.main.transform.position.x < -this.main.allowableErrorX){
-          this.main.physicsController.addVelocity(-this.main.speed,0);
+        else if (this.main.aimAt.transform.position.x - this.main.transform.position.x < -this.main.allowableErrorX)
+        {
+          this.main.physicsController.addVelocity(-this.main.speed, 0);
         }
-        else{
+        else
+        {
           this.main.search = false;
           this.stateMachine.switchState("normal");
         }
