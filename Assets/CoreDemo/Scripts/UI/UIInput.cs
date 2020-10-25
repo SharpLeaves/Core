@@ -14,9 +14,16 @@ public class UIInput : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
-    if (Input.anyKeyDown)
-    {
-      SceneManager.LoadScene("chapter0");
-    }
+
+  }
+
+  public void LoadChapter0()
+  {
+    SceneManager.LoadScene(1);
+  }
+
+  public void LoadChapter1()
+  {
+    SceneManager.LoadScene(4);
   }
 }

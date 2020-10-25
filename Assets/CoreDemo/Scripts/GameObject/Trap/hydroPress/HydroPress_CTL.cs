@@ -21,7 +21,9 @@ public class HydroPress_CTL : TrapBase
   public float TimeOffset;
 
   [Header("额外撞击箱")]
-  public Collider2D col;
+  public Collider2D EXtracol;
+  [Header("判断用Trigger")]
+  public Collider2D judgeCol;
 
 
   /* 当前下压速度 */
@@ -78,7 +80,8 @@ public class HydroPress_CTL : TrapBase
   {
     this.Active = false;
     isPress = false;
-    this.col.isTrigger = false;
+    this.EXtracol.isTrigger = false;
+    this.judgeCol.gameObject.SetActive(false);
     this.Press();
     this.Recall();
   }
@@ -101,12 +104,17 @@ public class HydroPress_CTL : TrapBase
   {
     if (isPress)
     {
-      this.col.isTrigger = false;
+      this.judgeCol.gameObject.SetActive(true);
+      this.EXtracol.isTrigger = true;
       this.CurrentPressSpeed += this.PressAcceleratedSpeed;
       this.transform.position -= new Vector3(0, CurrentPressSpeed * Time.deltaTime, 0);
       this.CurPressDistance += CurrentPressSpeed * Time.deltaTime;
       if (this.CurPressDistance >= this.PressDistance)
+      {
         StartCoroutine(PressTimeout());
+        Core.AudioManager._instance.PlayAudioByName("Pang", this.transform.position);
+      }
+
     }
 
   }
@@ -115,7 +123,8 @@ public class HydroPress_CTL : TrapBase
   {
     if (!isPress)
     {
-      this.col.isTrigger = true;
+      this.judgeCol.gameObject.SetActive(false);
+      this.EXtracol.isTrigger = false;
       this.transform.position += new Vector3(0, RecallSpeed * Time.deltaTime, 0);
       this.CurPressDistance -= RecallSpeed * Time.deltaTime;
       if (this.CurPressDistance <= 0)
