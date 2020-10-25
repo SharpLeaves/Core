@@ -10,9 +10,16 @@ namespace Core.Dog
     public Wed aimAt;
     public Rigidbody2D disk;
 
+    public CoreCTL core;
+
+    public bool IsPure;
     public AudioComponent audioComponent;
 
+    public Animator BossPuritiedAniamtor;
+
     public float power = 30.0f;
+
+
 
 
     protected override void StateMachineInit()
@@ -30,12 +37,22 @@ namespace Core.Dog
     void Start()
     {
       StateMachineInit();
-
+      this.IsPure = false;
     }
 
     private void FixedUpdate()
     {
       this.stateMachine.update();
+      JudgeCore();
+    }
+
+    public void JudgeCore()
+    {
+      if (this.core.IsPure && !IsPure)
+      {
+        this.IsPure = true;
+        this.stateMachine.switchState("breakout");
+      }
     }
   }
 }

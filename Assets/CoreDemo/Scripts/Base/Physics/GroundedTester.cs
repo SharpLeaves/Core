@@ -60,9 +60,9 @@ namespace Core
         Vector2 f2StartLinecast = f2Position;
         f2StartLinecast.x = f2GroundTesterPosition.x;
         // 检测碰撞
-        //Physics2D.OverlapBox(groundCheck.position, new Vector2(0.3f, 0.3f), 0, ground);
         //Physics2D.Linecast(f2StartLinecast, f2GroundTesterPosition, iGroundLayer)
-        if (Physics2D.OverlapBox(rGroundTester.position, new Vector2(0.5f, 0.5f), 0, iGroundLayer))
+        //Physics2D.OverlapBox(rGroundTester.position, new Vector2(1.0f, 0.6f), 0, iGroundLayer)
+        if (Physics2D.OverlapCircle(this.transform.position, 1.0f, iGroundLayer))
         {
           bGrounded = true;
         }

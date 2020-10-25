@@ -560,10 +560,20 @@ PrefabInstance:
       propertyPath: normalGravityScale
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 6852091478463575384, guid: e6756fa5567dfa046bb5a9e0a989fc30,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.554
+      objectReference: {fileID: 0}
     - target: {fileID: 6852091478828454324, guid: e6756fa5567dfa046bb5a9e0a989fc30,
         type: 3}
       propertyPath: groundLayer.m_Bits
       value: 768
+      objectReference: {fileID: 0}
+    - target: {fileID: 6852091478879854985, guid: e6756fa5567dfa046bb5a9e0a989fc30,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.973
       objectReference: {fileID: 0}
     - target: {fileID: 6852091479246604650, guid: e6756fa5567dfa046bb5a9e0a989fc30,
         type: 3}
@@ -573,12 +583,17 @@ PrefabInstance:
     - target: {fileID: 6852091479246604650, guid: e6756fa5567dfa046bb5a9e0a989fc30,
         type: 3}
       propertyPath: m_Offset.y
-      value: -1.7
+      value: -1.7012186
       objectReference: {fileID: 0}
     - target: {fileID: 6852091479246604650, guid: e6756fa5567dfa046bb5a9e0a989fc30,
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6852091479246604650, guid: e6756fa5567dfa046bb5a9e0a989fc30,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 4.590787
       objectReference: {fileID: 0}
     - target: {fileID: 6852091479246604651, guid: e6756fa5567dfa046bb5a9e0a989fc30,
         type: 3}

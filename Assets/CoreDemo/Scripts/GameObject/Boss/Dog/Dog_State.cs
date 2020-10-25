@@ -51,7 +51,8 @@ namespace Core.Dog
 
     public override void onEnter()
     {
-
+      this.main.BossPuritiedAniamtor.Play("Animation_Boss_Puritied");
+      Core.AudioManager._instance.PlayAudioByName("Core_Puritied", this.main.transform.position);
     }
 
     public override void onExit()
@@ -61,7 +62,11 @@ namespace Core.Dog
 
     public override void update()
     {
-
+      if (this.main.BossPuritiedAniamtor.GetCurrentAnimatorStateInfo(0).IsName("Animation_Boss_Puritied")
+        && this.main.BossPuritiedAniamtor.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+      {
+        Core.GameManagerData.GetInstance().SwitchScene(6);
+      }
     }
   }
 
@@ -79,7 +84,7 @@ namespace Core.Dog
     public override void onEnter()
     {
       this.main.animationController.play = "powerincrease";
-      this.main.audioComponent.Play("wed_charge", true);
+      this.main.audioComponent.Play("dog_charge", true);
     }
 
     public override void onExit()
@@ -111,6 +116,7 @@ namespace Core.Dog
     public override void onEnter()
     {
       this.main.animationController.play = "powerdecrease";
+      this.main.audioComponent.Play("lightwave", false);
     }
 
     public override void onExit()

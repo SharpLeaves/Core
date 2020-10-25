@@ -5,6 +5,9 @@ using Core;
 public class CoreCTL : Effective
 {
   public bool IsPure;
+
+  public AudioSource audioSource;
+
   // Start is called before the first frame update
   void Start()
   {

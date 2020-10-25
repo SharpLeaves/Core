@@ -12,6 +12,8 @@ public class WIndRobotCTL : MonoBehaviour
   //public Core.Character.Wed wed;
 
   public WindRobot_Wind wind;
+
+  public AudioSource audioSource;
   private bool IsPure;
   // Start is called before the first frame update
   void Start()
@@ -40,6 +42,7 @@ public class WIndRobotCTL : MonoBehaviour
   {
     this._light.color = new Color(0, 0.7f, 1, 1);
     wind.gameObject.SetActive(true);
+    audioSource.Play();
 
   }
 }
