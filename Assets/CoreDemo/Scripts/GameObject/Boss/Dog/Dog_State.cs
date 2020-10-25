@@ -208,9 +208,9 @@ namespace Core.Dog
       Vector2 velovity = this.main.disk.velocity;
       velovity.y = 0.0f;
       this.main.disk.velocity = velovity;
-      Vector2 positon = this.main.disk.transform.position;
-      positon.y = 0.0f;
-      this.main.disk.transform.position = positon;
+      Vector2 positon = this.main.disk.position;
+      // positon.y = 0.0f;
+      this.main.disk.position = positon;
     }
 
     public override void update()
