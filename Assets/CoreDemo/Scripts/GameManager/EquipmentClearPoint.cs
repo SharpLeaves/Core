@@ -12,6 +12,8 @@ public class EquipmentClearPoint : Core.Effective
   {
     wed.backEquipment.ClearEquipment();
     wed.handEquipment.ClearEquipment();
+    Core.GameManagerData.GetInstance().WEDcurEquipmentBack = null;
+    Core.GameManagerData.GetInstance().WEDcurEquipmentHand = null;
   }
 
   protected override void processObjectExit(GameObject gameObject)
