@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 public class UIInput : MonoBehaviour
 {
+  public Canvas canvas;
   // Start is called before the first frame update
   void Start()
   {
@@ -19,11 +20,13 @@ public class UIInput : MonoBehaviour
 
   public void LoadChapter0()
   {
-    SceneManager.LoadScene(1);
+    Core.GameManagerData.GetInstance().SwitchScene(7);
+    canvas.gameObject.SetActive(false);
   }
 
   public void LoadChapter1()
   {
-    SceneManager.LoadScene(4);
+    Core.GameManagerData.GetInstance().SwitchScene(4);
+    canvas.gameObject.SetActive(false);
   }
 }
