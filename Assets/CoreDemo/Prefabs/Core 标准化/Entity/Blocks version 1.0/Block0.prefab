@@ -318,7 +318,7 @@ GameObject:
   m_Layer: 0
   m_Name: Block_upTester
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -353,6 +353,7 @@ MonoBehaviour:
     m_Bits: 512
   groundedTesters:
   - {fileID: 7734915396041310985}
+  - {fileID: 7734915396019264633}
 --- !u!1 &7734915396489149986
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,7 +366,7 @@ GameObject:
   - component: {fileID: 7734915396489149987}
   - component: {fileID: 7734915396489149988}
   m_Layer: 8
-  m_Name: Block
+  m_Name: Block0
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -481,7 +482,7 @@ GameObject:
   m_Layer: 0
   m_Name: Block_groundTester
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1

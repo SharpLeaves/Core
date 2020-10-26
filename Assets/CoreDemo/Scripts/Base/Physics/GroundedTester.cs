@@ -62,10 +62,10 @@ namespace Core
         // 检测碰撞
         //Physics2D.Linecast(f2StartLinecast, f2GroundTesterPosition, iGroundLayer)
         //Physics2D.OverlapBox(rGroundTester.position, new Vector2(1.0f, 0.6f), 0, iGroundLayer)
-        if (Physics2D.OverlapCircle(this.transform.position, 1.0f, iGroundLayer))
+        if (Physics2D.OverlapCircle(rGroundTester.position, 1.0f, iGroundLayer))
         {
           bGrounded = true;
-          Debug.Log(this.gameObject.name);
+          //Debug.Log(this.gameObject.name);
         }
       }
     }

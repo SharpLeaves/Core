@@ -28,7 +28,7 @@ namespace Core.Equipment
     public override void update()
     {
       main.animationController.play = main.WEDState;
-      if (main.dashOK == false)
+      if (main.IsUsed == true)
       {
         stateMachine.switchState("active");
       }
@@ -56,7 +56,7 @@ namespace Core.Equipment
     public override void update()
     {
       main.animationController.play = main.WEDState;
-      if (main.dashOK == true)
+      if (main.IsUsed == false)
       {
         stateMachine.switchState("ready");
       }

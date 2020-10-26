@@ -34,6 +34,10 @@ namespace Core
     public int NextSceneNumber;
     /* 角色出生点 */
     private Vector2 spwanpoint;
+
+    public string curBGM = null;
+
+    public float curVol = 0;
     public Vector2 SpwanPoint
     {
       get

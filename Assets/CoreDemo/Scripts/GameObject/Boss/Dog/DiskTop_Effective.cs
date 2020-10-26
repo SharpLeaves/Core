@@ -34,10 +34,8 @@ namespace Core.Dog
             IronBlock block = gameObject.GetComponentInChildren<IronBlock>();
             if (block != null)
             {
-              Debug.Log("1");
               if (block.upTester.IsGrounded)
               {
-                Debug.Log("yes");
                 block.rigidbodyComponent.transform.parent = this.main.rigidbodyComponent.transform;
                 block.rigidbodyComponent.transform.gameObject.layer = 9;
               }

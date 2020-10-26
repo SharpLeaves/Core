@@ -8,7 +8,7 @@ namespace Core.Equipment
   {
     // Dash CD
     public float dashCD = 4.0f;
-    public bool dashOK = true;
+    public bool IsUsed;
 
     public float DashForce;
 
@@ -22,20 +22,18 @@ namespace Core.Equipment
 
     public override void function()
     {
-      if (main.GetStateMachine.curState.getName() == "air" && dashOK)
+      if (main.GetStateMachine.curState.getName() == "air" && !IsUsed)
       {
         Core.AudioManager._instance.PlayAudioByName("jet", this.transform.position);
-        dashOK = false;
+
         if (main.physicsController.Velocity.y < 0)
         {
           main.physicsController.addVelocity(0, -main.physicsController.Velocity.y + DashForce);
         }
         else
           main.physicsController.addVelocity(0, DashForce);
-        TimerManager.instance.addTask(new Task(dashCD, () =>
-        {
-          dashOK = true;
-        }));
+
+        IsUsed = true;
         this.stateMachine.switchState("active");
       }
     }
@@ -43,6 +41,7 @@ namespace Core.Equipment
     private void Start()
     {
       StateMachineInit();
+      IsUsed = false;
     }
 
     protected override void StateMachineInit()
@@ -59,6 +58,9 @@ namespace Core.Equipment
       base.Update();
       this.stateMachine.update();
       getWEDState();
+      if (main.groundedTester.IsGrounded)
+        IsUsed = false;
+
     }
 
     void getWEDState()

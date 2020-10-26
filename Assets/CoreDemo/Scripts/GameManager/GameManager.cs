@@ -40,6 +40,8 @@ public class GameManager : MonoBehaviour
   {
     GameManagerData.GetInstance().statemachineInit();
     GameInit();
+    if (GameManagerData.GetInstance().curBGM != null)
+      AudioManager._instance.PlayMusicByName(GameManagerData.GetInstance().curBGM, GameManagerData.GetInstance().curVol);
   }
 
   // Update is called once per frame
