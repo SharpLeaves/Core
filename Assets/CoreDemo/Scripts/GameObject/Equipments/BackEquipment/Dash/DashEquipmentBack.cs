@@ -1,5 +1,6 @@
 using Core;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 
 namespace Core.Equipment
 {
@@ -12,6 +13,9 @@ namespace Core.Equipment
     public float dashForce = 50f;
 
     public string WEDState;
+
+    public Light2D light1;
+    public Light2D light2;
 
     public override string getName()
     {

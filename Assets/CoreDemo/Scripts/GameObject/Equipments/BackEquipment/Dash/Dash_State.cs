@@ -19,6 +19,7 @@ namespace Core.Equipment
     }
     public override void onEnter()
     {
+      
       main.animationController.play = main.WEDState;
     }
     public override void onExit()
@@ -27,11 +28,23 @@ namespace Core.Equipment
     }
     public override void update()
     {
+      
+      if(main.WEDState == "run"){
+        this.main.light1.transform.localPosition = new Vector3(0.782f - 0.8f,-0.9f,0);
+        this.main.light2.transform.localPosition = new Vector3(0 - 0.8f,-0.9f,0);
+      }
+      else{
+        this.main.light1.transform.localPosition = new Vector3(0.782f,0,0);
+        this.main.light2.transform.localPosition = new Vector3(0,0,0);
+      }
+      this.main.light1.color = UnityEngine.Color.blue;
+      this.main.light2.color = UnityEngine.Color.blue;
       main.animationController.play = main.WEDState;
       if (main.dashOK == false)
       {
         stateMachine.switchState("active");
       }
+      
     }
   }
 
@@ -47,7 +60,7 @@ namespace Core.Equipment
     }
     public override void onEnter()
     {
-
+      
     }
     public override void onExit()
     {
@@ -56,8 +69,17 @@ namespace Core.Equipment
     public override void update()
     {
       main.animationController.play = main.WEDState;
-      if (main.dashOK == true)
-      {
+      if(main.WEDState == "run"){
+        this.main.light1.transform.localPosition = new Vector3(0.782f - 0.8f,-0.9f,0);
+        this.main.light2.transform.localPosition = new Vector3(0 - 0.8f,-0.9f,0);
+      }
+      else{
+        this.main.light1.transform.localPosition = new Vector3(0.782f,0,0);
+        this.main.light2.transform.localPosition = new Vector3(0,0,0);
+      }
+      this.main.light1.color = UnityEngine.Color.red;
+      this.main.light2.color = UnityEngine.Color.red;
+      if (main.dashOK == true){
         stateMachine.switchState("ready");
       }
     }

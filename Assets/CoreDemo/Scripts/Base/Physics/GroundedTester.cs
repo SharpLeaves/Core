@@ -65,6 +65,7 @@ namespace Core
         if (Physics2D.OverlapCircle(this.transform.position, 1.0f, iGroundLayer))
         {
           bGrounded = true;
+          Debug.Log(this.gameObject.name);
         }
       }
     }
