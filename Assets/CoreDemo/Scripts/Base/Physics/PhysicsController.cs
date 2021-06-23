@@ -27,9 +27,6 @@ namespace Core{
 		public bool ignoreVelocity = false;
 		public bool ignorePosition = false;
 
-		
-		
-		
 		public Vector2 Velocity{
 			get{
 				return main.rigidbodyComponent.velocity;
@@ -86,9 +83,6 @@ namespace Core{
 		public void setVerticalBrake(bool b){
 			brakeVertical = b;
 		}
-
-
-
 
 		private void Awake(){
 			gravityScale = normalGravityScale;
@@ -208,12 +202,8 @@ namespace Core{
 
 			microAdjust();
 			after();
-
-
 		}
 
-
 		public System.Action onJump;
-
 	}
 }

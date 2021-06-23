@@ -2,16 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Core
-{
-  public class AudioManager : MonoBehaviour
-  {
+namespace Core{
+  public class AudioManager : MonoBehaviour{
 
     public AudioSource audiosource;
 
     public static AudioManager _instance;
-    void Awake()
-    {
+    void Awake(){
       audiosource = gameObject.AddComponent<AudioSource>();
 
       audiosource.playOnAwake = false;  //playOnAwake设为false时，通过调用play()方法启用
@@ -22,8 +19,7 @@ namespace Core
     }
 
     //在指定位置播放音频 PlayClipAtPoint()
-    public void PlayAudioByName(string name, Vector2 position)
-    {
+    public void PlayAudioByName(string name, Vector2 position){
       //这里目标文件处在 Resources/Sounds/目标文件name
       AudioClip clip = Resources.Load<AudioClip>("Sounds/" + name);
       if (position == null)
@@ -33,12 +29,10 @@ namespace Core
     }
 
     //如果当前有其他音频正在播放，停止当前音频，播放下一个
-    public void PlayMusicByName(string name, float vol)
-    {
+    public void PlayMusicByName(string name, float vol){
       AudioClip clip = Resources.Load<AudioClip>("Sounds/" + name);
 
-      if (audiosource.isPlaying)
-      {
+      if (audiosource.isPlaying){
         audiosource.Stop();
       }
       audiosource.volume = vol;

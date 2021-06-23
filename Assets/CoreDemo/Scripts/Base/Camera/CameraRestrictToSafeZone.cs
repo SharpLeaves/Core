@@ -23,7 +23,6 @@ namespace Core{
 		private void ConstraintInSafeZone()
 		{
 			Vector3 position = transform.position;
-			
 			Vector2 targetPosition = safeZoneCenter.position;
 			
 			position.x = Mathf.Clamp(position.x, targetPosition.x - safeZoneOffsetFromTarget.x - safeZoneSize.x, targetPosition.x - safeZoneOffsetFromTarget.x + safeZoneSize.x);
